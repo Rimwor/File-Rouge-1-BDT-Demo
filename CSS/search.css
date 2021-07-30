@@ -1,0 +1,156 @@
+/* ========================================================== BODY =================================================================== */
+/* BODY */
+
+html {
+    font-size: 12px !important;
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 20px !important;
+    }
+  }
+
+/* IMG HELP */
+.img_help {
+    opacity: 40%;
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+}
+
+/* ========================================================== MAIN CONTAINER ========================================================= */
+/* MAIN CONTAINER */
+.container-fluid {
+    padding: 10px !important;
+}
+
+/* ========================================================== HEADER ================================================================= */
+/* HEADER */
+.cell1 {
+    width: 5% !important;
+    min-width: 15px;
+}
+
+.cell2 {
+    width: 5% !important;
+    min-width: 15px;
+    margin-right: 10px;
+}
+
+.cell3 {
+    font-size: 25px !important;
+    width: 75% !important;
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+/* ========================================================== MIDDLE DIV ============================================================= */
+/* MIDDLE DIV */
+.middle_div {
+    background-color: rgba(255, 255, 255, 0.479);
+    margin: auto;
+    width: 85% !important;
+    height: 75% !important;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+/* BURGER MENU */
+.burger_menu {
+    text-align: right;
+    float:right;
+}
+
+/* CENTER DIV */
+.center_div {
+    margin-top: 2% !important;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+@media (min-width: 576px) { 
+    
+    .center_div {
+        margin-top: 2% !important;
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+    }
+
+ }
+
+/* IMG : .search icon. and .silhouette icon.  */
+._img1 {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+._img2 {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+/* BUTTONS : search, record borrowed BD, return borrowed BD */
+.btn {
+    margin-top: 2% !important;
+    width: auto !important;
+    max-height: 40px !important;
+    height: 100% !important;
+    font-size: 11px !important;
+}
+
+/* CELLS WITH ICONS : .search icon. and .silhouette icon.  */
+#cell_1 {
+    text-align: left;
+    width: 20% !important;
+}
+
+/* CELLS WITH TEXT AND BUTTONS : Consultation of the fund and Borrowed BD management */
+#cell_2 {
+    text-align: left;
+    width: 80% !important;
+}
+
+/* ========================================================== SEARCH FORM ============================================================== */
+/* SEARCH FORM */
+.search_form {
+    margin: auto;
+    width: 60%;
+    margin-top: 5%;
+}
+
+
+.consult_dfond {
+    background-color: rgba(97, 77, 77, 0.459);
+    text-align: center;
+    font-weight: bold !important;
+
+}
+
+.img_search_div {
+    text-align: center;
+}
+
+.img_search_form {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+}
+
+@media (min-width: 568px) { 
+    
+    .img_search_form {
+        width: 40%;
+        max-width: 220px;
+        height: auto;
+    }
+
+ }
+ 
+/* ========================================================== BODY END =============================================================== */
