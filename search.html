@@ -1,0 +1,108 @@
+<html lang="fr">
+<!-- ======================================================== START ================================================================ -->
+<!-- MAIN CONTAINER -->
+    <!-- MAIN CONTAINER : class="container-fluid" -->
+    <!-- HEADER : class="header" -->
+    <!-- IMG HELP : class="img_help" -->
+
+<!-- CONNECTION FORM -->
+    <!-- DIV : class="connection_form" -->
+    <!-- FORM : class="form_connection" -->
+    <!-- USER ID -->
+        <!-- INPUT ID : class="metro-input" id="username" -->
+    <!-- PIN -->
+        <!-- DIV : class="row" -->
+        <!-- INPUT PIN : class="metro-input" -->
+    <!-- SUBMIT button -->
+        <!-- DIV : class="btn_confirm1" -->
+        <!-- BUTTON : class="btn" id="btn_confirm" -->
+
+<!-- FOOTER -->
+        <!-- FOOTER : class="footer" -->
+        <!-- MOT DE PASSE OUBLIE button : class="button" -->
+
+<!-- ======================================================== HEAD ================================================================= -->
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>| RECHERCHE | Bédéthèque de Stockholm</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="CSS/metro/metro-all.css">
+    <link rel="stylesheet" href="CSS/fontawasome/fontawesome.css">
+
+    <link rel="stylesheet" href="CSS/search.css">
+
+
+</head>
+<!-- ======================================================== BODY ================================================================= -->
+<body>
+    <body background="../DEMO/MEDIA/img/bdthequebackground.jpg">   
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="row">
+                <div class="cell1">
+                <a href="../DEMO/help.html" target="_blank">
+                <img src="../DEMO/MEDIA/img/help.png" class="img_help"/></a>
+                </div>
+
+                <div class="cell2">
+                    </div>
+                    
+                <div class="cell3">
+                <span class="">Bienvenue à votre compte </span><span id="user_status">Bibliothécaire</span> <span>, </span><span id="user_name">Andy Dufresne</span> !</span>
+                </div>
+            </div>                      
+        </header>
+
+        <!-- MIDDLE DIV -->
+        <div class="middle_div p-3 border" >
+            
+            <div class="burger_menu">
+            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                <li><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+            </ul>
+            </div>
+
+            <!-- CENTER DIV -->
+            <div class="center_div">
+
+                        <div class="consult_dfond col align-self-center">
+                            Consultation du fond
+                        </div>
+                        </br>
+                    
+                        <div class="img_search_div col align-self-center">
+                            <img src="../DEMO/MEDIA/img/search_form.png" class="img_search_form img-fluid mx-auto d-block">
+                        </div>
+                        </br>
+                        <input type="text" data-role="input" data-search-button="true" placeholder="Saisir un numero ISBN, un titre, un sous titre, une serie au un auteur">
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+   
+<!-- ========================================================= JS ================================================================== -->
+
+    <!-- JAVA SCRIPT -->
+    <script src="JS/index.js"></script>
+    <script src="JS/metro.js"></script>
+    <script src="JS/all.js"></script>
+
+<!-- ======================================================== END ================================================================== -->
+</html>

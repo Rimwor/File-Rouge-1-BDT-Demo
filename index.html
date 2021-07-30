@@ -1,0 +1,113 @@
+<html lang="fr">
+<!-- ======================================================== START ================================================================ -->
+<!-- MAIN CONTAINER -->
+    <!-- MAIN CONTAINER : class="container-fluid" -->
+    <!-- HEADER : class="header" -->
+    <!-- IMG HELP : class="img_help" -->
+
+<!-- CONNECTION FORM -->
+    <!-- DIV : class="connection_form" -->
+    <!-- FORM : class="form_connection" -->
+    <!-- USER ID -->
+        <!-- INPUT ID : class="metro-input" id="username" -->
+    <!-- PIN -->
+        <!-- DIV : class="row" -->
+        <!-- INPUT PIN : class="metro-input" -->
+    <!-- SUBMIT button -->
+        <!-- DIV : class="btn_confirm1" -->
+        <!-- BUTTON : class="btn" id="btn_confirm" -->
+
+<!-- FOOTER -->
+        <!-- FOOTER : class="footer" -->
+        <!-- MOT DE PASSE OUBLIE button : class="button" -->
+
+<!-- ======================================================== HEAD ================================================================= -->
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>Bienvenue à la bédéthèque de Stockholm</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="CSS/metro/metro-all.css">
+    <link rel="stylesheet" href="CSS/fontawasome/fontawesome.css">
+
+    <link rel="stylesheet" href="CSS/index.css">
+
+</head>
+<!-- ======================================================== BODY ================================================================= -->
+<body>
+    <body background="../DEMO/MEDIA/img/bdthequebackground.jpg">   
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+
+        <!-- HEADER -->
+        <header class="header">
+            <a href="../DEMO/help.html" target="_blank">
+            <img src="../DEMO/MEDIA/img/help.png" class="img_help"/>
+            </a>
+        </header>
+
+        <!-- CONNECTION FORM -->
+
+        <div class="connection_form col-sm-9 p-3 border" >
+            <form class="form_connection">
+
+                <!-- USER ID -->
+                <div class="mb-3">
+                    <label for="username">Entrez votre identifiant personnel :</label>
+                    </br></br>
+                    <input class="metro-input" placeholder="  Votre identifiant personnel" type="text" id="username" name="username"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    minlength="10"
+                    style="-webkit-text-security: disc;"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); " required/>
+                </div>
+
+                <!-- PIN -->
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Saisie votre code PIN : </label>
+                    </br>
+                        <!-- KEY PAD -->
+                        <div class="row">
+                            <div class="cell-md-6">
+                                <input class="metro-input" placeholder="Votre code pin" type="text" data-role="keypad" data-shuffle="true" data-dynamic-position="true" data-on-change="$('#change_target').val(arguments[0])" required/>
+                            </div>
+                        </div>
+                    </br>
+                    <!-- SUBMIT -->
+                    <div class="btn_confirmation"> 
+                        <button type="submit" class="btn btn-sm btn-primary" id="btn_confirm">Confirme</button>
+                    </div>
+                </br>
+                </div>             
+            </form>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <a href="../DEMO/mot_de_passe_oublie.html" target="_blank">
+            <button class="button"><i class="fas fa-unlock-alt"></i>&nbspMot de passe oublié</button>
+            </a>
+            
+        </footer>
+
+    </div>
+
+</body>
+<!-- ========================================================= JS ================================================================== -->
+
+    <!-- JAVA SCRIPT -->
+    <script src="JS/index.js"></script>
+    <script src="JS/metro.js"></script>
+    <script src="JS/all.js"></script>
+
+<!-- ======================================================== END ================================================================== -->
+</html>
