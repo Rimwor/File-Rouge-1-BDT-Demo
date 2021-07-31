@@ -39,6 +39,8 @@
 
     <link rel="stylesheet" href="CSS/index.css">
 
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.16.0.css">
+
 </head>
 <!-- ======================================================== BODY ================================================================= -->
 <body>
@@ -57,28 +59,26 @@
         <!-- CONNECTION FORM -->
 
         <div class="connection_form col-sm-9 p-3 border" >
-            <form class="form_connection">
+            <form class="form_connection" action="compte_bibliothecaire.html" method="POST">
 
                 <!-- USER ID -->
                 <div class="mb-3">
                     <label for="username">Entrez votre identifiant personnel :</label>
                     </br></br>
                     <input class="metro-input" placeholder="  Votre identifiant personnel" type="text" id="username" name="username"
-                    pattern="[0-9]{10}"
-                    maxlength="10"
                     minlength="10"
                     style="-webkit-text-security: disc;"
-                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); " required/>
+                    required/>
                 </div>
 
                 <!-- PIN -->
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Saisie votre code PIN : </label>
+                    <label for="password" class="form-label">Saisie votre code PIN : </label>
                     </br>
                         <!-- KEY PAD -->
                         <div class="row">
                             <div class="cell-md-6">
-                                <input class="metro-input" placeholder="Votre code pin" type="text" data-role="keypad" data-shuffle="true" data-dynamic-position="true" data-on-change="$('#change_target').val(arguments[0])" required/>
+                                <input  id="password" name="password" class="metro-input" placeholder="Votre code pin" type="text" data-role="keypad" data-shuffle="true" data-dynamic-position="false" data-on-change="$('#change_target').val(arguments[0])"  data-key-length="6" required="required"/>
                             </div>
                         </div>
                     </br>
@@ -101,13 +101,22 @@
 
     </div>
 
-</body>
-<!-- ========================================================= JS ================================================================== -->
+    <div id="qunit" hidden></div>
+    <div id="qunit-fixture" hidden></div>
+
+
+    <!-- ========================================================= JS ================================================================== -->
 
     <!-- JAVA SCRIPT -->
-    <script src="JS/index.js"></script>
+    <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
+    <script src="JS/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="JS/connexion.js"></script>
+
     <script src="JS/metro.js"></script>
     <script src="JS/all.js"></script>
+
+</body>
 
 <!-- ======================================================== END ================================================================== -->
 </html>
