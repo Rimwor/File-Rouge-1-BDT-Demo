@@ -1,0 +1,86 @@
+<html lang="fr">
+    <!-- MAIN CONTAINER -->
+    <!-- MAIN CONTAINER : class="container-fluid" -->
+    <!-- HEADER : class="header" -->
+    <!-- IMG HELP : class="img_help" -->
+
+<!-- ERROR MESSAGE -->
+    <!-- DIV : class="error_msg" -->
+    <!-- BUTTON : OK : id="btn_ok -->
+
+<!-- ======================================================== HEAD ================================================================= -->
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>| ERREUR DE CONNECTION | Bédéthèque de Stockholm</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="CSS/metro/metro-all.css">
+    <link rel="stylesheet" href="CSS/fontawasome/fontawesome.css">
+
+    <link rel="stylesheet" href="CSS/error_connection.css">
+
+</head>
+<!-- ======================================================== BODY ================================================================= -->
+<body>
+    <body background="MEDIA\bdthequebackground.jpg">   
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+
+        <!-- HEADER -->
+        <header class="header">
+            <a href="">
+            <img src="MEDIA\help.png" class="img_help"/>
+            </a>
+        </header>
+
+        <!-- ERROR MESSAGE -->
+
+        <div class="error_msg col-sm-9 p-3 border" >
+            
+            <center>
+            <h1 class="h1 text-left"><i class="fas fa-times-circle" style="color: red"></i> Échec de la connexion !!</h1>
+            </center>
+            <hr class="hr1"></hr>     
+                <p style="color: red">
+                    Le nom d'utilisateur et/ou le mot de passe saisis sont incorrects.
+                </p>
+            <p>
+                Tentatives restantes : 2.</br>
+                Ensuite, votre compte sera bloqué !!</br>
+                Si vous avez oublié vos données, veuillez utiliser la récupération de compte.</br>
+            </p>
+            <p>* En cas de problème, contactez l'Administrateur.</p>
+            </br>
+                <button id="btn_ok" class="btn btn-outline-dark d-grid col-4 mx-auto">OK</button>
+            </br>
+            </br>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <a href="mot_de_passe_oublie.html" target="_blank">
+            <button class="button"><i class="fas fa-unlock-alt"></i>&nbspMot de passe oublié</button>
+            </a>
+            
+        </footer>
+
+    </div>
+
+</body>
+<!-- ========================================================= JS ================================================================== -->
+
+    <!-- JAVA SCRIPT -->
+   
+    <script src="JS/metro.js"></script>
+    <script src="JS/all.js"></script>
+
+<!-- ======================================================== END ================================================================== -->
+</html>
