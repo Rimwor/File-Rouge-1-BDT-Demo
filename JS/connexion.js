@@ -1,6 +1,8 @@
 var identifiant;
 var motPasse;
 var key;
+var form;
+var btnConfirmer;
 var monId = /^[0-9]{10}$/;
 var monPin = /^[0-9]{6}$/;
 
@@ -10,7 +12,7 @@ var monPin = /^[0-9]{6}$/;
 $(document).ready(function() {
     identifiant = $("#username");
     motPasse = $("#password");
-
+    form = $("#connexion");
     btnConfirmer = $("#btn_confirm");
 
 
@@ -29,8 +31,7 @@ function verifCredentials(e) {
         e.preventDefault();
         alert("Le format de vos identifiants est invalide");
     } else if (username != 1234567890 || password != 123456) {
-        e.preventDefault();
-        alert("Identifiant et/ou mot de passe incorrect");
+        $(form).attr("action", "error_connection.html");
     }
 
 }
