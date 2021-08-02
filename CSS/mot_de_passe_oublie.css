@@ -30,7 +30,7 @@ html {
 }
 
 /* ========================================================== CONNECTION FORM ======================================================== */
-/* CHELP INFO */
+/* HELP INFO */
 .help_info {
     background-color: rgba(255, 255, 255, 0.479);
     margin: auto;
@@ -40,13 +40,73 @@ html {
     margin-top: 2%;
 }
 
+@media screen and (min-width: 530px) {
+  .help_info {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .help_info {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .help_info {
+    width: 50% !important;
+  }
+}
+
 .h1 {
     font-size: 22px !important;
     font-weight: bold;
 }
 
+@media screen and (min-width: 530px) {
+  .h1 {
+    font-size: 12px !important;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .h1 {
+    font-size: 12px !important;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .h1 {
+    font-size: 22px !important;
+    font-weight: bold;
+  }
+}
+
 .h2 {
     font-size: 20px !important;
+}
+
+@media screen and (min-width: 630px) {
+  .h2 {
+    font-size: 10px !important;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .h2 {
+    font-size: 10px !important;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .h2 {
+    font-size: 20px !important;
+    font-weight: bold;
+  }
 }
 
 /* ========================================================== FOOTER ================================================================= */

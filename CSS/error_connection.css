@@ -40,6 +40,24 @@ html {
     margin-top: 2%;
 }
 
+@media screen and (min-width: 530px) {
+  .error_msg {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .error_msg  {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .error_msg  {
+    width: 50% !important;
+  }
+}
+
 .hr1 {
     border-top: 1px solid rgb(80, 80, 80);
 }

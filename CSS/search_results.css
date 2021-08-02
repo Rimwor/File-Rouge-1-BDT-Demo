@@ -71,37 +71,43 @@ html {
 
   @media screen and (min-width: 560px) {
     .middle_div {
-        height: 117% !important;
+        height: 98% !important;
     }
   }
 
   @media screen and (min-width: 630px) {
     .middle_div {
-        height: 102% !important;
+        height: 88% !important;
     }
   }
 
   @media screen and (min-width: 660px) {
     .middle_div {
-        height: 98% !important;
+        height: 86% !important;
     }
   }
 
   @media screen and (min-width: 700px) {
     .middle_div {
-        height: 83% !important;
+        height: 85% !important;
+    }
+  }
+
+  @media screen and (min-width: 735px) {
+    .middle_div {
+        height: 84% !important;
     }
   }
 
   @media screen and (min-width: 800px) {
     .middle_div {
-        height: 93% !important;
+        height: 95% !important;
     }
   }
 
   @media screen and (min-width: 820px) {
     .middle_div {
-        height: 86% !important;
+        height: 88% !important;
     }
   }
 
@@ -130,7 +136,7 @@ html {
 
 
 /* DIV HEADING - TEXT */
-.div_heading{
+.div_heading {
     background-color: rgba(37, 32, 32, 0.692) !important;
     color: white;
     max-width: 230px;
@@ -173,9 +179,16 @@ td {
 
   @media screen and (min-width: 320px) {
     .cat1, .cat2 {
-      font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+      font-size: 7px !important;
     }
   }
+
+  @media screen and (min-width: 720px) {
+    .cat1, .cat2 {
+      font-size: 10px !important;
+    }
+  }
+
   @media screen and (min-width: 1000px) {
     .cat1, .cat2 {
       font-size: 12px !important;
@@ -183,7 +196,7 @@ td {
   }
 
 /* COVER IMAGE */
-.cover_img_div{
+.cover_img_div {
     float: right !important;
 }
 
@@ -206,6 +219,7 @@ td {
     left:0;
     overflow: auto;
     border: solid rgba(255, 255, 255, 0.63) 2px;
+    background-color: rgba(255, 255, 255, 0.63) !important;
     font-size: 12px !important;
 }
 
@@ -218,7 +232,22 @@ td {
         left:0;
         overflow:auto;
         border: solid rgba(255, 255, 255, 0.63) 2px;
-        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+        background-color: rgba(255, 255, 255, 0.63) !important;
+        font-size: 8px !important;
+    }
+  }
+
+  @media screen and (min-width: 720px) {
+    .box {
+        position:absolute;
+        width: 855px;
+        height: 50px;
+        top:0;
+        left:0;
+        overflow:auto;
+        border: solid rgba(255, 255, 255, 0.63) 2px;
+        background-color: rgba(255, 255, 255, 0.63) !important;
+        font-size: 10px !important;
     }
   }
 
@@ -231,8 +260,10 @@ td {
         left:0;
         overflow:auto;
         border: solid rgba(255, 255, 255, 0.63) 2px;
+        background-color: rgba(255, 255, 255, 0.63) !important;
         font-size: 12px !important;
   }
+}
 
 /* BACK BUTTON / & / BORROW BUTTON */
 .btns_div {

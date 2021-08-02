@@ -5,21 +5,29 @@
     <!-- HEADER : class="header" -->
     <!-- IMG HELP : class="img_help" -->
 
-<!-- CONNECTION FORM -->
-    <!-- DIV : class="connection_form" -->
-    <!-- FORM : class="form_connection" -->
-    <!-- USER ID -->
-        <!-- INPUT ID : class="metro-input" id="username" -->
-    <!-- PIN -->
-        <!-- DIV : class="row" -->
-        <!-- INPUT PIN : class="metro-input" -->
-    <!-- SUBMIT button -->
-        <!-- DIV : class="btn_confirm1" -->
-        <!-- BUTTON : class="btn" id="btn_confirm" -->
+<!-- MAIN CONTAINER -->
+    <!-- MAIN CONTAINER : class="container-fluid" -->
 
-<!-- FOOTER -->
-        <!-- FOOTER : class="footer" -->
-        <!-- MOT DE PASSE OUBLIE button : class="button" -->
+    <!-- HEADER : class="header" -->
+        <!-- DIV : class="row" -->
+            <!-- DIV 1 : class="cell1" -->
+                <!-- IMG HELP : class="img_help" -->
+            <!-- DIV 1 : class="cell2" -->
+            <!-- DIV 1 : class="cell3" -->
+                <!-- USER STATUS : id="user_status" -->
+                <!-- USER NAME : id="user_name" -->
+
+<!-- MIDDLE DIV -->
+    <!-- MIDDLE DIV : class="middle_div" -->
+    <!-- BURGER MENU -->
+        <!-- BURGER button : id="context_toggle" -->
+        <!-- MENU UL : class="d-menu" -->
+
+    <!-- CENTER DIV : class="center_div"-->
+        <!-- in : DIV : class="row" -->
+            <!-- in DIV : class="cell" ; id="cell_1" ; id="cell_2"-->
+            <!-- BUTTONS : -->
+                <!-- id="btn_back" -->
 
 <!-- ======================================================== HEAD ================================================================= -->
 <head>
@@ -45,7 +53,7 @@
 </head>
 <!-- ======================================================== BODY ================================================================= -->
 <body>
-    <body background="MEDIA\bdthequebackground.jpg">   
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
 
     <!-- MAIN CONTAINER -->
     <div class="container-fluid">
@@ -55,7 +63,7 @@
             <div class="row">
                 <div class="cell1">
                 <a href="help.html" target="_blank">
-                <img src="MEDIA\help.png" class="img_help"/></a>
+                <img src="MEDIA\help.png" class="img_help" alt="help"/></a>
                 </div>
 
                 <div class="cell2">
@@ -88,11 +96,21 @@
                         </br>
                     
                         <div class="img_search_div col align-self-center">
-                            <img src="MEDIA\search_form.png" class="img_search_form img-fluid mx-auto d-block">
+                            <img src="MEDIA\search_form.png" class="img_search_form img-fluid mx-auto d-block" alt="search">
                         </div>
                         </br>
                         <input type="text" data-role="input" data-search-button="true" placeholder="Saisir un numero ISBN, un titre, un sous titre, une serie au un auteur">
-                
+                                               
+            </div>
+
+                <!-- BACK BUTTON -->
+                <div class="btn_bck d-flex flex-justify-start">
+                    <div>  
+                        <button id="btn_back" class="button justify-content-md-start">
+                        <i class="fas fa-chevron-left"></i>
+                        </button>
+                </div>
+
             </div>
         </div>
     </div>

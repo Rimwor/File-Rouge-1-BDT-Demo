@@ -12,10 +12,10 @@
         <!-- INPUT ID : class="metro-input" id="username" -->
     <!-- PIN -->
         <!-- DIV : class="row" -->
-        <!-- INPUT PIN : class="metro-input" -->
+        <!-- INPUT PIN : class="metro-input" : id="password" -->
     <!-- SUBMIT button -->
-        <!-- DIV : class="btn_confirm1" -->
-        <!-- BUTTON : class="btn" id="btn_confirm" -->
+        <!-- DIV : class="btn_confirmation" -->
+        <!-- BUTTON : id="btn_confirm" -->
 
 <!-- FOOTER -->
         <!-- FOOTER : class="footer" -->
@@ -44,7 +44,7 @@
 </head>
 <!-- ======================================================== BODY ================================================================= -->
 <body>
-    <body background="MEDIA\bdthequebackground.jpg">   
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
 
     <!-- MAIN CONTAINER -->
     <div class="container-fluid">
@@ -52,7 +52,7 @@
         <!-- HEADER -->
         <header class="header">
             <a href="help.html" target="_blank">
-            <img src="MEDIA\help.png" class="img_help"/>
+            <img src="MEDIA\help.png" class="img_help" alt="help"/>
             </a>
         </header>
 
@@ -65,7 +65,7 @@
                 <div class="mb-3">
                     <label for="username">Entrez votre identifiant personnel :</label>
                     </br></br>
-                    <input class="metro-input" placeholder="  Votre identifiant personnel" type="text" id="username" name="username"
+                    <input id="username" class="metro-input" placeholder="  Votre identifiant personnel" type="text" name="username"
                     maxlength="10"
                     style="-webkit-text-security: disc;"
                     required/>
@@ -78,13 +78,13 @@
                         <!-- KEY PAD -->
                         <div class="row">
                             <div class="cell-md-6">
-                                <input  id="password" name="password" class="metro-input" placeholder="Votre code pin" type="text" data-role="keypad" data-shuffle="true" data-dynamic-position="false" data-on-change="$('#change_target').val(arguments[0])"  data-key-length="6" required="required"/>
+                                <input id="password" name="password" class="metro-input" placeholder="Votre code pin" type="text" data-role="keypad" data-shuffle="true" data-dynamic-position="false" data-on-change="$('#change_target').val(arguments[0])"  data-key-length="6" required="required"/>
                             </div>
                         </div>
                     </br>
                     <!-- SUBMIT -->
                     <div class="btn_confirmation"> 
-                        <button type="submit" class="btn btn-sm btn-primary" id="btn_confirm">Confirmer</button>
+                        <button id="btn_confirm" type="submit" class="btn btn-sm btn-primary">Confirmer</button>
                     </div>
                 </br>
                 </div>             

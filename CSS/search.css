@@ -58,6 +58,54 @@ html {
     border: 3px solid rgb(255, 255, 255);
 }
 
+@media screen and (min-width: 320px) {
+    .middle_div {
+        height: 108% !important;
+    }
+  }
+
+  @media screen and (min-width: 560px) {
+    .middle_div {
+        height: 72% !important;
+    }
+  }
+
+  @media screen and (min-width: 630px) {
+    .middle_div {
+        height: 68% !important;
+    }
+  }
+
+  @media screen and (min-width: 660px) {
+    .middle_div {
+        height: 76% !important;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .middle_div {
+        height: 78% !important;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .middle_div {
+        height: 76% !important;
+    }
+  }
+
+  @media screen and (min-width: 820px) {
+    .middle_div {
+        height: 79% !important;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .middle_div {
+        height: 78% !important;
+    }
+  }
+
 /* BURGER MENU */
 .burger_menu {
     text-align: right;
@@ -153,4 +201,72 @@ html {
 
  }
  
+ .btn_bck {
+     margin-top: 10% !important;
+     position: fixed;
+ }
+
+ @media (min-width: 568px) { 
+    
+    .btn_bck {
+        margin-top: -8% !important;
+        position: fixed;
+    }
+
+ }
+
+ @media (min-width: 660px) { 
+    
+    .btn_bck {
+        margin-top: -2% !important;
+        position: fixed;
+    }
+
+ }
+
+ @media (min-width: 730px) { 
+    
+    .btn_bck {
+        margin-top: 2% !important;
+        position: fixed;
+    }
+
+ }
+
+ @media (min-width: 810px) { 
+    
+    .btn_bck {
+        margin-top: -5% !important;
+        position: fixed;
+    }
+
+ }
+
+ @media (min-width: 820px) { 
+    
+    .btn_bck {
+        margin-top: 0 !important;
+        position: fixed;
+    }
+
+ }
+
+ @media (min-width: 1000px) { 
+    
+    .btn_bck {
+        margin-top: 8% !important;
+        position: fixed;
+    }
+
+ }
+
+ /* @media (min-width: 1215px) { 
+    
+    .btn_bck {
+        margin-top: 5% !important;
+        position: fixed;
+    }
+
+ } */
+
 /* ========================================================== BODY END =============================================================== */
