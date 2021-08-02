@@ -59,14 +59,14 @@
         <!-- CONNECTION FORM -->
 
         <div class="connection_form col-sm-9 p-3 border" >
-            <form class="form_connection" action="compte_bibliothecaire.html" method="POST">
+            <form  id="connexion" class="form_connection" action="compte_bibliothecaire.html" method="POST">
 
                 <!-- USER ID -->
                 <div class="mb-3">
                     <label for="username">Entrez votre identifiant personnel :</label>
                     </br></br>
                     <input class="metro-input" placeholder="  Votre identifiant personnel" type="text" id="username" name="username"
-                    minlength="10"
+                    maxlength="10"
                     style="-webkit-text-security: disc;"
                     required/>
                 </div>
@@ -84,7 +84,7 @@
                     </br>
                     <!-- SUBMIT -->
                     <div class="btn_confirmation"> 
-                        <button type="submit" class="btn btn-sm btn-primary" id="btn_confirm">Confirme</button>
+                        <button type="submit" class="btn btn-sm btn-primary" id="btn_confirm">Confirmer</button>
                     </div>
                 </br>
                 </div>             
@@ -111,8 +111,8 @@
     <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
     <script src="JS/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="JS/comptes_utilisateurs.js"></script>
     <script src="JS/connexion.js"></script>
-
     <script src="JS/metro.js"></script>
     <script src="JS/all.js"></script>
 
