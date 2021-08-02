@@ -1,0 +1,146 @@
+/* ========================================================== BODY =================================================================== */
+/* BODY */
+/* ========================================================== BODY =================================================================== */
+
+html {
+    font-size: 8px !important;
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 14px !important;
+    }
+  }
+
+/* IMG HELP */
+.img_help {
+    opacity: 40%;
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+}
+
+/* ========================================================== MAIN CONTAINER ========================================================= */
+/* MAIN CONTAINER */
+.container-fluid {
+    padding: 10px !important;
+}
+
+/* ========================================================== HEADER ================================================================= */
+/* HEADER */
+.cell1 {
+    width: 5% !important;
+    min-width: 15px;
+}
+
+.cell2 {
+    width: 5% !important;
+    min-width: 15px;
+    margin-right: 10px;
+}
+
+.cell3 {
+    font-size: 25px !important;
+    width: 75% !important;
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+/* ========================================================== MIDDLE DIV ============================================================= */
+/* MIDDLE DIV */
+.middle_div {
+    background-color: rgba(255, 255, 255, 0.479);
+    margin: auto;
+    width: 85% !important;
+    height: 78% !important;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+/* BURGER MENU */
+.burger_menu {
+    text-align: right;
+    float:right;
+}
+
+/* HEADING */
+.div_heading {
+    background-color: rgba(97, 77, 77, 0.459);
+    max-width: 225px !important;
+    float: left;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    right: 0;
+    margin: 0;
+}
+
+/* CENTER DIV */
+.center_div {
+    margin: 15px;
+    margin-top: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+/* IMG : .search icon. and .silhouette icon.  */
+._img1 {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+@media (min-width: 560px) { 
+    
+    ._img1 {
+        width: 45% !important;
+        max-width: 100px;
+        height: auto;
+    }
+
+ }
+
+._img2 {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+@media (min-width: 560px) { 
+    
+    ._img2{
+        width: 45%;
+        max-width: 100px;
+        height: auto;
+    }
+
+ }
+
+/* BUTTONS : search, record borrowed BD, return borrowed BD */
+#btn_pret {
+    margin-top: 2% !important;
+    font-size: 11px !important;
+    float: right !important;
+}
+
+
+/* CELLS WITH ICONS : .search icon. and .silhouette icon.  */
+#cell_1 {
+    text-align: left;
+    width: 20% !important;
+}
+
+/* CELLS WITH TEXT AND BUTTONS : Consultation of the fund and Borrowed BD management */
+#cell_2 {
+    text-align: left;
+    width: 80% !important;
+}
+
+/* ========================================================== BODY END =============================================================== */

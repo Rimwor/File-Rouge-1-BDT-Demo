@@ -1,0 +1,183 @@
+<html lang="fr">
+<!-- ======================================================== START ================================================================ -->
+<!-- MAIN CONTAINER -->
+    <!-- MAIN CONTAINER : class="container-fluid" -->
+
+    <!-- HEADER : class="header" -->
+        <!-- DIV : class="row" -->
+            <!-- DIV 1 : class="cell1" -->
+                <!-- IMG HELP : class="img_help" -->
+            <!-- DIV 1 : class="cell2" -->
+            <!-- DIV 1 : class="cell3" -->
+                <!-- USER STATUS : id="user_status" -->
+                <!-- USER NAME : id="user_name" -->
+
+<!-- MIDDLE DIV -->
+    <!-- MIDDLE DIV : class="middle_div" -->
+    <!-- BURGER MENU -->
+        <!-- BURGER button : id="context_toggle" -->
+        <!-- MENU UL : class="d-menu" -->
+
+    <!-- CENTER DIV : class="center_div"-->
+        <!-- in : DIV : class="row" -->
+            <!-- in DIV : class="cell" ; id="cell_1" ; id="cell_2"-->
+            <!-- BUTTONS : -->
+                <!-- id="btn_cherche" -->
+                <!-- id="btn_enregistrement" -->
+                <!-- id="btn_restitution" -->
+
+<!-- ======================================================== HEAD ================================================================= -->
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>| Résultat du recherche | Bédéthèque de Stockholm</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="CSS/metro/metro-all.css">
+    <link rel="stylesheet" href="CSS/fontawasome/fontawesome.css">
+
+    <link rel="stylesheet" href="CSS/search_results.css">
+
+</head>
+<!-- ======================================================== BODY ================================================================= -->
+<body>
+    <body background="MEDIA\bdthequebackground.jpg">   
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="row">
+                <div class="cell1">
+                <a href="help.html" target="_blank">
+                <img src="MEDIA\help.png" class="img_help"/></a>
+                </div>
+
+                <div class="cell2">
+                    </div>
+                    
+                <div class="cell3">
+                <span class="">Bienvenue à votre compte </span><span id="user_status">Bibliothécaire</span> <span>, </span><span id="user_name">Andy Dufresne</span> !</span>
+                </div>
+            </div>                      
+        </header>
+
+        <!-- MIDDLE DIV -->
+        <div class="middle_div p-3 border" >
+            
+            <div class="burger_menu">
+            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                <li><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+            </ul>
+            </div>
+
+            <div class="div_heading">&nbsp&nbsp Résultat du recherche</div>
+
+            <!-- CENTER DIV -->
+            <div class="center_div">
+                <div class="row">
+
+                    <div class="col1 col col-sm-5 offset-sm-2 col-md-8 offset-md-0">
+                        <!-- CATEGORIES -->
+                        <div class="grid">
+                            <div class="row">
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>Titre : </button></div></div>
+                                <div class="cell-10"><div>Titre Abcdefghijkalmn Abcdefghijkalmn</div></div>
+                            </div>
+                            <div class="row">
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>Auteur/s : </button></div></div>
+                                <div class="cell-10"><div>Auteur/s Abcdefghijkalmn Abcdefghijkalmn</div></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>Séries&nbsp: </button></div></div>
+                                <div class="cell-2"><div>Séries </div></div>
+
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>Copies&nbsp: </button></div></div>
+                                <div class="cell-2"><div>Nombre</div></div>
+                            </div>
+                            <div class="row">
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>Disponibilité&nbsp: </button></div></div>
+                                <div class="cell-2"><div>Disponibilité</div></div>
+
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>Genre&nbsp: </button></div></div>
+                                <div class="cell-3"><div>Genre</div></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>État&nbsp: </button></div></div>
+                                <div class="cell-2"><div>État </div></div>
+
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>Public&nbsp: </button></div></div>
+                                <div class="cell-2"><div>Public</div></div>
+                            </div>
+                            <div class="row">
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>Emplacement&nbsp: </button></div></div>
+                                <div class="cell-2"><div>Emplacement</div></div>
+
+                                <div class="cell-2"><div><button type="button" class="btn btn-dark btn-sm" disabled>ISBN&nbsp: </button></div></div>
+                                <div class="cell-3"><div>ISBN</div></div>
+                            </div>
+                            
+                            <!-- DESCRIPTION -->
+                            <div class="row">
+                                <div class="cell">
+                                    <div class="row">
+                                        <div class="cell">
+                                            <div data-role="panel" data-width="500" data-height="110">
+                                                Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn Abcdefghijkalmn ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col2 col col-sm-5 offset-sm-2 col-md-4 offset-md-0">
+                        abc abc abc  abc abc  abc abc  abc abc  abc abc  abc abc  abc abc  abc abc  abc abc  abc abc  abc abc  abc abc  abc abc  
+                    </div>
+                    
+                </div>
+                
+                <div class="row">
+                    <!-- BACK BUTTON -->
+                    <div class="col1 col col-sm-5 col-md-6">
+                        <button id="btn_back" class="button d-grid d-md-flex justify-content-md-end">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+
+                    <!-- BORROW BUTTON -->
+                    <div class="col2 col col-sm-5 col-md-6">
+                        <button type="button" class="btn btn-primary btn-sm" id="btn_restitution">Procéder avec un prêt</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>   
+
+    </div>
+
+</body>
+<!-- ========================================================= JS ================================================================== -->
+
+    <!-- JAVA SCRIPT -->
+    <script src="JS/jquery.js"></script>
+    
+    <script src="JS/metro.js"></script>
+    <script src="JS/all.js"></script>
+
+<!-- ======================================================== END ================================================================== -->
+</html>
