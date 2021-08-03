@@ -2,9 +2,7 @@
 Développer une application Web Front-End
 Binôme : Beata - Flavie
 
-<![endif]-->
-
-# <![if !supportLists]>I. <![endif]>Introduction
+# Introduction
 
 **CONTEXTE**
 
@@ -14,12 +12,8 @@ _Pour cela, le service culturel met en place un nouveau logiciel de gestion des 
 
 Ce dossier technique concerne un logiciel _application de gestion des ressources de la bédéthèque municipale_. Il se compose des éléments suivants :
 
-<![if !supportLists]>- <![endif]>analyse UML ;
-
-<![if !supportLists]>- <![endif]>maquettage ;
-
-<![if !supportLists]>- <![endif]>réalisations ;
-
-<![if !supportLists]>- <![endif]>essais ;
-
-<![if !supportLists]>- <![endif]>travail en binôme.
+- analyse UML ;
+- maquettage ;
+- réalisations ;
+- essais ;
+- travail en binôme.
