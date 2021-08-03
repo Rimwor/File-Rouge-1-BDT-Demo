@@ -1,6 +1,7 @@
 # FIL ROUGE 1 : BDTK - AFPA CAEN (2021)
-_Développer une application Web Front-End
-_Binôme : Beata - Flavie
+Développer une application Web Front-End
+
+Binôme : Beata - Flavie
 
 # Introduction
 
