@@ -11,8 +11,32 @@ html {
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
   }
+
+  @media screen and (min-width: 560px) {
+    html {
+      font-size: 8px !important;
+    }
+  }
+
+  @media screen and (min-width: 630px) {
+    html {
+      font-size: 12px !important;
+    }
+  }
+
+  @media screen and (min-width: 810px) {
+    html {
+      font-size: 9px !important;
+    }
+  }
   
   @media screen and (min-width: 1000px) {
+    html {
+      font-size: 20px !important;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
     html {
       font-size: 20px !important;
     }
@@ -51,6 +75,36 @@ html {
     background-color: rgba(255, 255, 255, 0.479);
 }
 
+@media screen and (min-width: 320px) {
+  .cell3 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .cell3 {
+      font-size: 10px !important;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .cell3 {
+      font-size: 18px !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell3 {
+      font-size: 25px !important;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .cell3 {
+      font-size: 35px !important;
+  }
+}
+
 /* ========================================================== MIDDLE DIV ============================================================= */
 /* MIDDLE DIV */
 .middle_div {
@@ -71,13 +125,13 @@ html {
 
   @media screen and (min-width: 560px) {
     .middle_div {
-        height: 98% !important;
+        height: 85% !important;
     }
   }
 
   @media screen and (min-width: 630px) {
     .middle_div {
-        height: 88% !important;
+        height: 87% !important;
     }
   }
 
@@ -95,7 +149,7 @@ html {
 
   @media screen and (min-width: 735px) {
     .middle_div {
-        height: 84% !important;
+        height: 85% !important;
     }
   }
 
@@ -105,9 +159,15 @@ html {
     }
   }
 
+  @media screen and (min-width: 810px) {
+    .middle_div {
+        height: 85% !important;
+    }
+  }
+
   @media screen and (min-width: 820px) {
     .middle_div {
-        height: 88% !important;
+        height: 86% !important;
     }
   }
 
@@ -116,6 +176,13 @@ html {
         height: 78% !important;
     }
   }
+
+  @media screen and (min-width: 1000px) {
+    .middle_div {
+        height: 85% !important;
+    }
+  }
+
 
 /* BURGER MENU */
 .burger_menu {
@@ -189,9 +256,21 @@ td {
     }
   }
 
+  @media screen and (min-width: 820px) {
+    .cat1, .cat2 {
+      font-size: 10px !important;
+    }
+  }
+
   @media screen and (min-width: 1000px) {
     .cat1, .cat2 {
       font-size: 12px !important;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    .cat1, .cat2 {
+      font-size: 22px !important;
     }
   }
 
@@ -214,7 +293,7 @@ td {
 .box{
     position:absolute;
     width: 855px;
-    height: 150px;
+    height: 120px;
     top:0;
     left:0;
     overflow: auto;
@@ -228,6 +307,34 @@ td {
         position:absolute;
         width: 855px;
         height: 50px;
+        top:0;
+        left:0;
+        overflow:auto;
+        border: solid rgba(255, 255, 255, 0.63) 2px;
+        background-color: rgba(255, 255, 255, 0.63) !important;
+        font-size: 8px !important;
+    }
+  }
+
+  @media screen and (min-width: 560px) {
+    .box {
+        position:absolute;
+        width: 855px;
+        height: 40px;
+        top:0;
+        left:0;
+        overflow:auto;
+        border: solid rgba(255, 255, 255, 0.63) 2px;
+        background-color: rgba(255, 255, 255, 0.63) !important;
+        font-size: 8px !important;
+    }
+  }
+
+  @media screen and (min-width: 660px) {
+    .box {
+        position:absolute;
+        width: 855px;
+        height: 52px;
         top:0;
         left:0;
         overflow:auto;
@@ -251,18 +358,60 @@ td {
     }
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 810px) {
     .box {
         position:absolute;
         width: 855px;
-        height: 150px;
+        height: 40px;
         top:0;
         left:0;
         overflow:auto;
         border: solid rgba(255, 255, 255, 0.63) 2px;
         background-color: rgba(255, 255, 255, 0.63) !important;
-        font-size: 12px !important;
+        font-size: 10px !important;
+    }
   }
+
+  @media screen and (min-width: 820px) {
+    .box {
+        position:absolute;
+        width: 855px;
+        height: 70px;
+        top:0;
+        left:0;
+        overflow:auto;
+        border: solid rgba(255, 255, 255, 0.63) 2px;
+        background-color: rgba(255, 255, 255, 0.63) !important;
+        font-size: 10px !important;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .box {
+        position:absolute;
+        width: 855px;
+        height: 120px;
+        top:0;
+        left:0;
+        overflow:auto;
+        border: solid rgba(255, 255, 255, 0.63) 2px;
+        background-color: rgba(255, 255, 255, 0.63) !important;
+        font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .box {
+      position:absolute;
+      width: 1255px;
+      height: 224px;
+      top:0;
+      left:0;
+      overflow:auto;
+      border: solid rgba(255, 255, 255, 0.63) 2px;
+      background-color: rgba(255, 255, 255, 0.63) !important;
+      font-size: 22px !important;
+}
 }
 
 /* BACK BUTTON / & / BORROW BUTTON */
@@ -270,6 +419,60 @@ td {
     margin-left: 1% !important;
     margin-right: 1% !important;
     margin-top: 1% !important;
+}
+
+@media screen and (min-width: 560px) {
+  .btns_div {
+    margin-top: 6% !important;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .btns_div {
+    margin-top: 6% !important;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .btns_div {
+    margin-top: 7% !important;
+  }
+}
+
+@media screen and (min-width: 730px) {
+  .btns_div {
+    margin-top: 6% !important;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .btns_div {
+    margin-top: 1% !important;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .btns_div {
+    margin-top: 5% !important;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .btns_div {
+    margin-top: 25% !important;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .btns_div {
+    margin-top: 1% !important;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .btns_div {
+    margin-top: 8% !important;
+  }
 }
 
 /* ========================================================== BODY END =============================================================== */

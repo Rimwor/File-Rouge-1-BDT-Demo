@@ -42,19 +42,49 @@ html {
 
 @media screen and (min-width: 530px) {
   .error_msg {
-    width: 100% !important;
+    margin-top: -4%;
+    width: 80% !important;
   }
 }
 
 @media screen and (min-width: 630px) {
   .error_msg  {
     width: 100% !important;
+    margin-top: 4%;
+  }
+}
+
+@media screen and (min-width: 730px) {
+  .error_msg  {
+    width: 100% !important;
+    margin-top: 6%;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .error_msg  {
+    width: 100% !important;
+    margin-top: 2%;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .error_msg  {
     width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .error_msg  {
+    width: 80% !important;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .error_msg  {
+    width: 50% !important;
+    margin-top: 10%;
   }
 }
 

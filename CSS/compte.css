@@ -49,6 +49,18 @@ html {
     background-color: rgba(255, 255, 255, 0.479);
 }
 
+@media screen and (min-width: 320px) {
+    .cell3 {
+      font-size: 16px !important;
+    }
+  }
+  
+  @media screen and (min-width: 720px) {
+    .cell3 {
+      font-size: 18px !important;
+    }
+  }
+
 /* ========================================================== MIDDLE DIV ============================================================= */
 /* MIDDLE DIV */
 .middle_div {
