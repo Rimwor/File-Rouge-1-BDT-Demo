@@ -363,7 +363,7 @@ td {
 
 @media screen and (min-width: 810px) {
   .btns_div {
-    margin-top: 3.5% !important;
+    margin-top: 2% !important;
   }
 }
 
@@ -381,13 +381,13 @@ td {
 
 @media screen and (min-width: 1120px) {
   .btns_div {
-    margin-top: 1% !important;
+    margin-top: 8% !important;
   }
 }
 
 @media screen and (min-width: 1800px) {
   .btns_div {
-    margin-top: 20.52% !important;
+    margin-top: 20.51% !important;
   }
 }
 

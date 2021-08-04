@@ -94,8 +94,8 @@ html {
 @media screen and (min-width: 1360px) {
   .connection_form  {
     margin: auto;
-    width: 80%;
-    margin-top: 20%;
+    width: 60%;
+    margin-top: 10%;
   }
 }
 
