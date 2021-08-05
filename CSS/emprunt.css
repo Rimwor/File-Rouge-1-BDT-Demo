@@ -180,7 +180,13 @@ html {
 
 @media screen and (min-width: 1000px) {
   .middle_div {
-      height: 85% !important;
+      height: 86% !important;
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  .middle_div {
+      height: 86% !important;
   }
 }
 
@@ -375,19 +381,37 @@ td {
 
 @media screen and (min-width: 1020px) {
   .btns_div {
-    margin-top: 16% !important;
+    margin-top: 12% !important;
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  .btns_div {
+    margin-top: 10% !important;
   }
 }
 
 @media screen and (min-width: 1120px) {
   .btns_div {
-    margin-top: 8% !important;
+    margin-top: 3.4% !important;
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  .btns_div {
+    margin-top: 8.5% !important;
   }
 }
 
 @media screen and (min-width: 1800px) {
   .btns_div {
     margin-top: 20.51% !important;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .btns_div {
+    margin-top: -6% !important;
   }
 }
 
