@@ -88,12 +88,28 @@ html {
     transform: translate(-50%, -50%)
 }
 
+.center_div_adherent {
+  margin: 10px;
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  margin-right: -30%;
+  transform: translate(-20%, -50%)
+}
+
 
 /* IMG : .search icon. and .silhouette icon.  */
 ._img1 {
     width: 100%;
     max-width: 100px;
     height: auto;
+}
+
+._img1_ad {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
 }
 
 @media (min-width: 560px) { 
@@ -106,21 +122,15 @@ html {
 
  }
 
-._img2 {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-}
-
-@media (min-width: 560px) { 
+ @media (min-width: 560px) { 
     
-    ._img2{
-        width: 45%;
-        max-width: 100px;
-        height: auto;
-    }
+  ._img1_ad {
+    width: 55%;
+    max-width: 150px;
+    height: auto;
+  }
 
- }
+}
 
 /* BUTTONS : search, record borrowed BD, return borrowed BD */
 .btn {
@@ -136,10 +146,19 @@ html {
     width: 20% !important;
 }
 
+#cell_1_adherent {
+  text-align: left;
+  width: 20% !important;
+}
+
 /* CELLS WITH TEXT AND BUTTONS : Consultation of the fund and Borrowed BD management */
 #cell_2 {
     text-align: left;
     width: 80% !important;
 }
 
+#cell_2_adherent {
+  text-align: left;
+  width: 80% !important;
+}
 /* ========================================================== BODY END =============================================================== */
