@@ -130,7 +130,22 @@ html {
     height: auto;
   }
 
+
+._img2 {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
 }
+
+@media (min-width: 560px) { 
+    
+    ._img2{
+        width: 45%;
+        max-width: 100px;
+        height: auto;
+    }
+
+ }
 
 /* BUTTONS : search, record borrowed BD, return borrowed BD */
 .btn {
@@ -161,4 +176,5 @@ html {
   text-align: left;
   width: 80% !important;
 }
+
 /* ========================================================== BODY END =============================================================== */
