@@ -5,11 +5,13 @@
 html {
     font-size: 12px !important;
   }
+
   @media screen and (min-width: 320px) {
     html {
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
   }
+
   @media screen and (min-width: 1000px) {
     html {
       font-size: 20px !important;
@@ -85,7 +87,7 @@ html {
     top: 50%;
     left: 43%;
     margin-right: -30%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .center_div_adherent {
@@ -95,7 +97,7 @@ html {
   top: 50%;
   left: 30%;
   margin-right: -30%;
-  transform: translate(-20%, -50%)
+  transform: translate(-20%, -50%);
 }
 
 
@@ -129,7 +131,7 @@ html {
     max-width: 150px;
     height: auto;
   }
-
+ }
 
 ._img2 {
     width: 100%;
@@ -176,5 +178,5 @@ html {
   text-align: left;
   width: 80% !important;
 }
-
+ 
 /* ========================================================== BODY END =============================================================== */
