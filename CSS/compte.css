@@ -52,16 +52,34 @@ html {
 }
 
 @media screen and (min-width: 320px) {
-    .cell3 {
-      font-size: 16px !important;
-    }
+  .cell3 {
+    font-size: 16px !important;
   }
-  
-  @media screen and (min-width: 720px) {
-    .cell3 {
+}
+
+@media screen and (min-width: 560px) {
+  .cell3 {
+      font-size: 10px !important;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .cell3 {
       font-size: 18px !important;
-    }
   }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell3 {
+      font-size: 25px !important;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .cell3 {
+      font-size: 35px !important;
+  }
+}
 
 /* ========================================================== MIDDLE DIV ============================================================= */
 /* MIDDLE DIV */
