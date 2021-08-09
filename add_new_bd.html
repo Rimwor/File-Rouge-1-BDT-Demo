@@ -1,0 +1,245 @@
+<html lang="fr">
+<!-- ======================================================== START ================================================================ -->
+<!-- MAIN CONTAINER -->
+    <!-- MAIN CONTAINER : class="container-fluid" -->
+
+    <!-- HEADER : class="header" -->
+        <!-- DIV : class="row" -->
+            <!-- DIV 1 : class="cell1" -->
+                <!-- IMG HELP : class="img_help" -->
+            <!-- DIV 1 : class="cell2" -->
+            <!-- DIV 1 : class="cell3" -->
+                <!-- USER STATUS : id="user_status" -->
+                <!-- USER NAME : id="user_name" -->
+
+<!-- MIDDLE DIV -->
+    <!-- MIDDLE DIV : class="middle_div" -->
+    <!-- BURGER MENU -->
+        <!-- BURGER button : id="context_toggle" -->
+        <!-- MENU UL : class="d-menu" -->
+
+    <!-- CENTER DIV : -->
+        <!-- HEADING : class="div_heading" -->
+        <!-- CENTER DIV : class="center_row" -->
+            <!-- TABLE -->
+            <!-- DESCRIPTION -->
+                <!-- id="inputGroupFile04" -->
+            <!-- COVER IMG -->
+                <!-- id="formFileSm" -->
+            <!-- BUTTONS : -->
+                <!-- BACK / CANCEL / & / ADD NEW BD -->
+                <!-- BACK : id="btn_back" -->
+                <!-- PRET : id="new_bd" -->
+
+<!-- ======================================================== HEAD ================================================================= -->
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>| Compte Gestionnaire | Bédéthèque de Stockholm</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="CSS/metro/metro-all.css">
+    <link rel="stylesheet" href="CSS/fontawasome/fontawesome.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.16.0.css">
+
+    <link rel="stylesheet" href="CSS/add_new_bd.css">
+
+</head>
+<!-- ======================================================== BODY ================================================================= -->
+<body>
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="row">
+                <div class="cell1">
+                <a href="help.html" target="_blank">
+                <img src="MEDIA\help.png" class="img_help" alt="help"/></a>
+                </div>
+
+                <div class="cell2">
+                    </div>
+                    
+                <div class="cell3">
+                <span class="">Bienvenue sur votre compte </span><span id="user_status">Gestionnaire</span> <span>, </span><span id="user_name">Bertrand Guillon</span> !</span>
+                </div>
+            </div>                      
+        </header>
+
+        <!-- MIDDLE DIV -->
+        <div class="middle_div border" >
+            
+            <div class="burger_menu">
+            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                <li><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+            </ul>
+            </div>
+
+            <!-- CENTER DIV -->
+            <div class="div_heading">&nbsp&nbsp Enregistrement d'un nouveau BD &nbsp&nbsp</div>
+
+            <div class="center_row row">
+                
+                <div class="cell4 cell colspan-8 flex-align-self-stretch">
+                    <!-- TABLE -->
+                    <table class="table table-border cell-border">
+                        <tbody>
+                        <tr>
+                            <td class="cat1">Titre&nbsp:</td>
+                            <td class="cat2"><input type="text" class="form-control is-valid form-control-sm" placeholder="Ex: 'Titre'"></td>
+                        </tr>
+                        <tr>
+                            <td class="cat1">Auteur/s&nbsp:</td>
+                            <td class="cat2"><input type="text" class="form-control is-valid form-control-sm" placeholder="Ex: Auteur/s"></td>
+                        </tr>
+                        <tr>
+                            <td class="cat1">Séries&nbsp:</td>
+                            <td class="cat2"><input type="text" class="form-control is-valid form-control-sm" placeholder="Ex: Séries"></td>
+                            <td class="cat1">Copies&nbsp:</td>
+                            <td class="cat2"><input type="text" class="form-control is-valid form-control-sm" placeholder="Ex: 5"></td>
+                        </tr>
+                        <tr>
+                            <td class="cat1">Disponibilité&nbsp:</td>
+                            <td class="cat2">
+                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    <option>Choisissez une option</option>
+                                <option>Disponible</option>
+                                <option>Non-disponible</option>
+                                </select>
+                            </td>
+                            <td class="cat1">Genre&nbsp:</td>
+                            <td class="cat2">
+                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    <option>Choisissez une option</option>
+                                <option>Aventure</option>
+                                <option>Crime</option>
+                                <option>Drame</option>
+                                <option>Fantasy</option>
+                                <option>Horreur</option>
+                                <option>Romains</option>
+
+                                </select>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cat1">État&nbsp:</td>
+                            <td class="cat2">
+                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    <option>Choisissez une option</option>
+                                <option>Neuf</option>
+                                <option>Usé</option>
+                                <option>Détériore</option>
+                                <option>Fragile !</option>
+                                </select>
+                            </td>
+                            <td class="cat1">Public&nbsp:</td>
+                            <td class="cat2">
+                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    <option>Choisissez une option</option>
+                                <option>Enfants</option>
+                                <option>Jeunesse</option>
+                                <option>Adolescents </option>
+                                <option>Adultes</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cat1">Emplacement&nbsp:</td>
+                            <td class="cat2">
+                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    <option>Choisissez une option</option>
+                                <option>E1-01</option>
+                                <option>E1-02</option>
+                                <option>E1-03</option>
+                                <option>J1-01</option>
+                                <option>J1-02</option>
+                                <option>J1-03</option>
+                                <option>Ado1-01</option>
+                                <option>Ado1-02</option>
+                                <option>Ado1-03</option>
+                                <option>Adu1-01</option>
+                                <option>Adu1-02</option>
+                                <option>Adu1-03</option>
+                                </select>
+                            </td>
+                            <td class="cat1">ISBN&nbsp:</td>
+                            <td class="cat2"><input type="text" class="form-control is-valid form-control-sm" placeholder="Ex: 0-7645-2645-2641-3"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                
+                    <!-- DESCRIPTION -->
+                    <div class="description row">
+                        <div class="box">
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <button class="btn btn-light btn-sm" type="button" id="inputGroupFileAddon04">Ajouter description</button>
+                              </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- COVER IMG -->
+                <div class="cell5 cell colspan-3 offset-1 flex-align-self-stretch">
+                    <table class="table table-border cell-border">
+                    <tbody>
+                        <tr>
+                        <td class="cat1">Ajouter une image&nbsp:</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                        <div class="mb-3">
+                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                        </div>
+                </div>
+                  
+            </div>
+            
+            </br>
+            <!-- BACK / CANCEL / & / ADD NEW BD -->
+            <div class="btns_div d-flex flex-justify-start">
+                <!-- BACK / CANCEL -->
+                <div>
+                    <button id="btn_back" class="button justify-content-md-start stick-bottom">
+                    <i class="fas fa-chevron-left"></i> &nbsp Annuler
+                    </button>
+                </div>
+                <!-- ADD NEW BD -->
+                <div class="ml-auto">
+                    <button id="new_bd" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Enregistrer un nouveau BD</button>
+                </div>
+            </div>
+            
+        </div> 
+        
+        
+
+    </div>
+
+</body>
+<!-- ========================================================= JS ================================================================== -->
+
+    <!-- JAVA SCRIPT -->
+    <script src="JS/jquery.js"></script>
+    
+    <script src="JS/metro.js"></script>
+    <script src="JS/all.js"></script>
+
+<!-- ======================================================== END ================================================================== -->
+</html>
