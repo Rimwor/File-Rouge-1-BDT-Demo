@@ -1,0 +1,189 @@
+<html lang="fr">
+<!-- ======================================================== START ================================================================ -->
+<!-- MAIN CONTAINER -->
+    <!-- MAIN CONTAINER : class="container-fluid" -->
+
+    <!-- HEADER : class="header" -->
+        <!-- DIV : class="row" -->
+            <!-- DIV 1 : class="cell1" -->
+                <!-- IMG HELP : class="img_help" -->
+            <!-- DIV 1 : class="cell2" -->
+            <!-- DIV 1 : class="cell3" -->
+                <!-- USER STATUS : id="user_status" -->
+                <!-- USER NAME : id="user_name" -->
+
+<!-- MIDDLE DIV -->
+    <!-- MIDDLE DIV : class="middle_div" -->
+    <!-- BURGER MENU -->
+        <!-- BURGER button : id="context_toggle" -->
+        <!-- MENU UL : class="d-menu" -->
+
+    <!-- CENTER DIV : -->
+        <!-- HEADING : class="div_heading" -->
+        <!-- CENTER DIV : class="center_row" -->
+            <!-- TABLE -->
+            <!-- DESCRIPTION -->
+            <!-- COVER IMG -->
+            <!-- BUTTONS : -->
+                <!-- BACK BUTTON / & / BORROW BUTTON -->
+                <!-- BACK : id="btn_back" -->
+                <!-- SAVE : id="btn_enregistrer" -->
+                <!-- DELETE : id="btn_delete" -->
+
+<!-- ======================================================== HEAD ================================================================= -->
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>| Contrôles des prêts | Bédéthèque de Stockholm</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="CSS/metro/metro-all.css">
+    <link rel="stylesheet" href="CSS/fontawasome/fontawesome.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.16.0.css">
+
+    <link rel="stylesheet" href="CSS/controle_pret.css">
+
+</head>
+<!-- ======================================================== BODY ================================================================= -->
+<body>
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="row">
+                <div class="cell1">
+                <a href="help.html" target="_blank">
+                <img src="MEDIA\help.png" class="img_help" alt="help"/></a>
+                </div>
+
+                <div class="cell2">
+                    </div>
+                    
+                <div class="cell3">
+                <span class="">Bienvenue sur votre compte </span><span id="user_status">Responsable</span> <span>, </span><span id="user_name">Louise Nouget</span> !</span>
+                </div>
+            </div>                      
+        </header>
+
+        <!-- MIDDLE DIV -->
+        <div class="middle_div border" >
+            
+            <div class="burger_menu">
+            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                <li><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+            </ul>
+            </div>
+
+            <!-- CENTER DIV -->
+            <div class="div_heading">&nbsp&nbsp Gestion des contrôles des prêts &nbsp&nbsp</div>
+
+            <div class="center_row row">
+                
+                <div class="cell4 cell colspan-11 flex-align-self-stretch">
+
+                    <!-- CHOICE BAR -->
+                    <div class="input-group mb-4 ml-6">
+                        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Choisir ...</option>
+                          <option value="1">Rapport complet</option>
+                          <option value="2">Rapport retard : de retour et de paiement</option>
+                        </select>        
+                    </div>
+
+                    <div class="input-group mb-4 ml-6">
+                        <input type="text" data-role="calendarpicker">
+                    </div>
+
+                    <div class="input-group mb-4 ml-6 justify-content-evenly">
+                        <button id="btn_ok" type="button" class="btn btn-primary btn-sm stick-bottom">OK</button>
+                    </div>
+
+                    <!-- TABLE -->
+
+                    <div class="table-responsive-sm">
+
+                        <table class="table subcompact table-light table-striped table-sm">
+
+                            <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Prénom</th>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Mail</th>
+                                <th scope="col">Statut</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td class="td-3">Mark</td>
+                                <td>Otto</td>
+                                <td>motto@gmail.com</td>
+                                <td>à jour</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td class="table-danger">Jacob</td>
+                                <td class="table-danger">Thornton</td>
+                                <td class="table-danger">jacobt@gmail.com</td>
+                                <td class="table-danger">délai : 3j </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>larry_bird@gmail.com</td> 
+                                <td>à jour</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    
+                </div>
+             
+            </div>
+ 
+            <!-- BACK BUTTON / & / PRINT BUTTON -->
+            <div class="btns_div d-flex flex-justify-start">
+                <!-- BACK -->
+                <div>
+                    <button id="btn_back" class="button justify-content-md-start stick-bottom">
+                    <i class="fas fa-chevron-left"></i> &nbsp
+                    </button>
+                </div>
+                <!-- PRINT -->
+                <div class="ml-auto">
+                    <button id="btn_print" type="button" class="btn btn-info btn-sm justify-content-md-end stick-bottom">Imprimer un rapport</button>
+                </div>
+            </div>
+
+        </div> 
+
+    </div>
+
+</body>
+<!-- ========================================================= JS ================================================================== -->
+
+    <!-- JAVA SCRIPT -->
+    <script src="JS/jquery.js"></script>
+    
+    <script src="JS/metro.js"></script>
+    <script src="JS/all.js"></script>
+
+<!-- ======================================================== END ================================================================== -->
+</html>
