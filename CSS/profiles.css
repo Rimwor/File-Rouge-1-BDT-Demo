@@ -1,0 +1,157 @@
+/* ========================================================== BODY =================================================================== */
+/* BODY */
+/* ========================================================== BODY =================================================================== */
+
+html {
+    font-size: 12px !important;
+  }
+
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+
+  @media screen and (min-width: 560px) {
+    html {
+      font-size: 8px !important;
+    }
+  }
+
+  @media screen and (min-width: 630px) {
+    html {
+      font-size: 12px !important;
+    }
+  }
+
+  @media screen and (min-width: 810px) {
+    html {
+      font-size: 9px !important;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 20px !important;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    html {
+      font-size: 20px !important;
+    }
+  }
+
+/* IMG HELP */
+.img_help {
+    opacity: 40%;
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+}
+
+/* ========================================================== MAIN CONTAINER ========================================================= */
+/* MAIN CONTAINER */
+.container-fluid {
+    padding: 10px !important;
+}
+
+/* ========================================================== HEADER ================================================================= */
+/* HEADER */
+.cell1 {
+    width: 5% !important;
+    min-width: 15px;
+}
+
+.cell2 {
+    width: 5% !important;
+    min-width: 15px;
+    margin-right: 10px;
+}
+
+.cell3 {
+    font-size: 25px !important;
+    width: 75% !important;
+    background-color: rgba(71, 119, 81, 0.479);
+}
+
+@media screen and (min-width: 320px) {
+  .cell3 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .cell3 {
+      font-size: 10px !important;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .cell3 {
+      font-size: 18px !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell3 {
+      font-size: 25px !important;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .cell3 {
+      font-size: 35px !important;
+  }
+}
+
+/* ========================================================== MIDDLE DIV ============================================================= */
+/* MIDDLE DIV */
+.middle_div {
+    background-color: rgba(71, 119, 81, 0.479);
+    margin: auto;
+    padding: 12px;
+    width: 85% !important;
+    height: auto;
+    border: 3px solid rgb(34, 54, 33) !important;
+    position: relative;
+}
+
+/* BURGER MENU */
+.burger_menu {
+    text-align: right;
+    float:right;
+}
+
+/* ========================================================== CENTER DIV ============================================================= */
+/* CENTER DIV */
+
+/* DIV HEADING - TEXT */
+.div_heading {
+    background-color: rgba(37, 32, 32, 0.692) !important;
+    color: white;
+    max-width: 380px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.center_row {
+    margin-top: 5%;
+    margin-bottom: 0.5%;
+}
+
+/* TABLE */
+.table {
+    margin-left: 2% !important;
+    margin-right: 1% !important;
+    word-wrap:break-word;
+    table-layout:fixed;
+
+}
+
+td {
+    word-wrap:break-word;
+    }
+
+/* ========================================================== BODY END =============================================================== */
