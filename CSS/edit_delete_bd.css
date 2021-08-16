@@ -199,6 +199,17 @@ td {
     }
   }
 
+/* DESCRIPTION row */
+.description {
+  margin-left: 4%;
+}
+
+.textarea {
+width: 100%;
+height: auto;
+font-size: 12px !important;
+}
+
 /* COVER IMAGE */
 .cover_img_div {
     float: right !important;
@@ -213,17 +224,6 @@ td {
 .cell6 {
   margin-right: 10% !important;
   align-items: left;
-}
-
-/* DESCRIPTION row */
-.description {
-    margin-left: 4%;
-}
-
-.textarea {
-  width: 100%;
-  height: auto;
-  font-size: 12px !important;
 }
 
 @media screen and (min-width: 320px) {
