@@ -3,7 +3,7 @@
 var btnOk;
 var tentatives;
 var nbEssais =3;
-var nbTentatives = 2;
+var nbTentatives = 1;
 var messageErreur;
 
 /**
@@ -28,7 +28,6 @@ setTimeout (tries, 100);
  * Flavie
  */
 function tries () {
-    nbTentatives++;
     nbEssais -= nbTentatives;
     tentatives.html("<span> "+nbEssais+"</span>");
     if (nbEssais <= 0) {

@@ -1,0 +1,257 @@
+<html lang="fr">
+<!-- ======================================================== START ================================================================ -->
+<!-- MAIN CONTAINER -->
+    <!-- MAIN CONTAINER : class="container-fluid" -->
+
+    <!-- HEADER : class="header" -->
+        <!-- DIV : class="row" -->
+            <!-- DIV 1 : class="cell1" -->
+                <!-- IMG HELP : class="img_help" -->
+            <!-- DIV 1 : class="cell2" -->
+            <!-- DIV 1 : class="cell3" -->
+                <!-- USER STATUS : id="user_status" -->
+                <!-- USER NAME : id="user_name" -->
+
+<!-- MIDDLE DIV -->
+    <!-- MIDDLE DIV : class="middle_div" -->
+    <!-- BURGER MENU -->
+        <!-- BURGER button : id="context_toggle" -->
+        <!-- MENU UL : class="d-menu" -->
+
+    <!-- CENTER DIV : class="center_div"-->
+        <!-- in : DIV : class="row" -->
+            <!-- in DIV : class="cell" ; id="cell_1" ; id="cell_2"-->
+            <!-- BUTTONS : -->
+                <!-- id="btn_cherche" -->
+                <!-- id="btn_enregistrement" -->
+                <!-- id="btn_restitution" -->
+
+<!-- ======================================================== HEAD ================================================================= -->
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>| Compte Utilisateur | Bédéthèque de Stockholm</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="CSS/metro/metro-all.css">
+    <link rel="stylesheet" href="CSS/fontawasome/fontawesome.css">
+
+    <link rel="stylesheet" href="CSS/compte.css">
+
+</head>
+<!-- ======================================================== BODY ================================================================= -->
+<body>
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="row">
+                <div class="cell1">
+                <a href="help.html">
+                <img src="MEDIA\help.png" class="img_help" alt="help"/></a>
+                </div>
+
+                <div class="cell2">
+                    </div>
+                    
+                <div class="cell3">
+                <span class="">Bienvenue sur votre compte </span><span id="user_status"></span><span>, </span><span id="user_name"></span> !</span>
+                </div>
+            </div>                      
+        </header>
+
+        <!-- MIDDLE DIV -->
+        <div class="middle_div p-3 border" >
+            
+            <div class="burger_menu">
+            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                <li id="profile"><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                <li class="divider"></li>
+                <li id="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+            </ul>
+            </div>
+
+            <!-- CENTER DIV -->
+            <div id="bibliothecaire" class="center_div" style="visibility: hidden;">
+                <div class="row">
+                    <div class="cell" id="cell_1">
+                    <img src="MEDIA\search.png" class="_img1 img-fluid" alt="search">  
+                    </div>
+                    
+                    <div class="cell" id="cell_2">
+                        <p><b>Consultation du fond</b></p>
+                        <p>Effectuer une recherche de BD</p>
+                        <a href="search.html">
+                            <button id="btn_cherche" type="button" class="btn btn-primary btn-sm">Recherche</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </br>
+                <div class="row">
+                    <div id="cell_1" class="cell">
+                    <img src="MEDIA\profile.png" class="_img2 img-fluid" alt="profile">  
+                    </div>
+
+                    <div id="cell_2" class="cell">
+                        <p><b>Gestion des emprunts</b></p>
+                        <p>Enregistrement des prêts et restitution des prêts</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <!-- BUTTON SAVE RENT -->
+                            <a href="emprunt.html">
+                            <button id="btn_enregistrement" type="button" class="btn btn-primary btn-sm">Enregistrement prêts</button>
+                            </a>
+                            
+                            <!-- BUTTON GIVE BACK -->
+                            <a href="restitution.html">
+                            <button id="btn_restitution" type="button" class="btn btn-primary btn-sm">Restitution prêts</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </br>
+        </div>
+
+        <div id="administrateur" class="center_div" style="visibility: hidden;">
+            <br/>
+            <div class="row">
+                <div id="cell_1" class="cell">
+                <img src="MEDIA\profile.png" class="_img2 img-fluid" alt="profile">  
+                </div>
+
+                <div id="cell_2" class="cell">
+                    <p><b>Gestion des profils</b></p>
+                </br>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <!-- BUTTON NEW PROFILE -->
+                        <a href="new_profile.html">
+                        <button id="btn_new_profile" type="button" class="btn btn-primary btn-sm">Ajouter un nouveau profil </button>
+                        </a>
+                        <!-- BUTTON MANAGE PROFILE -->
+                        <a href="manage_profiles.html">
+                        <button id="btn_manage_profiles" type="button" class="btn btn-primary btn-sm">Gérer les profils </button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <br/>
+        
+        </div>
+
+        <div id="gestionnaire" class="center_div" style="visibility: hidden;">
+            <div class="row">
+                <div class="cell" id="cell_1">
+                <img src="MEDIA\search.png" class="_img1 img-fluid" alt="search">  
+                </div>
+                
+                <div class="cell" id="cell_2">
+                    <p><b>Consultation du fond</b></p>
+                    <p>Effectuer une recherche de BD</p>
+                    <a href="search.html">
+                        <!-- SEARCH BUTTON -->
+                        <button id="btn_cherche" type="button" class="btn btn-primary btn-sm">Recherche</button>
+                    </a>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div id="cell_1" class="cell">
+                <img src="MEDIA\book.png" class="_img2 img-fluid" alt="profile">  
+                </div>
+
+                <div id="cell_2" class="cell">
+                    <p><b>Gestion des BDs</b></p>
+                    <p>Enregistrement, édition ou suppression des BDs</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <!-- NEW BD BUTTON -->
+                        <a href="add_new_bd.html">
+                        <button id="btn_new_bd" type="button" class="btn btn-primary btn-sm">Enregistrer nouveau BD</button>
+                        </a>
+                        <!-- EDIT DELETE BUTTON // going through search first !! -->
+                        <a href="search.html">
+                        <button id="btn_edit_delete" type="button" class="btn btn-primary btn-sm">Éditer ou Supprimer BD</button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <br/>
+        </div>
+
+        <div id="adherent" class="center_div_adherent" style="visibility: hidden;">
+            <div class="row">
+                <div class="cell" id="cell_1_adherent">
+                <img src="MEDIA\search.png" class="_img1_ad img-fluid" alt="search">  
+                </div>
+                <!-- BUTTON SEARCH -->
+                <div class="cell" id="cell_2_adherent">
+                    <p><b>Consultation&nbspdu&nbspfond&nbspde&nbspBD</b></p>
+                    <p>Effectuer&nbspune&nbsprecherche&nbspde&nbspBD</p>
+                    <a href="search.html">
+                        <button id="btn_cherche" type="button" class="btn btn-primary btn-sm">Recherche</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="responsable" class="center_div" style="visibility: hidden;">
+            <div class="row">
+                <div class="cell" id="cell_1">
+                <img src="MEDIA\search.png" class="_img1 img-fluid" alt="search">  
+                </div>
+                
+                <div class="cell" id="cell_2">
+                    <p><b>Consultation du fond</b></p>
+                    <p>Effectuer une recherche de BD</p>
+                    <a href="search.html">
+                        <!-- SEARCH BUTTON -->
+                        <button id="btn_cherche" type="button" class="btn btn-primary btn-sm">Recherche</button>
+                    </a>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div id="cell_1" class="cell">
+                <img src="MEDIA\stat_list.png" class="_img2 img-fluid" alt="profile">  
+                </div>
+
+                <div id="cell_2" class="cell">
+                    <p><b>Gestion des contrôles des prêts</b></p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <!-- CONTROL RENT BUTTON -->
+                        <a href="controle_pret.html">
+                        <button id="btn_controle_pret" type="button" class="btn btn-primary btn-sm">Contrôles des prêts et les statistiques</button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <br/>
+        </div>
+
+    
+    </div>
+
+</body>
+<!-- ========================================================= JS ================================================================== -->
+
+    <!-- JAVA SCRIPT -->
+    <script src="JS/jquery.js"></script>
+    <script src="JS/test_profils.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/metro.js"></script>
+    <script src="JS/all.js"></script>
+
+<!-- ======================================================== END ================================================================== -->
+</html>

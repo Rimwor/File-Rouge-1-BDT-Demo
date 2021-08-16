@@ -41,6 +41,10 @@ $(document).ready(function() {
 function verifCredentials(e) {
     var username = $(identifiant).val();
     var password = $(motPasse).val();
+    localStorage.setItem("user", username);
+    localStorage.setItem("password", password);
+    var utilisateur = localStorage.getItem("user");
+    var code = localStorage.getItem("password");
     var count = users.length-1;
     console.log(username);
     console.log(password);
@@ -49,20 +53,24 @@ function verifCredentials(e) {
         alert("Le format de vos identifiants est invalide");
     } else {
         for (let i in users) {
-            if (username == users[i].identifiant && password == users[i].pin) {
-                if (users[i].type == "bibliothécaire") {
-                    $(form).attr("action", "compte_bibliothecaire.html");
-                } else if (users[i].type == "administrateur") {
-                    $(form).attr("action", "compte_administrateur.html");
-                } else if (users[i].type == "gestionnaire") {
-                    $(form).attr("action", "compte_gestionnaire.html");
-                } else if (users[i].type == "responsable") {
-                    $(form).attr("action", "compte_responsable.html");
-                } else if (users[i].type == "adhérent") {
-                    $(form).attr("action", "compte_adherent.html");
+            if (utilisateur == users[i].identifiant //&& code == users[i].pin
+            ){localStorage.setItem("type", users[i].type);
+                localStorage.setItem("name", users[i].name);
+                var profil = localStorage.getItem("type");
+                if (profil == "bibliothécaire") {
+                    $(form).attr("action", "compte.html");
+                } else if (profil == "administrateur") {
+                    $(form).attr("action", "compte.html");
+                } else if (profil == "gestionnaire") {
+                    $(form).attr("action", "compte.html");
+                } else if (profil == "responsable") {
+                    $(form).attr("action", "compte.html");
+                } else if (profil == "adhérent") {
+                    $(form).attr("action", "compte.html");
                 }
                 break;
-            } else if (i == count && (username != users[i].identifiant || password != users[i].pin)) {
+            } else if (i == count && (utilisateur != users[i].identifiant //|| code != users[i].pin)
+            )){
                 $(form).attr("action", "error_connection.html");
             }
             
