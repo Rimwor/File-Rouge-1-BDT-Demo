@@ -1,0 +1,161 @@
+<html lang="fr">
+<!-- ======================================================== START ================================================================ -->
+<!-- MAIN CONTAINER -->
+    <!-- MAIN CONTAINER : class="container-fluid" -->
+
+    <!-- HEADER : class="header" -->
+        <!-- DIV : class="row" -->
+            <!-- DIV 1 : class="cell1" -->
+                <!-- IMG HELP : class="img_help" -->
+            <!-- DIV 1 : class="cell2" -->
+            <!-- DIV 1 : class="cell3" -->
+                <!-- USER STATUS : id="user_status" -->
+                <!-- USER NAME : id="user_name" -->
+
+<!-- MIDDLE DIV -->
+    <!-- MIDDLE DIV : class="middle_div" -->
+    <!-- BURGER MENU -->
+        <!-- BURGER button : id="context_toggle" -->
+        <!-- MENU UL : class="d-menu" -->
+
+    <!-- CENTER DIV : -->
+        <!-- HEADING : class="div_heading" -->
+        <!-- CENTER DIV : class="center_row" -->
+            <!-- TABLE -->
+            <!-- DESCRIPTION -->
+            <!-- COVER IMG -->
+            <!-- BUTTONS : -->
+                <!-- BACK BUTTON / & / BORROW BUTTON -->
+                <!-- BACK : id="btn_back" -->
+                <!-- PRINT : id="btn_print" -->
+
+<!-- ======================================================== HEAD ================================================================= -->
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>| List de BDs | Bédéthèque de Stockholm</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="CSS/metro/metro-all.css">
+    <link rel="stylesheet" href="CSS/fontawasome/fontawesome.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.16.0.css">
+
+    <link rel="stylesheet" href="CSS/list_BD.css">
+
+</head>
+<!-- ======================================================== BODY ================================================================= -->
+<body>
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
+
+    <!-- MAIN CONTAINER -->
+    <div class="container-fluid">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="row">
+                <div class="cell1">
+                <a href="help.html" target="_blank">
+                <img src="MEDIA\help.png" class="img_help" alt="help"/></a>
+                </div>
+
+                <div class="cell2">
+                    </div>
+                    
+                <div class="cell3">
+                <span class="">Bienvenue sur votre compte </span><span id="user_status">Responsable</span> <span>, </span><span id="user_name">Louise Nouget</span> !</span>
+                </div>
+            </div>                      
+        </header>
+
+        <!-- MIDDLE DIV -->
+        <div class="middle_div border" >
+            
+            <div class="burger_menu">
+            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                <li><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+            </ul>
+            </div>
+
+            <!-- CENTER DIV -->
+            <div class="div_heading">&nbsp&nbsp List de BDs &nbsp&nbsp</div>
+
+            <div class="center_row row">
+                
+                <!-- <article id="article" class="col-xs-12 col-sm-9 col-md-10">
+                        </article> -->
+
+                <div class="cell4 cell colspan-11 flex-align-self-stretch">
+                  
+                    <!-- TABLE -->
+                    <div class="table-responsive-sm">
+                        <div id= "box"></div>
+                        <div id= "box_auteurs"></div>
+                        <!-- <table class="table subcompact table-light table-striped table-sm">
+
+                            <thead>
+                            <tr>
+                                <th scope="col">Autor/s</th>
+                                <th scope="col">Serie/s</th>
+                                <th scope="col">Album/s</th>
+                                <th scope="col">Mail</th>
+                                <th scope="col">Statut</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+
+                            <tr>
+                                <th scope="row">1</th>
+                                <td class="td-3">Mark</td>
+                                <td>Otto</td>
+                                <td>motto@gmail.com</td>
+                                <td>à jour</td>
+                            </tr>
+                            
+                            </tbody>
+                        </table> -->
+
+                    </div>
+                    
+                </div>
+             
+            </div>
+                </br>
+            <!-- BACK BUTTON / & / PRINT BUTTON -->
+            <div class="btns_div d-flex flex-justify-start">
+                <!-- BACK -->
+                <div>
+                    <button id="btn_back" class="button justify-content-md-start stick-bottom">
+                    <i class="fas fa-chevron-left"></i> &nbsp
+                    </button>
+                </div>
+
+        </div> 
+
+    </div>
+
+</body>
+<!-- ========================================================= JS ================================================================== -->
+
+    <!-- JAVA SCRIPT -->
+    <script src="JS/jquery.js"></script>
+    <script src="JS/auteurs.js"></script>
+    <script src="JS/albums.js"></script>
+    <script src="JS/series.js"></script>
+    <script src="JS/list_BD.js"></script>
+    
+    <script src="JS/metro.js"></script>
+    <script src="JS/all.js"></script>
+
+<!-- ======================================================== END ================================================================== -->
+</html>

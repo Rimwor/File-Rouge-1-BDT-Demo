@@ -1,0 +1,44 @@
+
+var html = "<table border='1|1'>";
+
+for(var [idSerie, serie] of series.entries()) {
+    // Recherche des albums de la série
+    for (var [idAlbum, album] of albums.entries()) {
+        if (album.idSerie == idSerie) {
+            html+="<tr>";
+            html+="<td>"+serie.nom+", Album N°"+album.numero+" "+album.titre+", Auteur:"+auteurs.get(album.idAuteur).nom+"</td>";
+            html+="</tr>";
+        }
+    }
+    
+}
+html+="</table>";
+console.log(html);
+document.getElementById("box_auteurs").innerHTML += html;
+
+// var rows = [{
+//     name: "John",
+//     age: 20,
+//     email: "xx@hotmail.com"
+// }, {
+//     name: "Jack",
+//     age: 50,
+//     email: "xxx@hotmail.com"
+// }, {
+//     name: "Son",
+//     age: 45,
+//     email: "xxxx@hotmail.com"
+// }];
+
+// var html = "<table border='1|1'>";
+// for (var i = 0; i < rows.length; i++) {
+//     html+="<tr>";
+//     html+="<td>"+rows[i].name+"</td>";
+//     html+="<td>"+rows[i].age+"</td>";
+//     html+="<td>"+rows[i].email+"</td>";
+    
+//     html+="</tr>";
+
+// }
+// html+="</table>";
+// document.getElementById("box").innerHTML = html;
