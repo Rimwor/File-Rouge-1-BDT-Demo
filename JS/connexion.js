@@ -53,13 +53,13 @@ function verifCredentials(e) {
                 if (users[i].type == "bibliothécaire") {
                     $(form).attr("action", "compte_bibliothecaire.html");
                 } else if (users[i].type == "administrateur") {
-                    $(form).attr("action", "administrateur.html");
+                    $(form).attr("action", "compte_administrateur.html");
                 } else if (users[i].type == "gestionnaire") {
-                    $(form).attr("action", "gestionnaire.html");
+                    $(form).attr("action", "compte_gestionnaire.html");
                 } else if (users[i].type == "responsable") {
-                    $(form).attr("action", "gestionnaire.html");
+                    $(form).attr("action", "compte_responsable.html");
                 } else if (users[i].type == "adhérent") {
-                    $(form).attr("action", "adhérent.html");
+                    $(form).attr("action", "compte_adherent.html");
                 }
                 break;
             } else if (i == count && (username != users[i].identifiant || password != users[i].pin)) {
