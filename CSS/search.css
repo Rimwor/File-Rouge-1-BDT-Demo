@@ -163,6 +163,11 @@ html {
     }
   }
 
+  /* @media screen and (min-width: 1420px) {
+    .middle_div {
+        height: 86% !important;
+    }
+  } */
 
 /* BURGER MENU */
 .burger_menu {
@@ -411,12 +416,13 @@ html {
 
  }
 
- /* @media (min-width: 2000px) { 
+ /* @media (min-width: 1880px) { 
     
     .btn_bck {
-        margin-top: 15% !important;
+        margin-top: 8% !important;
         position: fixed;
     }
 
  } */
+
 /* ========================================================== BODY END =============================================================== */

@@ -486,6 +486,12 @@ td {
   }
 }
 
+@media screen and (min-width: 1880px) {
+  .btns_div {
+    margin-top: 6% !important;
+  }
+}
+
 @media screen and (min-width: 2000px) {
   .btns_div {
     margin-top: 8% !important;

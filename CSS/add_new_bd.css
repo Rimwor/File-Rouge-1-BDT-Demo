@@ -362,6 +362,12 @@ td {
   }
 }
 
+@media screen and (min-width: 1880px) {
+  .btns_div {
+    margin-top: 11% !important;
+  }
+}
+
 @media screen and (min-width: 2000px) {
   .btns_div {
     margin-top: 8% !important;
