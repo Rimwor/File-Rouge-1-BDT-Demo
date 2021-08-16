@@ -270,15 +270,16 @@ td {
     }
   }
 
+/* CELL with NO */
 .no {
   background-color: rgba(37, 32, 32, 0.692) !important;
   color: white;
 }
-
+/* CELL with ISBN */
 .lis {
   background-color: rgba(255, 255, 255, 0.692) !important;
 }
-
+/* CELL with with dates and days */
 .lis1 {
   background-color: rgba(255, 255, 255, 0.692) !important;
   text-align: center;
@@ -336,7 +337,7 @@ td {
   }
 }
 
-/* BACK BUTTON / & / BORROW BUTTON */
+/* BACK BUTTON / & / RETURN BUTTON */
 .btns_div {
     margin-left: 1% !important;
     margin-right: 1% !important;
