@@ -42,14 +42,6 @@ html {
     }
   }
 
-/* IMG HELP */
-.img_help {
-    opacity: 40%;
-    width: 100%;
-    max-width: 30px;
-    height: auto;
-}
-
 /* ========================================================== MAIN CONTAINER ========================================================= */
 /* MAIN CONTAINER */
 .container-fluid {
@@ -58,6 +50,15 @@ html {
 
 /* ========================================================== HEADER ================================================================= */
 /* HEADER */
+
+/* IMG HELP */
+.img_help {
+  opacity: 40%;
+  width: 100%;
+  max-width: 30px;
+  height: auto;
+}
+
 .cell1 {
     width: 5% !important;
     min-width: 15px;
@@ -198,15 +199,6 @@ html {
 /* ========================================================== CENTER DIV ============================================================= */
 /* CENTER DIV */
 
-.col4 {
-    width: 60% !important;
-}
-
-.col5 { 
-    width: 40% !important;
-}
-
-
 /* DIV HEADING - TEXT */
 .div_heading {
     background-color: rgba(37, 32, 32, 0.692) !important;
@@ -279,6 +271,11 @@ td {
     }
   }
 
+/* DESCRIPTION row */
+.description {
+  margin-left: 0.3%;
+}
+
 /* COVER IMAGE */
 .cover_img_div {
     float: right !important;
@@ -288,11 +285,6 @@ td {
     margin-top: 0px;
     margin-right: 5%;
     float: right;
-}
-
-/* DESCRIPTION row */
-.description {
-    margin-left: 0.3%;
 }
 
 /* BACK / CANCEL / & / ADD NEW BD */
