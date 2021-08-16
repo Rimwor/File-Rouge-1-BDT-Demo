@@ -42,14 +42,6 @@ html {
     }
   }
 
-/* IMG HELP */
-.img_help {
-    opacity: 40%;
-    width: 100%;
-    max-width: 30px;
-    height: auto;
-}
-
 /* ========================================================== MAIN CONTAINER ========================================================= */
 /* MAIN CONTAINER */
 .container-fluid {
@@ -58,6 +50,15 @@ html {
 
 /* ========================================================== HEADER ================================================================= */
 /* HEADER */
+
+/* IMG HELP */
+.img_help {
+    opacity: 40%;
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+}
+
 .cell1 {
     width: 5% !important;
     min-width: 15px;
@@ -142,12 +143,24 @@ html {
 }
 
 /* TABLE */
-.table {
-    margin-left: 2% !important;
-    margin-right: 1% !important;
-    word-wrap:break-word;
-    table-layout:fixed;
+.tab1 {
+  margin-left: 2% !important;
+  margin-right: 1% !important;
+  word-wrap:break-word;
+  table-layout:fixed;
+  background-color: rgb(243, 241, 230);
+  border-color: grey;
+  border: solid;
+}
 
+/* .tr1 {
+  border: solid;
+} */
+
+.td1 {
+  border: solid;
+  border-color: grey;
+  padding: 12px;
 }
 
 td {
