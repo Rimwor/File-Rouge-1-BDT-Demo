@@ -163,22 +163,22 @@ jQuery(document).ready(function ($) {
 /**
  * Table list
  */
-// var html = "<table border='1|1' class='tab1'>";
+var html = "<table border='1|1' class='tab1'>";
 
-// for(var [idSerie, serie] of series.entries()) {
-//     // Recherche des albums de la série
-//     for (var [idAlbum, album] of albums.entries()) {
-//         if (album.idSerie == idSerie) {
-//             html+="<tr class='tr1'>";
-//             html+="<td class='td1'>"+serie.nom+", Album N°"+album.numero+" "+album.titre+", Auteur : "+auteurs.get(album.idAuteur).nom+"</td>";
-//             html+="</tr>";
-//         }
-//     }
+for(var [idSerie, serie] of series.entries()) {
+    // Recherche des albums de la série
+    for (var [idAlbum, album] of albums.entries()) {
+        if (album.idSerie == idSerie) {
+            html+="<tr class='tr1'>";
+            html+="<td class='td1'>"+serie.nom+", Album N°"+album.numero+" "+album.titre+", Auteur : "+auteurs.get(album.idAuteur).nom+"</td>";
+            html+="</tr>";
+        }
+    }
     
-// }
-// html+="</table>";
-// console.log(html);
-// document.getElementById("box_auteurs").innerHTML += html;
+}
+html+="</table>";
+console.log(html);
+document.getElementById("box_auteurs").innerHTML += html;
 
 
 /**
