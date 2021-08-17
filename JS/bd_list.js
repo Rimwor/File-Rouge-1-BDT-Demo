@@ -3,7 +3,7 @@
  * @param {string}
  * Beata
  */
- var html = "<table border='1|1' class='tab1'>";
+ var html = "<table border='1|1' class='tab1' id='myTab' >";
 
  for(var [idSerie, serie] of series.entries()) {
      // Recherche des albums de la série - la list
