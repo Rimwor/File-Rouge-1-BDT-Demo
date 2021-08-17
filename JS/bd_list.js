@@ -1,8 +1,7 @@
 /**
  * Table list
- * 
  * @param {string}
- * list-table
+ * Beata
  */
  var html = "<table border='1|1' class='tab1'>";
 
