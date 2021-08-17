@@ -47,13 +47,13 @@ function myFunction2() {
   input = document.getElementById("myInput2");
   filter = input.value.toUpperCase();
   table = document.getElementById("tab1");
-  tr = table.getElementsByClassName("tr1");
+  tr1 = table.getElementsByClassName("tr1");
 
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr1.length; i++) {
     td1 = tr1[i].getElementsByClassName("td1")[0];
     if (td1) {
-      txtValue = td.textContent || td1.innerText;
+      txtValue = td1.textContent || td1.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         tr1[i].style.display = "";
       } else {
