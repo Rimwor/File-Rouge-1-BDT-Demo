@@ -118,7 +118,7 @@ html {
     padding: 12px;
     width: 85% !important;
     height: auto;
-    border: 3px solid rgb(255, 255, 255) !important;
+    border: 1px solid rgb(255, 255, 255) !important;
     position: relative;
 }
 
@@ -221,7 +221,7 @@ td {
     margin-right: 1% !important;
     word-wrap:break-word;
     table-layout:fixed;
-    background-color: rgb(243, 241, 230);
+    background-color: rgb(243, 241, 230, 0.63);
     border-color: grey;
     border: solid;
   }
@@ -237,7 +237,6 @@ td {
   }
 
 /* COVER IMAGE */
-
 .cover_img_div {
     float: right !important;
 }
