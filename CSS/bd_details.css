@@ -212,28 +212,6 @@ td {
     }
 }
 
-
-/* TAB 1 - TR1 */
-.tab1 {
-    margin-left: 2% !important;
-    margin-right: 1% !important;
-    word-wrap:break-word;
-    table-layout:fixed;
-    background-color: rgb(243, 241, 230, 0.63);
-    border-color: grey;
-    border: solid;
-  }
-  
-  /* .tr1 {
-    border: solid;
-  } */
-  
-  .td1 {
-    border: solid;
-    border-color: grey;
-    padding: 12px;
-  }
-
 /* COVER IMAGE */
 .cover_img_div {
     float: right !important;
