@@ -94,20 +94,18 @@
 
                 <div class="center_row row">
 
-                    <div class="cell4 cell colspan-8 flex-align-self-stretch">
+                    <div class="cell4 cell colspan-6 flex-align-self-stretch">
                         <!-- TABLE -->
                         <table class="table table-border cell-border">
                         <tbody>
-                                <p>
+                                
                                     <tr>
                                         <td class="cat1"><label for="id">Id de l'album :</label></td>
                                         <td class="cat2">
                                         <input type="number" required id="id" value="0" min="0" title="Saisissez un numéro et validez">
                                         </td>
                                     </tr>
-                                </p>
-
-                                <p>
+                                
                                     <tr>
                                         <td class="cat1"><label for="serie">Série :</label></td>
                                         <td class="cat2">
@@ -132,56 +130,85 @@
                                         <input type="text" id="auteur" readonly>
                                         </td>
                                     </tr>
-                                </p>
-
-                                <p>
+                                                               
                                     <tr>
                                         <td class="cat1"><label for="prix">Prix :</label></td>
                                         <td class="cat2">
                                         <input type="number" id="prix" readonly>
                                         </td>
                                     </tr>
-                                </p>
+
+                                    <tr>
+                                        <td class="cat1"><label for="numeroBD">Numéro BD :</label></td>
+                                        <td class="cat2">
+                                        <input type="number" id="numeroBD" readonly>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="cat1"><label for="isbn">ISBN :</label></td>
+                                        <td class="cat2">
+                                        <input type="number" id="isbn" readonly>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="cat1"><label for="dispo">Disponibilité :</label></td>
+                                        <td class="cat2">
+                                        <input type="number" id="dispo" readonly>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="cat1"><label for="placement">Emplacement :</label></td>
+                                        <td class="cat2">
+                                        <input type="number" id="placement" readonly>
+                                        </td>
+                                    </tr>
+                                
                         </tbody>
                         </table>
                     </div>
 
                     <!-- COVER IMG -->
                     <div class="cell5 cell colspan-3 offset-1 flex-align-self-stretch">
-
                             <div is="toto" style="display: none;">
                                 <img src="MEDIA/images/noComicsMini.jpeg" id="albumMini" >
                             </div>
                         
-                            <img src="MEDIA/images/noComics.jpeg" id="album"  class="img_cover img-fluid rounded float-end bottom" alt="BD cover">
-                        
+                            <img src="MEDIA/images/noComics.jpeg" id="album"  class="img_cover img-fluid rounded float-end bottom" alt="BD cover">                       
                     </div>
 
                 </div>
 
-                <!-- ================================================================================================- -->
+                <!-- =====================================================- -->
 
-                <div class="center_row row">
-                    <div class="cell4 cell colspan-11 flex-align-self-stretch">
+                <!-- <div class="center_row row">
+                    <div class="cell4 cell colspan-11 flex-align-self-stretch"> -->
 
                         <!-- TABLE -->
                         <!-- <div id="box_auteurs"></div> -->
                         
-                    </div>
-                </div>
-
+                    <!-- </div>
+                </div> -->
 
                 </br>
 
-
-                <!-- BACK BUTTON / & / PRINT BUTTON -->
+                <!-- BUTTONS -->
                 <div class="btns_div d-flex flex-justify-start">
-                    <!-- BACK -->
-                    <div>
-                        <button id="btn_back" class="button justify-content-md-start stick-bottom">
-                    <i class="fas fa-chevron-left"></i> &nbsp
-                    </button>
-                    </div>
+
+                        <!-- BACK / CANCEL // for ALL  -->
+                        <div>
+                            <button id="btn_back" class="button justify-content-md-start stick-bottom">
+                            <i class="fas fa-chevron-left"></i> &nbsp Annuler
+                            </button>
+                        </div>
+                        <!-- EDIT/DELETE // for GESTIONNAIRE -->
+                        <div class="ml-auto">
+                            <a href="edit_delete_bd.html">
+                            <button id="btn_edit_delete" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Édition / Suppression</button>
+                            </a>
+                        </div>              
 
                 </div>
 

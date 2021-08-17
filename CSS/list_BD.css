@@ -3,7 +3,7 @@
 /* ========================================================== BODY =================================================================== */
 
 html {
-    font-size: 12px !important;
+    font-size: 20px !important;
 }
 
 @media screen and (min-width: 320px) {
@@ -55,7 +55,6 @@ html {
 /* HEADER */
 
 /* IMG HELP */
-
 .img_help {
     opacity: 40%;
     width: 100%;
@@ -113,7 +112,6 @@ html {
 
 /* ========================================================== MIDDLE DIV ============================================================= */
 /* MIDDLE DIV */
-
 .middle_div {
     background-color: rgba(255, 255, 255, 0.479);
     margin: auto;
@@ -126,7 +124,6 @@ html {
 
 
 /* BURGER MENU */
-
 .burger_menu {
     text-align: right;
     float: right;
@@ -155,7 +152,6 @@ html {
 
 
 /* TABLE */
-
 .table {
     margin-left: 2% !important;
     margin-right: 1% !important;
@@ -180,7 +176,7 @@ td {
 
 .cat1,
 .cat2 {
-    font-size: 10px !important;
+    font-size: 16px !important;
 }
 
 @media screen and (min-width: 320px) {
@@ -207,7 +203,7 @@ td {
 @media screen and (min-width: 1000px) {
     .cat1,
     .cat2 {
-        font-size: 12px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -240,8 +236,7 @@ td {
     padding: 12px;
   }
 
-  /* COVER IMAGE */
-
+/* COVER IMAGE */
 .cover_img_div {
     float: right !important;
 }
@@ -251,4 +246,5 @@ td {
     margin-right: 5%;
     float: right;
 }
+
 /* ========================================================== BODY END =============================================================== */
