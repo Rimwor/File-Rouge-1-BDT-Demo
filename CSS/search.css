@@ -104,70 +104,12 @@ html {
 .middle_div {
     background-color: rgba(255, 255, 255, 0.479);
     margin: auto;
+    padding: 12px;
     width: 85% !important;
-    height: 75% !important;
-    border: 3px solid rgb(255, 255, 255);
+    height: auto;
+    border: 1px solid rgb(255, 255, 255) !important;
+    position: relative;
 }
-
-@media screen and (min-width: 320px) {
-    .middle_div {
-        height: 108% !important;
-    }
-  }
-
-  @media screen and (min-width: 560px) {
-    .middle_div {
-        height: 86% !important;
-    }
-  }
-
-  @media screen and (min-width: 630px) {
-    .middle_div {
-        height: 86% !important;
-    }
-  }
-
-  @media screen and (min-width: 660px) {
-    .middle_div {
-        height: 84% !important;
-    }
-  }
-
-  @media screen and (min-width: 700px) {
-    .middle_div {
-        height: 80% !important;
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    .middle_div {
-        height: 80% !important;
-    }
-  }
-
-  @media screen and (min-width: 820px) {
-    .middle_div {
-        height: 84% !important;
-    }
-  }
-
-  @media screen and (min-width: 900px) {
-    .middle_div {
-        height: 78% !important;
-    }
-  }
-
-  @media screen and (min-width: 1000px) {
-    .middle_div {
-        height: 82% !important;
-    }
-  }
-
-  /* @media screen and (min-width: 1420px) {
-    .middle_div {
-        height: 86% !important;
-    }
-  } */
 
 /* BURGER MENU */
 .burger_menu {
@@ -234,6 +176,7 @@ html {
     margin-top: 5%;
 }
 
+
 .consult_dfond {
     background-color: rgba(97, 77, 77, 0.459);
     text-align: center;
@@ -250,39 +193,6 @@ html {
     max-width: 220px;
     height: auto;
 }
-
-#myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-  }
-  
-  #myUL {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
-  
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
 
 /* SEARCH IMG */
 @media (min-width: 568px) { 
@@ -436,4 +346,25 @@ html {
 
  } */
 
+/* BUTTON back to TOP */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(2, 2, 2, 0.507); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  
 /* ========================================================== BODY END =============================================================== */

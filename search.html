@@ -53,7 +53,7 @@
 </head>
 <!-- ======================================================== BODY ================================================================= -->
 <body>
-    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
+    <body background="MEDIA\bdthequebackground.jpg"  style="background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover;" alt="background">   
 
     <!-- MAIN CONTAINER -->
     <div class="container-fluid">
@@ -70,7 +70,7 @@
                     </div>
                     
                 <div class="cell3">
-                <span class="">Bienvenue sur votre compte </span><span id="user_status">Bibliothécaire</span> <span>, </span><span id="user_name">Andy Dufresne</span> !</span>
+                    <span class="">Bienvenue sur votre compte </span><span id="user_status"></span><span>, </span><span id="user_name"></span> !</span>
                 </div>
             </div>                      
         </header>
@@ -98,7 +98,19 @@
                     <img src="MEDIA\search_form.png" class="img_search_form img-fluid mx-auto d-block" alt="search">
                 </div>
                 </br>
-                <input type="text" data-role="input" id="myInput" onkeyup="myFunction()" data-search-button="true" placeholder="Saisir un numero ISBN, un titre, un sous titre, une serie au un auteur">                               
+                <input type="text" data-role="input" data-search-button="true" id="searchButton" placeholder="Saisir un numero ISBN, un titre, un sous titre, une serie au un auteur">                               
+
+                <!-- =====================================================- -->
+
+                <div class="center_row row">
+                    <div class="cell4 cell colspan-11 flex-align-self-stretch">
+
+                        <!-- TABLE -->
+                        <div id="box_auteurs"></div>
+                        
+                    </div>
+                </div>
+
             </div>
 
             </br>
@@ -110,7 +122,8 @@
                     <i class="fas fa-chevron-left"></i>
                     </button>
                 </div>
-            
+                <!-- BUTTON BACK TO TOP -->
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             </div> 
 
         </div>
@@ -124,16 +137,16 @@
     <script src="JS/jquery.js"></script>
     <script src="JS/menu.js"></script>
     <script src="JS/metro.js"></script>
+    <script src="JS/all.js"></script>
 
     <script src="JS/auteurs.js"></script>
     <script src="JS/albums.js"></script>
     <script src="JS/series.js"></script>
 
-    <script src="search.html"></script>
-    <script src="JS/test_profils.js"></script>
+    <script src="JS/bd_list.js"></script>
+    <script src="JS/btn_top.js"></script>
 
-    <script src="JS/all.js"></script>
-    
+    <script src="JS/test_profils.js"></script>
 
 <!-- ======================================================== END ================================================================== -->
 </html>
