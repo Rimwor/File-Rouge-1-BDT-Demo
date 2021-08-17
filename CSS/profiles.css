@@ -3,44 +3,44 @@
 /* ========================================================== BODY =================================================================== */
 
 html {
-    font-size: 12px !important;
-  }
+  font-size: 20px !important;
+}
 
-  @media screen and (min-width: 320px) {
-    html {
+@media screen and (min-width: 320px) {
+  html {
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-    }
   }
+}
 
-  @media screen and (min-width: 560px) {
-    html {
-      font-size: 8px !important;
-    }
+@media screen and (min-width: 560px) {
+  html {
+      font-size: 14px !important;
   }
+}
 
-  @media screen and (min-width: 630px) {
-    html {
-      font-size: 12px !important;
-    }
+@media screen and (min-width: 630px) {
+  html {
+      font-size: 14px !important;
   }
+}
 
-  @media screen and (min-width: 810px) {
-    html {
-      font-size: 9px !important;
-    }
+@media screen and (min-width: 810px) {
+  html {
+      font-size: 16px !important;
   }
-  
-  @media screen and (min-width: 1000px) {
-    html {
+}
+
+@media screen and (min-width: 1000px) {
+  html {
       font-size: 20px !important;
-    }
   }
+}
 
-  @media screen and (min-width: 2000px) {
-    html {
+@media screen and (min-width: 2000px) {
+  html {
       font-size: 20px !important;
-    }
   }
+}
 
 /* IMG HELP */
 .img_help {
@@ -75,21 +75,50 @@ html {
     background-color: rgba(71, 119, 81, 0.479);
 }
 
+.cell1 {
+  width: 5% !important;
+  min-width: 15px;
+}
+
+.cell2 {
+  width: 5% !important;
+  min-width: 15px;
+  margin-right: 10px;
+}
+
+.cell3 {
+  font-size: 25px !important;
+  width: 75% !important;
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
 @media screen and (min-width: 320px) {
   .cell3 {
-    font-size: 16px !important;
+      font-size: 16px !important;
   }
 }
 
 @media screen and (min-width: 560px) {
   .cell3 {
-      font-size: 10px !important;
+      font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .cell3 {
+      font-size: 17px !important;
   }
 }
 
 @media screen and (min-width: 720px) {
   .cell3 {
-      font-size: 18px !important;
+      font-size: 19px !important;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .cell3 {
+      font-size: 21px !important;
   }
 }
 
@@ -137,7 +166,7 @@ html {
 }
 
 .center_row {
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 0.5%;
 }
 
