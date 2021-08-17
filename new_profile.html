@@ -1,34 +1,35 @@
 <html lang="fr">
 <!-- ======================================================== START ================================================================ -->
 <!-- MAIN CONTAINER -->
-    <!-- MAIN CONTAINER : class="container-fluid" -->
+<!-- MAIN CONTAINER : class="container-fluid" -->
 
-    <!-- HEADER : class="header" -->
-        <!-- DIV : class="row" -->
-            <!-- DIV 1 : class="cell1" -->
-                <!-- IMG HELP : class="img_help" -->
-            <!-- DIV 1 : class="cell2" -->
-            <!-- DIV 1 : class="cell3" -->
-                <!-- USER STATUS : id="user_status" -->
-                <!-- USER NAME : id="user_name" -->
+<!-- HEADER : class="header" -->
+<!-- DIV : class="row" -->
+<!-- DIV 1 : class="cell1" -->
+<!-- IMG HELP : class="img_help" -->
+<!-- DIV 1 : class="cell2" -->
+<!-- DIV 1 : class="cell3" -->
+<!-- USER STATUS : id="user_status" -->
+<!-- USER NAME : id="user_name" -->
 
 <!-- MIDDLE DIV -->
-    <!-- MIDDLE DIV : class="middle_div" -->
-    <!-- BURGER MENU -->
-        <!-- BURGER button : id="context_toggle" -->
-        <!-- MENU UL : class="d-menu" -->
+<!-- MIDDLE DIV : class="middle_div" -->
+<!-- BURGER MENU -->
+<!-- BURGER button : id="context_toggle" -->
+<!-- MENU UL : class="d-menu" -->
 
-    <!-- CENTER DIV : -->
-        <!-- HEADING : class="div_heading" -->
-        <!-- CENTER DIV : class="center_row" -->
-            <!-- TABLE -->
-            <!-- DESCRIPTION -->
-            <!-- COVER IMG -->
-            <!-- BUTTONS : -->
-                <!-- BACK : id="btn_back" -->
-                <!-- NEW PROFILE : id="btn_save_new_profile" -->
+<!-- CENTER DIV : -->
+<!-- HEADING : class="div_heading" -->
+<!-- CENTER DIV : class="center_row" -->
+<!-- TABLE -->
+<!-- DESCRIPTION -->
+<!-- COVER IMG -->
+<!-- BUTTONS : -->
+<!-- BACK : id="btn_back" -->
+<!-- NEW PROFILE : id="btn_save_new_profile" -->
 
 <!-- ======================================================== HEAD ================================================================= -->
+
 <head>
 
     <!-- META -->
@@ -50,116 +51,146 @@
 
 </head>
 <!-- ======================================================== BODY ================================================================= -->
+
 <body>
-    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
 
-    <!-- MAIN CONTAINER -->
-    <div class="container-fluid">
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">
 
-        <!-- HEADER -->
-        <header class="header">
-            <div class="row">
-                <div class="cell1">
-                <a href="help.html" target="_blank">
-                <img src="MEDIA\help.png" class="img_help" alt="help"/></a>
-                </div>
+        <!-- MAIN CONTAINER -->
+        <div class="container-fluid">
 
-                <div class="cell2">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="row">
+                    <div class="cell1">
+                        <a href="help.html" target="_blank">
+                            <img src="MEDIA\help.png" class="img_help" alt="help" /></a>
                     </div>
-                    
-                <div class="cell3">
-                <span class="">Bienvenue sur votre compte </span><span id="user_status">Administrateur</span> <span>, </span><span id="user_name">Marcel Farot</span> !</span>
-                </div>
-            </div>                      
-        </header>
 
-        <!-- MIDDLE DIV -->
-        <div class="middle_div border" >
-            
-            <div class="burger_menu">
-            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
-            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
-                <li id="profile"><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
-                <li class="divider"></li>
-                <li id="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
-            </ul>
-            </div>
-
-            <!-- CENTER DIV -->
-            <div class="div_heading">&nbsp&nbsp  Gestion des profils &nbsp&nbsp</div>
-
-            <div class="center_row row">
-                
-                <div class="cell4 cell colspan-12 d-flex justify-content-center mb-10">
-
-                    <div class="table-responsive-sm">
-
-                        <div class="input-group input-group-sm mb-3 d-flex justify-content-center" style="color: white;">
-                            <p>CRÉATION D'UN PROFIL</p>
-                        </div>
-
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">ID</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">Nom</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">Prénom</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">E-mail</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-
-                        <div class="input-group input-group-sm mb-3">
-                            <select id="disabledSelect" class="form-select form-select-sm border-0">
-                                <option>Statut du compte</option>
-                            <option>Adhérent</option>
-                            <option>Administrateur</option>
-                            <option>Bibliothécaire</option>
-                            <option>Gestionnaire</option>
-                            <option>Responsable</option>
-                            </select>
-                        </div>
+                    <div class="cell2">
                     </div>
-                    
+
+                    <div class="cell3">
+                        <span class="">Bienvenue sur votre compte </span><span id="user_status">Administrateur</span> <span>, </span><span id="user_name">Marcel Farot</span> !</span>
+                    </div>
                 </div>
-             
-            </div>
- 
-            <!-- BACK BUTTON / & / PRINT BUTTON -->
-            <div class="btns_div d-flex flex-justify-start">
-                <!-- BACK -->
-                <div>
-                    <button id="btn_back" class="button justify-content-md-start stick-bottom">
+            </header>
+
+            <!-- MIDDLE DIV -->
+            <div class="middle_div border">
+
+                <div class="burger_menu">
+                    <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+                    <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                        <li id="profile"><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                        <li class="divider"></li>
+                        <li id="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+                    </ul>
+                </div>
+
+                <!-- CENTER DIV -->
+                <div class="div_heading">&nbsp&nbsp Gestion des profils &nbsp&nbsp</div>
+
+                <div class="center_row row">
+
+                    <div class="cell4 cell colspan-12 d-flex justify-content-center mb-10">
+
+                        <div class="table-responsive-sm">
+
+                            <div class="input-group input-group-sm mb-3 d-flex justify-content-center" style="color: white;">
+                                <p>CRÉATION D'UN PROFIL</p>
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" class="inputGroup-sizing-sm">ID</span>
+                                <input id="identifiant" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" class="inputGroup-sizing-sm">PIN</span>
+                                <input id="pin" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" class="inputGroup-sizing-sm">Nom</span>
+                                <input id="nom" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" class="inputGroup-sizing-sm">Prénom</span>
+                                <input id="prenom" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" class="inputGroup-sizing-sm">E-mail</span>
+                                <input id="email" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" class="inputGroup-sizing-sm">Adresse</span>
+                                <input id="adresse" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" class="inputGroup-sizing-sm">Code Postal</span>
+                                <input id="postcode" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <span class="input-group-text" class="inputGroup-sizing-sm">Commune</span>
+                                <input id="ville" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                            <div class="input-group input-group-sm mb-3">
+                                <select id="statut" class="form-select form-select-sm border-0">
+                                    <option>adhérent</option>
+                                    <option>administrateur</option>
+                                    <option>bibliothécaire</option>
+                                    <option>gestionnaire</option>
+                                    <option>responsable</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- BACK BUTTON / & / PRINT BUTTON -->
+                <div class="btns_div d-flex flex-justify-start">
+                    <!-- BACK -->
+                    <div>
+                        <button id="btn_back" class="button justify-content-md-start stick-bottom">
                     <i class="fas fa-chevron-left"></i> &nbsp
                     </button>
+                    </div>
+                    <!-- PRINT -->
+                    <div class="ml-auto">
+                        <button id="btn_save_new_profile" type="submit" class="btn btn-success btn-sm justify-content-md-end stick-bottom">Enregistrer un nouveau profil</button>
+                    </div>
                 </div>
-                <!-- PRINT -->
-                <div class="ml-auto">
-                    <button id="btn_save_new_profile" type="button" class="btn btn-success btn-sm justify-content-md-end stick-bottom">Enregistrer un nouveau profil</button>
-                </div>
+
             </div>
 
-        </div> 
+        </div>
 
-    </div>
+        <div id="qunit" hidden></div>
+        <div id="qunit-fixture" hidden></div>
+
+
+        <!-- ========================================================= JS ================================================================== -->
+
+        <!-- JAVA SCRIPT -->
+        <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
+        <script src="JS/jquery.js"></script>
+        <script src="JS/menu.js"></script>
+        <script src="JS/comptes_utilisateurs.js"></script>
+        <script src="JS/controles_profils.js"></script>
+        <script src="JS/metro.js"></script>
+        <script src="JS/all.js"></script>
+    </body>
 
 </body>
-<!-- ========================================================= JS ================================================================== -->
-
-    <!-- JAVA SCRIPT -->
-    <script src="JS/jquery.js"></script>
-    <script src="JS/menu.js"></script>
-    <script src="JS/metro.js"></script>
-    <script src="JS/all.js"></script>
-
 <!-- ======================================================== END ================================================================== -->
+
 </html>
