@@ -32,8 +32,7 @@ jQuery(document).ready(function ($) {
 	        if (album.idSerie == idSerie) {
 	            console.log(serie.nom+", Album N°"+album.numero+" "+album.titre+", Auteur:"+auteurs.get(album.idAuteur).nom);
 	        }
-	    }
-	    
+	    }	    
 	}
 	/**/
 
@@ -115,7 +114,6 @@ jQuery(document).ready(function ($) {
 				SRC_ALBUM_MINI + nomFic + ".jpg",
 				SRC_ALBUM + nomFic + ".jpg"
 			);
-
 		}
 	}
 
@@ -139,8 +137,6 @@ jQuery(document).ready(function ($) {
 				});
 			})
 		});
-
-
 	}
 
 	/**
@@ -154,9 +150,7 @@ jQuery(document).ready(function ($) {
 		if (element.id === "albumMini")
 			element.src = ALBUM_DEFAULT_MINI;
 		else element.src = ALBUM_DEFAULT;
-
 	}
-
 });
 
 
