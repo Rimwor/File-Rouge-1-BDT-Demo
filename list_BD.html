@@ -72,7 +72,7 @@
                     </div>
 
                     <div class="cell3">
-                        <span class="">Bienvenue sur votre compte </span><span id="user_status">Responsable</span> <span>, </span><span id="user_name">Louise Nouget</span> !</span>
+                        <span class="">Bienvenue sur votre compte </span><span id="user_status"></span><span>, </span><span id="user_name"></span> !</span>
                     </div>
                 </div>
             </header>
@@ -93,7 +93,8 @@
                 <div class="div_heading">&nbsp&nbsp List de BDs &nbsp&nbsp</div>
 
                 <div class="center_row row">
-
+                    
+                    <!-- ==================================================================================================== -->
                     <div class="cell4 cell colspan-6 flex-align-self-stretch">
                         <!-- TABLE -->
                         <table class="table table-border cell-border">
@@ -168,6 +169,15 @@
                                 
                         </tbody>
                         </table>
+
+                        <!-- EDIT/DELETE // for GESTIONNAIRE -->
+                        <div class="btns_div d-flex flex-justify-start">
+                        <div id="gestionnaire" style="visibility: hidden;" class="ml-auto">
+                            <a href="edit_delete_bd.html">
+                            <button id="btn_edit_delete" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Édition / Suppression</button>
+                            </a>
+                        </div>
+                    </div>
                     </div>
 
                     <!-- COVER IMG -->
@@ -203,12 +213,11 @@
                             <i class="fas fa-chevron-left"></i> &nbsp Annuler
                             </button>
                         </div>
-                        <!-- EDIT/DELETE // for GESTIONNAIRE -->
-                        <div class="ml-auto">
-                            <a href="edit_delete_bd.html">
-                            <button id="btn_edit_delete" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Édition / Suppression</button>
-                            </a>
-                        </div>              
+
+                        <!-- PRET // for BIBLIOTHECAIRE -->
+                        <div id="bibliothecaire" style="visibility: hidden;" class="ml-auto">
+                            <button id="btn_pret" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Procéder avec un prêt</button>
+                        </div>
 
                 </div>
 
@@ -225,6 +234,7 @@
     <script src="JS/series.js"></script>
 
     <script src="JS/list_BD.js"></script>
+    <script src="JS/test_profils.js"></script>
 
     <script src="JS/metro.js"></script>
     <script src="JS/all.js"></script>
