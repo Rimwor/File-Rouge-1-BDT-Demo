@@ -97,95 +97,64 @@
                     <div class="cell4 cell colspan-8 flex-align-self-stretch">
                         <!-- TABLE -->
                         <table class="table table-border cell-border">
-                            <tbody>
-
-                                <tr>
-                                    <td class="cat1" for="id">Id de l'album&nbsp:</td>
-                                    <td id="titre" class="cat2">
+                        <tbody>
+                                <p>
+                                    <tr>
+                                        <td class="cat1"><label for="id">Id de l'album :</label></td>
+                                        <td class="cat2">
                                         <input type="number" required id="id" value="0" min="0" title="Saisissez un numéro et validez">
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+                                </p>
 
-                                <tr>
-                                    <td class="cat1" for="auteur">Auteur&nbsp:</td>
-                                    <td class="cat2">
-                                        <input type="text" id="auteur" readonly>
-                                    </td>
-
-                                </tr>
-
-                                <tr>
-                                    <td class="cat1" for="serie">Série&nbsp:</td>
-                                    <td class="cat2">
+                                <p>
+                                    <tr>
+                                        <td class="cat1"><label for="serie">Série :</label></td>
+                                        <td class="cat2">
                                         <input type="text" id="serie" readonly>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="cat1" for="numero">Album N°&nbsp:</td>
-                                    <td class="cat2">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cat1"><label for="numero">Album N° :</label></td>
+                                        <td class="cat2">
                                         <input type="text" id="numero" readonly>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="cat1" for="titre">Titre&nbsp:</td>
-                                    <td class="cat2">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cat1"><label for="titre">Titre :</label></td>
+                                        <td class="cat2">
                                         <input type="text" id="titre" readonly>
-                                    </td>
-                                </tr>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cat1"><label for="auteur">Auteur :</label></td>
+                                        <td class="cat2">
+                                        <input type="text" id="auteur" readonly>
+                                        </td>
+                                    </tr>
+                                </p>
 
-                                <tr>
-                                    <td class="cat1">Genre&nbsp:</td>
-                                    <td class="cat2"></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="cat1">État&nbsp:</td>
-                                    <td class="cat2"></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="cat1">Disponibilité&nbsp:</td>
-                                    <td class="cat2"></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="cat1">Emplacement&nbsp:</td>
-                                    <td class="cat2"></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="cat1">ISBN&nbsp:</td>
-                                    <td class="cat2"></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="cat1">Prix&nbsp:</td>
-                                    <td class="cat2">
+                                <p>
+                                    <tr>
+                                        <td class="cat1"><label for="prix">Prix :</label></td>
+                                        <td class="cat2">
                                         <input type="number" id="prix" readonly>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="cat1">Numéro&nbsp:</td>
-                                    <td class="cat2"></td>
-                                </tr>
-                                
-                            </tbody>
+                                        </td>
+                                    </tr>
+                                </p>
+                        </tbody>
                         </table>
-
                     </div>
 
                     <!-- COVER IMG -->
                     <div class="cell5 cell colspan-3 offset-1 flex-align-self-stretch">
-                        <div class="cover_img_div">
-                            <img src="MEDIA/images/noComics.jpeg" id="album" class="img_cover img-fluid rounded float-end bottom" alt="BD cover">
-                        </div>
 
-                        <div is="toto" style="display: none;">
-                            <img src="MEDIA/images/noComicsMini.jpeg" id="albumMini">
-                        </div>
+                            <div is="toto" style="display: none;">
+                                <img src="MEDIA/images/noComicsMini.jpeg" id="albumMini" >
+                            </div>
+                        
+                            <img src="MEDIA/images/noComics.jpeg" id="album"  class="img_cover img-fluid rounded float-end bottom" alt="BD cover">
+                        
                     </div>
 
                 </div>
