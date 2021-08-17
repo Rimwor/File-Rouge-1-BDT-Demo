@@ -3,7 +3,7 @@
 /* ========================================================== BODY =================================================================== */
 
 html {
-    font-size: 12px !important;
+    font-size: 20px !important;
 }
 
 @media screen and (min-width: 320px) {
@@ -55,7 +55,6 @@ html {
 /* HEADER */
 
 /* IMG HELP */
-
 .img_help {
     opacity: 40%;
     width: 100%;
@@ -113,25 +112,21 @@ html {
 
 /* ========================================================== MIDDLE DIV ============================================================= */
 /* MIDDLE DIV */
-
 .middle_div {
     background-color: rgba(255, 255, 255, 0.479);
     margin: auto;
     padding: 12px;
     width: 85% !important;
     height: auto;
-    border: 3px solid rgb(255, 255, 255) !important;
+    border: 1px solid rgb(255, 255, 255) !important;
     position: relative;
 }
 
-
 /* BURGER MENU */
-
 .burger_menu {
     text-align: right;
     float: right;
 }
-
 
 /* ========================================================== CENTER DIV ============================================================= */
 /* CENTER DIV */
@@ -155,7 +150,6 @@ html {
 
 
 /* TABLE */
-
 .table {
     margin-left: 2% !important;
     margin-right: 1% !important;
@@ -180,7 +174,7 @@ td {
 
 .cat1,
 .cat2 {
-    font-size: 10px !important;
+    font-size: 16px !important;
 }
 
 @media screen and (min-width: 320px) {
@@ -207,7 +201,7 @@ td {
 @media screen and (min-width: 1000px) {
     .cat1,
     .cat2 {
-        font-size: 12px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -218,30 +212,7 @@ td {
     }
 }
 
-
-/* TAB 1 - TR1 */
-.tab1 {
-    margin-left: 2% !important;
-    margin-right: 1% !important;
-    word-wrap:break-word;
-    table-layout:fixed;
-    background-color: rgb(243, 241, 230);
-    border-color: grey;
-    border: solid;
-  }
-  
-  /* .tr1 {
-    border: solid;
-  } */
-  
-  .td1 {
-    border: solid;
-    border-color: grey;
-    padding: 12px;
-  }
-
-  /* COVER IMAGE */
-
+/* COVER IMAGE */
 .cover_img_div {
     float: right !important;
 }
@@ -251,4 +222,28 @@ td {
     margin-right: 5%;
     float: right;
 }
+
+
+ @media only screen and (min-width: 320px){
+    #albumMini {
+      display: auto;
+    }
+ }
+
+ @media only screen and (min-width: 1000px){
+    #albumMini {
+      display: none !important;
+    }
+ }
+
+ @media only screen and (max-width: 1024px){
+    #album {
+      display: none;
+    }
+ }
+
+ /* BUTTONS */
+ .btns_div {
+    margin-top: 5% !important;
+ }
 /* ========================================================== BODY END =============================================================== */

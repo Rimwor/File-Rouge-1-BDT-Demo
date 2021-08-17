@@ -32,8 +32,7 @@ jQuery(document).ready(function ($) {
 	        if (album.idSerie == idSerie) {
 	            console.log(serie.nom+", Album N°"+album.numero+" "+album.titre+", Auteur:"+auteurs.get(album.idAuteur).nom);
 	        }
-	    }
-	    
+	    }	    
 	}
 	/**/
 
@@ -115,7 +114,6 @@ jQuery(document).ready(function ($) {
 				SRC_ALBUM_MINI + nomFic + ".jpg",
 				SRC_ALBUM + nomFic + ".jpg"
 			);
-
 		}
 	}
 
@@ -139,8 +137,6 @@ jQuery(document).ready(function ($) {
 				});
 			})
 		});
-
-
 	}
 
 	/**
@@ -154,60 +150,5 @@ jQuery(document).ready(function ($) {
 		if (element.id === "albumMini")
 			element.src = ALBUM_DEFAULT_MINI;
 		else element.src = ALBUM_DEFAULT;
-
 	}
-
 });
-
-
-/**
- * Table list
- */
-var html = "<table border='1|1' class='tab1'>";
-
-for(var [idSerie, serie] of series.entries()) {
-    // Recherche des albums de la série
-    for (var [idAlbum, album] of albums.entries()) {
-        if (album.idSerie == idSerie) {
-            html+="<tr class='tr1'>";
-            html+="<td class='td1'>"+serie.nom+", Album N°"+album.numero+" "+album.titre+", Auteur : "+auteurs.get(album.idAuteur).nom+"</td>";
-            html+="</tr>";
-        }
-    }
-    
-}
-html+="</table>";
-console.log(html);
-document.getElementById("box_auteurs").innerHTML += html;
-
-
-/**
- * An example for a table list  
- */
-
-// var rows = [{
-//     name: "John",
-//     age: 20,
-//     email: "xx@hotmail.com"
-// }, {
-//     name: "Jack",
-//     age: 50,
-//     email: "xxx@hotmail.com"
-// }, {
-//     name: "Son",
-//     age: 45,
-//     email: "xxxx@hotmail.com"
-// }];
-
-// var html = "<table border='1|1'>";
-// for (var i = 0; i < rows.length; i++) {
-//     html+="<tr>";
-//     html+="<td>"+rows[i].name+"</td>";
-//     html+="<td>"+rows[i].age+"</td>";
-//     html+="<td>"+rows[i].email+"</td>";
-    
-//     html+="</tr>";
-
-// }
-// html+="</table>";
-// document.getElementById("box").innerHTML = html;
