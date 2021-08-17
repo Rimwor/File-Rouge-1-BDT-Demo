@@ -168,22 +168,17 @@ html {
     height: auto;
 }
 
-/* ========================================================== SEARCH FORM ============================================================== */
-/* SEARCH FORM */
-.search_form {
-    margin: auto;
-    width: 80%;
-    margin-top: 5%;
-}
+/* ========================================================== SEARCH =================================================================== */
 
-
+/* CONSULTATION DU FOND header */
 .consult_dfond {
     background-color: rgba(97, 77, 77, 0.459);
     text-align: center;
     font-weight: bold !important;
 
 }
-
+/* ========================================================== SEARCH IMAGE ============================================================= */
+/* SEARCH IMG */
 .img_search_div {
     text-align: center;
 }
@@ -194,7 +189,6 @@ html {
     height: auto;
 }
 
-/* SEARCH IMG */
 @media (min-width: 568px) { 
     
     .img_search_form {
@@ -202,7 +196,6 @@ html {
         max-width: 220px;
         height: auto;
     }
-
  }
 
  @media (min-width: 640px) { 
@@ -212,7 +205,6 @@ html {
         max-width: 220px;
         height: auto;
     }
-
  }
 
  @media (min-width: 812px) { 
@@ -222,7 +214,6 @@ html {
         max-width: 220px;
         height: auto;
     }
-
  }
 
  @media (min-width: 820px) { 
@@ -232,7 +223,6 @@ html {
         max-width: 220px;
         height: auto;
     }
-
  }
 
  @media (min-width: 1020px) { 
@@ -242,7 +232,6 @@ html {
         max-width: 420px;
         height: auto;
     }
-
  }
 
  @media (min-width: 1200px) { 
@@ -252,7 +241,6 @@ html {
         max-width: 280px;
         height: auto;
     }
-
  }
 
  @media (min-width: 1400px) { 
@@ -263,7 +251,6 @@ html {
         max-width: 480px;
         height: auto;
     }
-
  }
 
  @media (min-width: 2000px) { 
@@ -274,10 +261,42 @@ html {
         max-width: 650px;
         height: auto;
     }
-
  }
+/* ========================================================== SEARCH FORM ============================================================== */
+/* SEARCH FORM */
+.search_form {
+    margin: auto;
+    width: 80%;
+    margin-top: 5%;
+}
 
- /* BTN BACK */
+/* ========================================================== LIST TABLE =============================================================== */
+/* LIST TABLE */
+/* TAB 1 - TR1 */
+.tab1 {
+    margin-left: 2% !important;
+    margin-right: 1% !important;
+    word-wrap:break-word;
+    table-layout:fixed;
+    background-color: rgb(243, 241, 230, 0.63);
+    border-color: grey;
+    border: 1px solid;
+  }
+  
+  /* .tr1 {
+    border: solid;
+  } */
+  
+  .td1 {
+    border: solid;
+    border-color: grey;
+    border: 1px solid;
+    padding: 12px;
+  }
+
+/* ========================================================== BUTTONS ================================================================== */
+
+/* BTN BACK */
  .btn_bck {
      margin-top: 10% !important;
      position: fixed;
@@ -289,7 +308,6 @@ html {
         margin-top: -5% !important;
         position: fixed;
     }
-
  }
 
  @media (min-width: 660px) { 
@@ -298,7 +316,6 @@ html {
         margin-top: -2% !important;
         position: fixed;
     }
-
  }
 
  @media (min-width: 730px) { 
@@ -307,7 +324,6 @@ html {
         margin-top: 2% !important;
         position: fixed;
     }
-
  }
 
  @media (min-width: 810px) { 
@@ -316,7 +332,6 @@ html {
         margin-top: -5% !important;
         position: fixed;
     }
-
  }
 
  @media (min-width: 820px) { 
@@ -325,7 +340,6 @@ html {
         margin-top: 0 !important;
         position: fixed;
     }
-
  }
 
  @media (min-width: 1000px) { 
@@ -334,7 +348,6 @@ html {
         margin-top: 8% !important;
         position: fixed;
     }
-
  }
 
  /* @media (min-width: 1880px) { 
