@@ -14,19 +14,19 @@ html {
 
 @media screen and (min-width: 560px) {
     html {
-        font-size: 8px !important;
+        font-size: 14px !important;
     }
 }
 
 @media screen and (min-width: 630px) {
     html {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 }
 
 @media screen and (min-width: 810px) {
     html {
-        font-size: 9px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -87,13 +87,25 @@ html {
 
 @media screen and (min-width: 560px) {
     .cell3 {
-        font-size: 10px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .cell3 {
+        font-size: 17px !important;
     }
 }
 
 @media screen and (min-width: 720px) {
     .cell3 {
-        font-size: 18px !important;
+        font-size: 19px !important;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .cell3 {
+        font-size: 21px !important;
     }
 }
 
@@ -145,7 +157,6 @@ html {
 .center_row {
     margin-top: 5%;
     margin-bottom: 0.5%;
-    margin-left: 15%;
 }
 
 
@@ -164,7 +175,7 @@ td {
 .cat1 {
     background-color: rgba(37, 32, 32, 0.692) !important;
     color: white;
-    max-width: 80px !important;
+    width: 120px !important;
 }
 
 .cat2 {
@@ -180,21 +191,21 @@ td {
 @media screen and (min-width: 320px) {
     .cat1,
     .cat2 {
-        font-size: 7px !important;
+        font-size: 12px !important;
     }
 }
 
 @media screen and (min-width: 720px) {
     .cat1,
     .cat2 {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 }
 
 @media screen and (min-width: 820px) {
     .cat1,
     .cat2 {
-        font-size: 10px !important;
+        font-size: 14px !important;
     }
 }
 
@@ -217,6 +228,12 @@ td {
     float: right !important;
 }
 
+@media only screen and (max-width: 1024px){
+    .cover_img_div {
+      display: none;
+    }
+ }
+
 .img_cover {
     margin-top: 0px;
     margin-right: 5%;
@@ -236,7 +253,7 @@ td {
     }
  }
 
- @media only screen and (max-width: 1024px){
+ @media only screen and (max-width: 1020px){
     #album {
       display: none;
     }

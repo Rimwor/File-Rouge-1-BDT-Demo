@@ -95,7 +95,7 @@
                 <div class="center_row row">
                     
                     <!-- ==================================================================================================== -->
-                    <div class="cell4 cell colspan-8 flex-align-self-stretch"> 
+                    <div class="cell4 cell colspan-lg-8 colspan-fs-12 colspan-sm-12 colspan-md-12 flex-align-self-stretch mt-5">
 
                         <!-- TABLE -->
                         <table class="table table-border cell-border">
@@ -104,55 +104,46 @@
                                     <tr>
                                         <td class="cat1"><label for="id">ISBN :</label></td>
                                         <td class="cat2">
-                                        <input type="number" required id="id" value="0" min="0" title="Saisissez un numéro et validez">
+                                        <input type="number" data-role="input" required id="id" value="0" min="0" title="Saisissez un numéro et validez">
                                         </td>
                                     </tr>
                                 
                                     <tr>
                                         <td class="cat1"><label for="serie">Série :</label></td>
                                         <td class="cat2">
-                                        <input type="text" id="serie" readonly>
+                                        <input type="text" data-role="input" id="serie" readonly>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td class="cat1"><label for="numero">Album N° :</label></td>
                                         <td class="cat2">
-                                        <input type="text" id="numero" readonly>
+                                        <input type="text" data-role="input" id="numero" readonly>
                                         </td>
                                     </tr>
 
                                     <tr>
                                         <td class="cat1"><label for="titre">Titre :</label></td>
                                         <td class="cat2">
-                                        <input type="text" id="titre" readonly>
+                                        <input type="text" data-role="input" id="titre" readonly>
                                         </td>
                                     </tr>
 
-<<<<<<< HEAD:list_BD.html
-                                <tr>
-                                    <td class="cat1">Numéro&nbsp:</td>
-                                    <td class="cat2"></td>
-                                </tr>
-
-                            </tbody>
-=======
                                     <tr>
                                         <td class="cat1"><label for="auteur">Auteur :</label></td>
                                         <td class="cat2">
-                                        <input type="text" id="auteur" readonly>
+                                        <input type="text" data-role="input" id="auteur" readonly>
                                         </td>
                                     </tr>
                                                                
                                     <tr>
                                         <td class="cat1"><label for="prix">Prix :</label></td>
                                         <td class="cat2">
-                                        <input type="number" id="prix" readonly>
+                                        <input type="number" data-role="input" id="prix" readonly>
                                         </td>
                                     </tr>
                                 
                         </tbody>
->>>>>>> e555062fb3f0955a1788b3410e10866688ba4927:bd_details.html
                         </table>
 
                         <div is="toto">
@@ -168,23 +159,13 @@
                         </div>
                         </div>
 
-                    </div>
-                    
+                    </div>             
 
-<<<<<<< HEAD:list_BD.html
-                        <!-- TABLE -->
-                        <!-- <div id="box_auteurs"></div> -->
-
-=======
                     <!-- COVER IMG -->
                     <div class="cell5 cell colspan-3 offset-1 flex-align-self-stretch">
                             <img src="MEDIA/images/noComics.jpeg" id="album" class="img_cover img-fluid rounded float-end bottom" alt="BD cover">                       
->>>>>>> e555062fb3f0955a1788b3410e10866688ba4927:bd_details.html
                     </div>
-
                 </div>
-
-                </br>
 
                 <!-- BUTTONS -->
                 <div class="btns_div d-flex flex-justify-start">
@@ -204,7 +185,8 @@
                 </div>
 
             </div>
-
+        </div>
+        
     </body>
     <!-- ========================================================= JS ================================================================== -->
 
@@ -216,17 +198,10 @@
     <script src="JS/auteurs.js"></script>
     <script src="JS/albums.js"></script>
     <script src="JS/series.js"></script>
-<<<<<<< HEAD:list_BD.html
-    <script src="JS/menu.js"></script>
-    <script src="JS/list_BD.js"></script>
-
-    <script src="JS/metro.js"></script>
-    <script src="JS/all.js"></script>
-=======
 
     <script src="JS/bd_details.js"></script>
     <script src="JS/test_profils.js"></script>
->>>>>>> e555062fb3f0955a1788b3410e10866688ba4927:bd_details.html
+    <script src="JS/menu.js"></script>
 
     <!-- ======================================================== END ================================================================== -->
 
