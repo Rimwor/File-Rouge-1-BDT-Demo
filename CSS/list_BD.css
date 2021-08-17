@@ -237,6 +237,7 @@ td {
   }
 
 /* COVER IMAGE */
+
 .cover_img_div {
     float: right !important;
 }
@@ -247,4 +248,27 @@ td {
     float: right;
 }
 
+
+ @media only screen and (min-width: 320px){
+    #albumMini {
+      display: auto;
+    }
+ }
+
+ @media only screen and (min-width: 1000px){
+    #albumMini {
+      display: none !important;
+    }
+ }
+
+ @media only screen and (max-width: 1024px){
+    #album {
+      display: none;
+    }
+ }
+
+ /* BUTTONS */
+ .btns_div {
+    margin-top: 5% !important;
+ }
 /* ========================================================== BODY END =============================================================== */
