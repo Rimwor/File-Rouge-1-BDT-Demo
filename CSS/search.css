@@ -183,85 +183,6 @@ html {
     text-align: center;
 }
 
-.img_search_form {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-}
-
-@media (min-width: 568px) { 
-    
-    .img_search_form {
-        width: 43%;
-        max-width: 220px;
-        height: auto;
-    }
- }
-
- @media (min-width: 640px) { 
-    
-    .img_search_form {
-        width: 40%;
-        max-width: 220px;
-        height: auto;
-    }
- }
-
- @media (min-width: 812px) { 
-    
-    .img_search_form {
-        width: 53%;
-        max-width: 220px;
-        height: auto;
-    }
- }
-
- @media (min-width: 820px) { 
-    
-    .img_search_form {
-        width: 47%;
-        max-width: 220px;
-        height: auto;
-    }
- }
-
- @media (min-width: 1020px) { 
-    
-    .img_search_form {
-        width: 98%;
-        max-width: 420px;
-        height: auto;
-    }
- }
-
- @media (min-width: 1200px) { 
-    
-    .img_search_form {
-        width: 80%;
-        max-width: 280px;
-        height: auto;
-    }
- }
-
- @media (min-width: 1400px) { 
-    
-    .img_search_form {
-        /* margin-top: 1%; */
-        width: 52%;
-        max-width: 480px;
-        height: auto;
-    }
- }
-
- @media (min-width: 2000px) { 
-    
-    .img_search_form {
-        margin-top: 5%;
-        width: 80%;
-        max-width: 650px;
-        height: auto;
-    }
- }
 /* ========================================================== SEARCH FORM ============================================================== */
 /* SEARCH FORM */
 .search_form {
@@ -270,10 +191,90 @@ html {
     margin-top: 5%;
 }
 
+.img_search_form {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+@media (min-width: 568px) { 
+    
+  .img_search_form {
+      width: 43%;
+      max-width: 220px;
+      height: auto;
+  }
+}
+
+@media (min-width: 640px) { 
+  
+  .img_search_form {
+      width: 40%;
+      max-width: 220px;
+      height: auto;
+  }
+}
+
+@media (min-width: 812px) { 
+  
+  .img_search_form {
+      width: 53%;
+      max-width: 220px;
+      height: auto;
+  }
+}
+
+@media (min-width: 820px) { 
+  
+  .img_search_form {
+      width: 47%;
+      max-width: 220px;
+      height: auto;
+  }
+}
+
+@media (min-width: 1020px) { 
+  
+  .img_search_form {
+      width: 98%;
+      max-width: 420px;
+      height: auto;
+  }
+}
+
+@media (min-width: 1200px) { 
+  
+  .img_search_form {
+      width: 80%;
+      max-width: 280px;
+      height: auto;
+  }
+}
+
+@media (min-width: 1300px) { 
+  
+  .img_search_form {
+      /* margin-top: 1%; */
+      width: 52%;
+      max-width: 480px;
+      height: auto;
+  }
+}
+
+@media (min-width: 2000px) { 
+  
+  .img_search_form {
+      margin-top: 5%;
+      width: 80%;
+      max-width: 650px;
+      height: auto;
+  }
+}
+
 /* ========================================================== LIST TABLE =============================================================== */
 /* LIST TABLE */
 /* TAB 1 - TR1 */
-.tab1 {
+.tab1, table {
     margin-left: 2% !important;
     margin-right: 1% !important;
     word-wrap:break-word;
@@ -292,12 +293,72 @@ html {
     border-color: grey;
     border: 1px solid;
     padding: 12px;
+    min-width: 700px;
+    display: flex;
   }
 
+  @media (min-width: 568px) { 
+    
+    .td1 {
+      min-width: 300px;
+      font-size: 10px;
+    }
+ }
+
+ @media (min-width: 640px) { 
+    
+    .td1 {
+      min-width: 300px;
+      font-size: 10px;
+    }
+ }
+
+ @media (min-width: 720px) { 
+    
+  .td1 {
+    min-width: 300px;
+    font-size: 10px;
+  }
+}
+
+ @media (min-width: 820px) { 
+    
+    .td1 {
+      min-width: 400px;
+      font-size: 10px;
+    }
+ }
+
+ @media (min-width: 1020px) { 
+    
+    .td1 {
+      min-width: 600px;
+      font-size: 14px;
+    }
+ }
+
+ @media (min-width: 1300px) { 
+    
+    .td1 {
+      min-width: 700px;
+      font-size: 18px;
+    }
+ }
+
+ @media (min-width: 1420px) { 
+    
+  .td1 {
+    min-width: 680px;
+    font-size: 14px;
+  }
+}
+
+ 
   .myInputs {
     width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
+    height: 4%;
+    font-size: 12px; /* Increase font-size */
+    padding: 8px 10px 8px 10px; /* Add some padding */
     border: 1px solid #ddd; /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
   }
