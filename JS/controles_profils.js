@@ -93,24 +93,40 @@ function verifProfil(e) {
         !regEmail.test(monEmail) || !regAdress.test(monAdresse) || !regPostCode.test(monCodePostal) ||
         !regCity.test(maCommune)) {
         e.preventDefault();
-        alert("Le format de vos identifiants est invalide");
+        alert("Veuillez respecter les formats requis");
     } else {
-        console.log(monId + " " + monPin + " " + monNom + " " +
-            monPrenom + " " + monEmail + " " + monAdresse + " " +
-            monCodePostal + " " + maCommune + " " + monStatut)
-        var myUser = {
-            type: monStatut,
-            identifiant: monId,
-            pin: monPin,
-            name: monNom + " " + monPrenom,
-            email: monEmail,
-            adress: monAdresse + ", " + monCodePostal + " " + maCommune
+        for (let i in users) {
+            if (users[i].identifiant == monId || users[i].email == monEmail) {
+                e.preventDefault();
+                alert("ID et / ou email déjà utilisé(s). Voulez-vous modifier un profil existant ?");
+            } else if (i == users.length - 1 && (users[i].identifiant != monId && users[i].email != monEmail)) {
+                console.log(monId + " " + monPin + " " + monNom + " " +
+                    monPrenom + " " + monEmail + " " + monAdresse + " " +
+                    monCodePostal + " " + maCommune + " " + monStatut)
+                var myUser = {
+                    type: monStatut,
+                    identifiant: monId,
+                    pin: monPin,
+                    name: monNom + " " + monPrenom,
+                    email: monEmail,
+                    adress: monAdresse,
+                    zipCode: monCodePostal,
+                    city: maCommune
+                }
+
+                users.push(myUser);
+                console.log(users);
+            }
+
+
         }
 
-        users.push(myUser);
-        console.log(users);
+
     }
+
 }
+
+
 
 function getValue(monInput, maRegEx) {
     $(monInput).on("keyup", function(e) {

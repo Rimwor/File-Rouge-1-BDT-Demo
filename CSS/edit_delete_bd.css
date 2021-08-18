@@ -1,48 +1,54 @@
 /* ========================================================== BODY =================================================================== */
+
+
 /* BODY */
+
+
 /* ========================================================== BODY =================================================================== */
 
 html {
-  font-size: 20px !important;
+    font-size: 20px !important;
 }
 
 @media screen and (min-width: 320px) {
-  html {
-      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  }
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
 }
 
 @media screen and (min-width: 560px) {
-  html {
-      font-size: 14px !important;
-  }
+    html {
+        font-size: 14px !important;
+    }
 }
 
 @media screen and (min-width: 630px) {
-  html {
-      font-size: 14px !important;
-  }
+    html {
+        font-size: 14px !important;
+    }
 }
 
 @media screen and (min-width: 810px) {
-  html {
-      font-size: 16px !important;
-  }
+    html {
+        font-size: 16px !important;
+    }
 }
 
 @media screen and (min-width: 1000px) {
-  html {
-      font-size: 20px !important;
-  }
+    html {
+        font-size: 20px !important;
+    }
 }
 
 @media screen and (min-width: 2000px) {
-  html {
-      font-size: 20px !important;
-  }
+    html {
+        font-size: 20px !important;
+    }
 }
 
+
 /* IMG HELP */
+
 .img_help {
     opacity: 40%;
     width: 100%;
@@ -50,14 +56,22 @@ html {
     height: auto;
 }
 
+
 /* ========================================================== MAIN CONTAINER ========================================================= */
+
+
 /* MAIN CONTAINER */
+
 .container-fluid {
     padding: 10px !important;
 }
 
+
 /* ========================================================== HEADER ================================================================= */
+
+
 /* HEADER */
+
 .cell1 {
     width: 5% !important;
     min-width: 15px;
@@ -72,73 +86,86 @@ html {
 .cell3 {
     font-size: 25px !important;
     width: 75% !important;
+    min-width: 400px !important;
     background-color: rgba(119, 71, 71, 0.479);
 }
 
 @media screen and (min-width: 320px) {
-  .cell3 {
-      font-size: 16px !important;
-  }
+    .cell3 {
+        font-size: 16px !important;
+    }
 }
 
 @media screen and (min-width: 560px) {
-  .cell3 {
-      font-size: 14px !important;
-  }
+    .cell3 {
+        font-size: 14px !important;
+    }
 }
 
 @media screen and (min-width: 660px) {
-  .cell3 {
-      font-size: 17px !important;
-  }
+    .cell3 {
+        font-size: 17px !important;
+    }
 }
 
 @media screen and (min-width: 720px) {
-  .cell3 {
-      font-size: 19px !important;
-  }
+    .cell3 {
+        font-size: 19px !important;
+    }
 }
 
 @media screen and (min-width: 820px) {
-  .cell3 {
-      font-size: 21px !important;
-  }
+    .cell3 {
+        font-size: 21px !important;
+    }
 }
 
 @media screen and (min-width: 1000px) {
-  .cell3 {
-      font-size: 25px !important;
-  }
+    .cell3 {
+        font-size: 25px !important;
+    }
 }
 
 @media screen and (min-width: 2000px) {
-  .cell3 {
-      font-size: 35px !important;
-  }
+    .cell3 {
+        font-size: 35px !important;
+    }
 }
 
+
 /* ========================================================== MIDDLE DIV ============================================================= */
+
+
 /* MIDDLE DIV */
+
 .middle_div {
     background-color: rgba(119, 71, 71, 0.479);
     margin: auto;
     padding: 12px;
     width: 85% !important;
+    min-width: 500px !important;
     height: auto;
     border: 3px solid rgb(54, 33, 33) !important;
     position: relative;
 }
 
+
 /* BURGER MENU */
+
 .burger_menu {
     text-align: right;
-    float:right;
+    float: right;
 }
 
+
 /* ========================================================== CENTER DIV ============================================================= */
+
+
 /* CENTER DIV */
 
+
 /* DIV HEADING - TEXT */
+
 .div_heading {
     background-color: rgba(37, 32, 32, 0.692) !important;
     color: white;
@@ -153,28 +180,49 @@ html {
     margin-bottom: 0.5%;
 }
 
+
 /* TABLE */
+
 .table {
     margin-left: 2% !important;
     margin-right: 1% !important;
-    word-wrap:break-word;
-    table-layout:fixed;
-
+    word-wrap: break-word;
+    table-layout: fixed;
 }
 
 td {
-    word-wrap:break-word;
-    }
+    word-wrap: break-word;
+}
+
+.cell4 {
+    margin-right: 5px !important;
+}
+
+.table {
+    margin-right: 5px;
+}
+
+.cat2 {
+    padding: 5px !important;
+    margin-right: 5px !important;
+}
 
 .cat1 {
     background-color: rgba(37, 32, 32, 0.692) !important;
     color: rgb(255, 255, 255);
     width: 120px !important;
+    min-width: 150px !important;
+    font-size: 20px !important;
 }
 
 .cat2 {
     background-color: rgba(255, 242, 242, 0.63) !important;
     max-width: 200px !important;
+    min-width: 150px !important;
+}
+
+.offset-1 {
+    margin-left: 3% !important;
 }
 
 .cat1,
@@ -182,10 +230,34 @@ td {
     font-size: 16px !important;
 }
 
+.cell6 {
+    min-width: 200px;
+}
+
+.center_row {
+    margin-right: 5px !important;
+}
+
+.cell4 {
+    margin-right: 5px !important;
+}
+
+button {
+    margin: 5px !important;
+}
+
+@media screen and (min-width: 320px) {
+    .cat1 {
+        width: 150px !important;
+        word-wrap: normal !important;
+        font-size: 500px !important;
+    }
+}
+
 @media screen and (min-width: 320px) {
     .cat1,
     .cat2 {
-        font-size: 12px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -193,6 +265,35 @@ td {
     .cat1,
     .cat2 {
         font-size: 12px !important;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .cat1,
+    .cat2 {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .cat1,
+    .cat2 {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .cat1,
+    .cat2 {
+        font-size: 22px !important;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .cat1,
+    .td .cat2 {
+        font-size: 12px !important;
+        min-width: 110px !important;
     }
 }
 
@@ -217,18 +318,45 @@ td {
     }
 }
 
+@media screen and (min-width: 320px) {
+    .cat2 .input {
+        min-width: 150px !important;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .cat2 .form-select {
+        min-width: 150px !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .cat2 {
+        min-width: 150px !important;
+    }
+}
+
+td {
+    min-width: 220px;
+}
+
+
 /* DESCRIPTION row */
+
 .description {
-  margin-left: 4%;
+    margin-left: 4%;
 }
 
 .textarea {
-width: 100%;
-height: auto;
-font-size: 12px !important;
+    width: 100%;
+    height: auto;
+    font-size: 12px !important;
 }
 
+
 /* COVER IMAGE */
+
 .cover_img_div {
     float: right !important;
 }
@@ -238,5 +366,24 @@ font-size: 12px !important;
     margin-right: 5%;
     float: right;
 }
+
+@media screen and (min-width: 320px) {
+    .center_row {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .form-control {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .center_row {
+        display: flex !important;
+    }
+}
+
 
 /* ========================================================== BODY END =============================================================== */

@@ -24,7 +24,7 @@ $(document).ready(function() {
     identifiant.on("keyup", getIdValue);
 
     //L'utilisateur saisit son code PIN à l'aide du clavier numérique contextuel
-    motPasse.on("change",getPinValue);
+    motPasse.on("change", getPinValue);
 
     // L'utilisateur soumet le formulaire de connexion
     btnConfirmer.on("click", verifCredentials);
@@ -45,7 +45,7 @@ function verifCredentials(e) {
     localStorage.setItem("password", password);
     var utilisateur = localStorage.getItem("user");
     var code = localStorage.getItem("password");
-    var count = users.length-1;
+    var count = users.length - 1;
     console.log(username);
     console.log(password);
     if (!monId.test(username) || !monPin.test(password)) {
@@ -54,7 +54,8 @@ function verifCredentials(e) {
     } else {
         for (let i in users) {
             if (utilisateur == users[i].identifiant //&& code == users[i].pin
-            ){localStorage.setItem("type", users[i].type);
+            ) {
+                localStorage.setItem("type", users[i].type);
                 localStorage.setItem("name", users[i].name);
                 var profil = localStorage.getItem("type");
                 if (profil == "bibliothécaire") {
@@ -70,12 +71,12 @@ function verifCredentials(e) {
                 }
                 break;
             } else if (i == count && (utilisateur != users[i].identifiant //|| code != users[i].pin)
-            )){
+                )) {
                 $(form).attr("action", "error_connection.html");
             }
-            
+
         }
-        
+
     }
 
 }
@@ -114,8 +115,8 @@ function getIdValue() {
  * Tant que format invalide ==> bordure saisie rouge
  * Flavie
  */
-function alertId (text) {
-    
+function alertId(text) {
+
     if (monId.test(text) === false) {
         $(identifiant).css("border", "solid red");
     } else {
@@ -129,7 +130,7 @@ function alertId (text) {
  * Tant que format invalide ==> bordure saisie rouge
  * Flavie
  */
-function alertPin (text) {
+function alertPin(text) {
     if (monPin.test(text) === false) {
         $(".key").css("border", "solid red");
     } else {
@@ -144,27 +145,27 @@ function alertPin (text) {
  * Flavie
  */
 
-function regExId (text) {
+function regExId(text) {
     return monId.test(text);
 }
 
 QUnit.module('regExId', function() {
     QUnit.test('2501036587 ==> bon', function(assert) {
-      assert.true(regExId(2501036587));
-    }); 
+        assert.true(regExId(2501036587));
+    });
     QUnit.test('25010365877 ==> faux', function(assert) {
         assert.false(regExId(25010365877));
-      });
+    });
 
     QUnit.test('250103658 ==> faux', function(assert) {
         assert.false(regExId(250103658));
     });
 
     QUnit.test('250103658A ==> faux', function(assert) {
-        assert.false(regExId(250103658+"A"));
+        assert.false(regExId(250103658 + "A"));
     });
     QUnit.test('25010 36587 ==> faux', function(assert) {
-        assert.false(regExId(25010+" "+36587));
+        assert.false(regExId(25010 + " " + 36587));
     });
 });
 
@@ -173,27 +174,26 @@ QUnit.module('regExId', function() {
  * TESTs UNITAIRES regEx pour le PIN
  * Flavie
  */
-function regExPin (text) {
+function regExPin(text) {
     return monPin.test(text);
 }
 
 QUnit.module('regExId', function() {
     QUnit.test('123456 ==> bon', function(assert) {
-      assert.true(regExPin(123456));
-    }); 
+        assert.true(regExPin(123456));
+    });
     QUnit.test('1234567 ==> faux', function(assert) {
         assert.false(regExPin(1234567));
-      });
+    });
 
     QUnit.test('12345 ==> faux', function(assert) {
         assert.false(regExPin(12345));
     });
 
     QUnit.test('12345A ==> faux', function(assert) {
-        assert.false(regExPin(12345+"A"));
+        assert.false(regExPin(12345 + "A"));
     });
     QUnit.test('123 456 ==> faux', function(assert) {
-        assert.false(regExPin(123+" "+456));
+        assert.false(regExPin(123 + " " + 456));
     });
 });
-

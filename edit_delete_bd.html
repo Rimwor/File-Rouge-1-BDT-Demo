@@ -1,36 +1,37 @@
 <html lang="fr">
 <!-- ======================================================== START ================================================================ -->
 <!-- MAIN CONTAINER -->
-    <!-- MAIN CONTAINER : class="container-fluid" -->
+<!-- MAIN CONTAINER : class="container-fluid" -->
 
-    <!-- HEADER : class="header" -->
-        <!-- DIV : class="row" -->
-            <!-- DIV 1 : class="cell1" -->
-                <!-- IMG HELP : class="img_help" -->
-            <!-- DIV 1 : class="cell2" -->
-            <!-- DIV 1 : class="cell3" -->
-                <!-- USER STATUS : id="user_status" -->
-                <!-- USER NAME : id="user_name" -->
+<!-- HEADER : class="header" -->
+<!-- DIV : class="row" -->
+<!-- DIV 1 : class="cell1" -->
+<!-- IMG HELP : class="img_help" -->
+<!-- DIV 1 : class="cell2" -->
+<!-- DIV 1 : class="cell3" -->
+<!-- USER STATUS : id="user_status" -->
+<!-- USER NAME : id="user_name" -->
 
 <!-- MIDDLE DIV -->
-    <!-- MIDDLE DIV : class="middle_div" -->
-    <!-- BURGER MENU -->
-        <!-- BURGER button : id="context_toggle" -->
-        <!-- MENU UL : class="d-menu" -->
+<!-- MIDDLE DIV : class="middle_div" -->
+<!-- BURGER MENU -->
+<!-- BURGER button : id="context_toggle" -->
+<!-- MENU UL : class="d-menu" -->
 
-    <!-- CENTER DIV : -->
-        <!-- HEADING : class="div_heading" -->
-        <!-- CENTER DIV : class="center_row" -->
-            <!-- TABLE -->
-            <!-- DESCRIPTION -->
-            <!-- COVER IMG -->
-            <!-- BUTTONS : -->
-                <!-- BACK BUTTON / & / BORROW BUTTON -->
-                <!-- BACK : id="btn_back" -->
-                <!-- DELETE : id="btn_delete" -->
-               <!-- SAVE : id="btn_enregistrer" -->
-               
+<!-- CENTER DIV : -->
+<!-- HEADING : class="div_heading" -->
+<!-- CENTER DIV : class="center_row" -->
+<!-- TABLE -->
+<!-- DESCRIPTION -->
+<!-- COVER IMG -->
+<!-- BUTTONS : -->
+<!-- BACK BUTTON / & / BORROW BUTTON -->
+<!-- BACK : id="btn_back" -->
+<!-- DELETE : id="btn_delete" -->
+<!-- SAVE : id="btn_enregistrer" -->
+
 <!-- ======================================================== HEAD ================================================================= -->
+
 <head>
 
     <!-- META -->
@@ -52,94 +53,113 @@
 
 </head>
 <!-- ======================================================== BODY ================================================================= -->
+
 <body>
-    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
 
-    <!-- MAIN CONTAINER -->
-    <div class="container-fluid">
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">
 
-        <!-- HEADER -->
-        <header class="header">
-            <div class="row">
-                <div class="cell1">
-                <a href="help.html" target="_blank">
-                <img src="MEDIA\help.png" class="img_help" alt="help"/></a>
-                </div>
+        <!-- MAIN CONTAINER -->
+        <div class="container-fluid">
 
-                <div class="cell2">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="row">
+                    <div class="cell1">
+                        <a href="help.html" target="_blank">
+                            <img src="MEDIA\help.png" class="img_help" alt="help" /></a>
                     </div>
-                    
-                <div class="cell3">
-                <span class="">Bienvenue sur votre compte </span><span id="user_status">Gestionnaire</span> <span>, </span><span id="user_name">Bertrand Guillon</span> !</span>
+
+                    <div class="cell2">
+                    </div>
+
+                    <div class="cell3">
+                        <span class="">Bienvenue sur votre compte </span><span id="user_status">Gestionnaire</span> <span>, </span><span id="user_name">Bertrand Guillon</span> !</span>
+                    </div>
                 </div>
-            </div>                      
-        </header>
+            </header>
 
-        <!-- MIDDLE DIV -->
-        <div class="middle_div border" >
-            
-            <div class="burger_menu">
-            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
-            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
-                <li id="profile"><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
-                <li class="divider"></li>
-                <li id="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
-            </ul>
-            </div>
+            <!-- MIDDLE DIV -->
+            <div class="middle_div border">
 
-            <!-- CENTER DIV -->
-            <div class="div_heading">&nbsp&nbsp Gestion BD &nbsp&nbsp</div>
+                <div class="burger_menu">
+                    <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+                    <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                        <li id="profile"><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                        <li class="divider"></li>
+                        <li id="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+                    </ul>
+                </div>
 
-            <div class="center_row row">
-                
-                <div class="cell4 cell colspan-8 flex-align-self-stretch">
-                    <!-- TABLE -->
-                    <table class="table table-border cell-border">
-                        <tbody>
-                        <tr>
-                            <td class="cat1">Titre&nbsp:</td>
-                            <td class="cat2">
-                                <input type="text" data-role="taginput" class="input-small" value="Titre">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cat1">Auteur/s&nbsp:</td>
-                            <td class="cat2">
-                                <input type="text" data-role="taginput" class="input-small" value="Auteur/s">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cat1">Séries&nbsp:</td>
-                            <td class="cat2">
-                                <input type="text" data-role="taginput" class="input-small" value="Séries">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cat1">Disponibilité&nbsp:</td>
-                            <td class="cat2">
-                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                <!-- CENTER DIV -->
+                <div class="div_heading">&nbsp&nbsp Gestion BD &nbsp&nbsp</div>
+
+                <div class="center_row row">
+
+                    <!-- COVER IMG -->
+                    <div class="cell5 cell colspan-3 offset-1 flex-align-self-stretch">
+
+
+
+                        <div class="cell6 mt-5 mb-5">
+                            <div class="mb-3">
+                                <input class="form-control form-control-sm" id="formFileSm" type="file">
+                            </div>
+                        </div>
+                        <div class="cover_img_div mb-5">
+                            <img src="MEDIA/albums/IR-01-La voie fiscale.jpg" class="img_cover img-fluid rounded float-end bottom" alt="BD cover" />
+                        </div>
+                        <!-- <input type="file" data-role="file" data-prepend="Select your photo(s):"> -->
+
+                    </div>
+
+                    <div class="cell4 cell colspan-lg-8 colspan-fs-12 colspan-sm-12 colspan-md-12 flex-align-self-stretch mt-5">
+                        <!-- TABLE -->
+                        <table class=" table table-border cell-border ">
+                            <tbody>
+                                <tr>
+                                    <td class="cat1 ">Titre&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <input type="text " class="input " size="1 ">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cat1 ">Auteur/s&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <input type="text " class="input " size="1 ">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cat1 ">Séries&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <input type="text " class="input " size="1 ">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cat1 ">Disponibilité&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <select id="disabledSelect " class="form-select form-select-sm border-0 ">
                                 <option>Choisissez une option</option>
                                 <option selected>Disponible</option>
                                 <option>Non-disponible</option>
                                 </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cat1">État&nbsp:</td>
-                            <td class="cat2">
-                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cat1 ">État&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <select id="disabledSelect " class="form-select form-select-sm border-0 ">
                                     <option>Choisissez une option</option>
                                 <option selected>Neuf</option>
                                 <option>Usé</option>
                                 <option>Détériore</option>
                                 <option>Fragile !</option>
                                 </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cat1">Emplacement&nbsp:</td>
-                            <td class="cat2">
-                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cat1 ">Emplacement&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <select id="disabledSelect " class="form-select form-select-sm border-0 ">
                                     <option>Choisissez une option</option>
                                 <option>E1-01</option>
                                 <option>E1-02</option>
@@ -154,18 +174,18 @@
                                 <option>Adu1-02</option>
                                 <option>Adu1-03</option>
                                 </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cat1">Copies&nbsp:</td>
-                            <td class="cat2">
-                                <input type="text" data-role="taginput" class="input-small" value="Copies">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cat1">Genre&nbsp:</td>
-                            <td class="cat2">
-                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cat1 ">Copies&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <input type="text " class="input " size="1 ">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cat1 ">Genre&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <select id="disabledSelect " class="form-select form-select-sm border-0 ">
                                     <option>Choisissez une option</option>
                                 <option>Aventure</option>
                                 <option selected>Crime</option>
@@ -175,83 +195,63 @@
                                 <option>Romains</option>
 
                                 </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cat1">Public&nbsp:</td>
-                            <td class="cat2">
-                                <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cat1 ">Public&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <select id="disabledSelect " class="form-select form-select-sm border-0 ">
                                     <option>Choisissez une option</option>
                                 <option>Enfants</option>
                                 <option>Jeunesse</option>
                                 <option selected>Adolescents </option>
                                 <option>Adultes</option>
                                 </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cat1">ISBN&nbsp:</td>
-                            <td class="cat2">
-                                <input type="text" data-role="taginput" class="input-small" value="ISBN">
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                
-                    <!-- DESCRIPTION -->
-                    <div class="description row">
-                        <textarea data-role="textarea" data-append="<span class='fas fa-pen-nib'></span>">Description : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </textarea>
-                    </div>
-                </div>
-
-                <!-- COVER IMG -->
-                <div class="cell5 cell colspan-3 offset-1 flex-align-self-stretch">
-                    
-                    <div class="cell6">
-                        <div class="mb-3">
-                            <input class="form-control form-control-sm" id="formFileSm" type="file">
-                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cat1 ">ISBN&nbsp:</td>
+                                    <td class="cat2 ">
+                                        <input type="text " class="input " size="1 ">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
-                    <div class="cover_img_div">
-                        <img src="MEDIA/albums/IR-01-La voie fiscale.jpg" class="img_cover img-fluid rounded float-end bottom" alt="BD cover"/>
-                    </div>
-                        <!-- <input type="file" data-role="file" data-prepend="Select your photo(s):"> -->
                 </div>
-                  
-            </div>
- 
-            <!-- BACK, CANCEL BUTTONS / & / DELETE, SAVE CAHNGES BUTTONS -->
-            <div class="btns_div d-flex flex-justify-start">
-                <!-- BACK / CANCEL -->
-                <div>
-                    <button id="btn_back" class="button justify-content-md-start stick-bottom">
-                    <i class="fas fa-chevron-left"></i> &nbsp Annuler
+
+                <!-- BACK, CANCEL BUTTONS / & / DELETE, SAVE CAHNGES BUTTONS -->
+                <div class="btns_div d-flex flex-justify-start ">
+                    <!-- BACK / CANCEL -->
+                    <div>
+                        <button id="btn_back " class="button justify-content-md-start stick-bottom ">
+                    <i class="fas fa-chevron-left "></i> &nbsp Annuler
                     </button>
+                    </div>
+                    <!-- DELETE -->
+                    <div class="ml-auto ">
+                        <button id="btn_delete " type="button " class="btn btn-danger btn-sm justify-content-md-end stick-bottom ">Supprimer BD</button>
+                    </div>
+                    <!-- SAVE -->
+                    <div class="ml-auto ">
+                        <button id="btn_enregistrer " type="button " class="btn btn-primary btn-sm justify-content-md-end stick-bottom ">Enregistrer changements</button>
+                    </div>
                 </div>
-                <!-- DELETE -->
-                <div class="ml-auto">
-                    <button id="btn_delete" type="button" class="btn btn-danger btn-sm justify-content-md-end stick-bottom">Supprimer BD</button>
-                </div>
-                <!-- SAVE -->
-                <div class="ml-auto">
-                    <button id="btn_enregistrer" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Enregistrer changements</button>
-                </div>
+
             </div>
 
-        </div> 
+        </div>
 
-    </div>
-
-</body>
-<!-- ========================================================= JS ================================================================== -->
+    </body>
+    <!-- ========================================================= JS ================================================================== -->
 
     <!-- JAVA SCRIPT -->
-    <script src="JS/jquery.js"></script>
-    <script src="JS/menu.js"></script>
-    <script src="JS/metro.js"></script>
-    <script src="JS/all.js"></script>
+    <script src="JS/jquery.js "></script>
+    <script src="JS/menu.js "></script>
+    <script src="JS/metro.js "></script>
+    <script src="JS/all.js "></script>
 
-<!-- ======================================================== END ================================================================== -->
+    <!-- ======================================================== END ================================================================== -->
+
 </html>

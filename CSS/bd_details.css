@@ -1,5 +1,9 @@
 /* ========================================================== BODY =================================================================== */
+
+
 /* BODY */
+
+
 /* ========================================================== BODY =================================================================== */
 
 html {
@@ -44,6 +48,8 @@ html {
 
 
 /* ========================================================== MAIN CONTAINER ========================================================= */
+
+
 /* MAIN CONTAINER */
 
 .container-fluid {
@@ -52,9 +58,13 @@ html {
 
 
 /* ========================================================== HEADER ================================================================= */
+
+
 /* HEADER */
 
+
 /* IMG HELP */
+
 .img_help {
     opacity: 40%;
     width: 100%;
@@ -123,7 +133,10 @@ html {
 
 
 /* ========================================================== MIDDLE DIV ============================================================= */
+
+
 /* MIDDLE DIV */
+
 .middle_div {
     background-color: rgba(255, 255, 255, 0.479);
     margin: auto;
@@ -134,14 +147,20 @@ html {
     position: relative;
 }
 
+
 /* BURGER MENU */
+
 .burger_menu {
     text-align: right;
     float: right;
 }
 
+
 /* ========================================================== CENTER DIV ============================================================= */
+
+
 /* CENTER DIV */
+
 
 /* DIV HEADING - TEXT */
 
@@ -161,6 +180,7 @@ html {
 
 
 /* TABLE */
+
 .table {
     margin-left: 2% !important;
     margin-right: 1% !important;
@@ -223,16 +243,18 @@ td {
     }
 }
 
+
 /* COVER IMAGE */
+
 .cover_img_div {
     float: right !important;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
     .cover_img_div {
-      display: none;
+        display: none;
     }
- }
+}
 
 .img_cover {
     margin-top: 0px;
@@ -240,27 +262,30 @@ td {
     float: right;
 }
 
-
- @media only screen and (min-width: 320px){
+@media only screen and (min-width: 320px) {
     #albumMini {
-      display: auto;
+        display: auto;
     }
- }
+}
 
- @media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
     #albumMini {
-      display: none !important;
+        display: none !important;
     }
- }
+}
 
- @media only screen and (max-width: 1020px){
+@media only screen and (max-width: 1020px) {
     #album {
-      display: none;
+        display: none;
     }
- }
+}
 
- /* BUTTONS */
- .btns_div {
+
+/* BUTTONS */
+
+.btns_div {
     margin-top: 5% !important;
- }
+}
+
+
 /* ========================================================== BODY END =============================================================== */

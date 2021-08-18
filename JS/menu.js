@@ -1,7 +1,7 @@
 var deconnexion;
 var monProfil;
 
-$(document).ready(function(){
+$(document).ready(function() {
     monProfil = $("#profile");
     deconnexion = $("#logout");
 
@@ -10,7 +10,10 @@ $(document).ready(function(){
 });
 
 function logout() {
-    localStorage.clear();
+    localStorage.removeItem("user");
+    localStorage.removeItem("password");
+    localStorage.removeItem("name");
+    localStorage.removeItem("type");
     location.replace("index.html");
 }
 

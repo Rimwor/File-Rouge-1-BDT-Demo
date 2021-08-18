@@ -1,27 +1,28 @@
 <html lang="fr">
 <!-- ======================================================== START ================================================================ -->
 <!-- MAIN CONTAINER -->
-    <!-- MAIN CONTAINER : class="container-fluid" -->
-    <!-- HEADER : class="header" -->
-    <!-- IMG HELP : class="img_help" -->
+<!-- MAIN CONTAINER : class="container-fluid" -->
+<!-- HEADER : class="header" -->
+<!-- IMG HELP : class="img_help" -->
 
 <!-- CONNECTION FORM -->
-    <!-- DIV : class="connection_form" -->
-    <!-- FORM : class="form_connection" -->
-    <!-- USER ID -->
-        <!-- INPUT ID : class="metro-input" id="username" -->
-    <!-- PIN -->
-        <!-- DIV : class="row" -->
-        <!-- INPUT PIN : class="metro-input" : id="password" -->
-    <!-- SUBMIT button -->
-        <!-- DIV : class="btn_confirmation" -->
-        <!-- BUTTON : id="btn_confirm" -->
+<!-- DIV : class="connection_form" -->
+<!-- FORM : class="form_connection" -->
+<!-- USER ID -->
+<!-- INPUT ID : class="metro-input" id="username" -->
+<!-- PIN -->
+<!-- DIV : class="row" -->
+<!-- INPUT PIN : class="metro-input" : id="password" -->
+<!-- SUBMIT button -->
+<!-- DIV : class="btn_confirmation" -->
+<!-- BUTTON : id="btn_confirm" -->
 
 <!-- FOOTER -->
-        <!-- FOOTER : class="footer" -->
-        <!-- MOT DE PASSE OUBLIE button : class="button" -->
+<!-- FOOTER : class="footer" -->
+<!-- MOT DE PASSE OUBLIE button : class="button" -->
 
 <!-- ======================================================== HEAD ================================================================= -->
+
 <head>
 
     <!-- META -->
@@ -43,81 +44,84 @@
 
 </head>
 <!-- ======================================================== BODY ================================================================= -->
+
 <body>
-    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
 
-    <!-- MAIN CONTAINER -->
-    <div class="container-fluid">
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">
 
-        <!-- HEADER -->
-        <header class="header">
-            <a href="help.html" target="_blank">
-            <img src="MEDIA\help.png" class="img_help" alt="help"/>
-            </a>
-        </header>
+        <!-- MAIN CONTAINER -->
+        <div class="container-fluid">
 
-        <!-- CONNECTION FORM -->
+            <!-- HEADER -->
+            <header class="header">
+                <a href="help.html" target="_blank">
+                    <img src="MEDIA\help.png" class="img_help" alt="help" />
+                </a>
+            </header>
 
-        <div class="connection_form col-sm-9 p-3 border" >
-            <form  id="connexion" class="form_connection" action="compte_bibliothecaire.html" method="POST">
+            <!-- CONNECTION FORM -->
 
-                <!-- USER ID -->
-                <div class="mb-3">
-                    <label for="username">Entrez votre identifiant personnel :</label>
-                    </br></br>
-                    <input id="username" class="metro-input" placeholder="  Votre identifiant personnel" type="text" name="username"
-                    maxlength="10"
-                    style="-webkit-text-security: disc;"
-                    required/>
-                </div>
+            <div class="connection_form col-sm-9 p-3 border">
+                <form id="connexion" class="form_connection" action="compte_bibliothecaire.html" method="POST">
 
-                <!-- PIN -->
-                <div class="mb-3">
-                    <label for="password" class="form-label">Saisie votre code PIN : </label>
-                    </br>
+                    <!-- USER ID -->
+                    <div class="mb-3">
+                        <label for="username">Entrez votre identifiant personnel :</label>
+                        </br>
+                        </br>
+                        <input id="username" class="metro-input" placeholder="  Votre identifiant personnel" type="text" name="username" maxlength="10" style="-webkit-text-security: disc;" required/>
+                    </div>
+
+                    <!-- PIN -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Saisie votre code PIN : </label>
+                        </br>
                         <!-- KEY PAD -->
                         <div class="row">
                             <div class="cell-md-6">
-                                <input id="password" name="password" class="metro-input" placeholder="Votre code pin" type="text" data-role="keypad" data-shuffle="true" data-dynamic-position="false" data-on-change="$('#change_target').val(arguments[0])"  data-key-length="6" required="required"/>
+                                <input id="password" name="password" class="metro-input" placeholder="Votre code pin" type="text" data-role="keypad" data-shuffle="true" data-dynamic-position="false" data-on-change="$('#change_target').val(arguments[0])" data-key-length="6" required="required"
+                                />
                             </div>
                         </div>
-                    </br>
-                    <!-- SUBMIT -->
-                    <div class="btn_confirmation"> 
-                        <button id="btn_confirm" type="submit" class="btn btn-sm btn-primary">Confirmer</button>
+                        </br>
+                        <!-- SUBMIT -->
+                        <div class="btn_confirmation">
+                            <button id="btn_confirm" type="submit" class="btn btn-sm btn-primary">Confirmer</button>
+                        </div>
+                        </br>
                     </div>
-                </br>
-                </div>             
-            </form>
+                </form>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <a href="mot_de_passe_oublie.html" target="_blank">
+                    <!-- PASSWORD FORGOT BUTTON -->
+                    <button class="button"><i class="fas fa-unlock-alt"></i>&nbspMot de passe oublié</button>
+                </a>
+
+            </footer>
+
         </div>
 
-        <!-- FOOTER -->
-        <footer class="footer">
-            <a href="mot_de_passe_oublie.html" target="_blank">
-                <!-- PASSWORD FORGOT BUTTON -->
-            <button class="button"><i class="fas fa-unlock-alt"></i>&nbspMot de passe oublié</button>
-            </a>
-            
-        </footer>
-
-    </div>
-
-    <div id="qunit" hidden></div>
-    <div id="qunit-fixture" hidden></div>
+        <div id="qunit" hidden></div>
+        <div id="qunit-fixture" hidden></div>
 
 
-    <!-- ========================================================= JS ================================================================== -->
+        <!-- ========================================================= JS ================================================================== -->
 
-    <!-- JAVA SCRIPT -->
-    <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
-    <script src="JS/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="JS/comptes_utilisateurs.js"></script>
-    <script src="JS/connexion.js"></script>
-    <script src="JS/metro.js"></script>
-    <script src="JS/all.js"></script>
+        <!-- JAVA SCRIPT -->
+        <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
+        <script src="JS/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="JS/comptes_utilisateurs.js"></script>
+        <script src="JS/controles_profils.js"></script>
+        <script src="JS/connexion.js"></script>
+        <script src="JS/metro.js"></script>
+        <script src="JS/all.js"></script>
 
-</body>
+    </body>
 
-<!-- ======================================================== END ================================================================== -->
+    <!-- ======================================================== END ================================================================== -->
+
 </html>
