@@ -1,19 +1,21 @@
+// ------------------------------------------------------------------------------------------------------------------- >>>
+/**
+ * SEARCH BY SERIES NAME
+ * @param {string}
+ * Beata
+ */
+
 var search_bar = document.getElementById("myInput");
 search_bar.addEventListener("keyup", mySearch_serie);
 
 function mySearch_serie() {
-  /**
- * Table list
- * @param {string}
- * Beata
- */
  var html = "<table border='1|1' class='tab1' id='myTab' >";
 
  for(var [idSerie, serie] of series.entries()) {
-     // Recherche des albums de la série - la list
+     // Recherche des albums par SÉRIE
      for (var [idAlbum, album] of albums.entries()) {
         if (album.idSerie == idSerie) {
-            if (serie.nom.includes(search_bar.value)) {
+            if (serie.nom.toLowerCase().includes(search_bar.value.toLowerCase())) {
               html+="<tr class='tr1'>";
               html+="<td class='td1'>"+serie.nom+", Album N°"+album.numero+" "+album.titre+", Auteur : "+auteurs.get(album.idAuteur).nom+"</td>";
               html+="</tr>";
@@ -27,22 +29,24 @@ function mySearch_serie() {
 
 }
 
+// ------------------------------------------------------------------------------------------------------------------- >>>
+/**
+ * SEARCH BY SERIES TITLE
+ * @param {string}
+ * Beata
+ */
+
 var search_bar1 = document.getElementById("myInput1");
 search_bar1.addEventListener("keyup", mySearch_titre);
 
 function mySearch_titre() {
-  /**
- * Table list
- * @param {string}
- * Beata
- */
  var html = "<table border='1|1' class='tab1' id='myTab' >";
 
  for(var [idSerie, serie] of series.entries()) {
-     // Recherche des albums de la série - la list
+     // Recherche des albums par TITRE
      for (var [idAlbum, album] of albums.entries()) {
         if (album.idSerie == idSerie) {
-            if (album.titre.includes(search_bar1.value)) {
+            if (album.titre.toLowerCase().includes(search_bar1.value.toLowerCase())) {
               html+="<tr class='tr1'>";
               html+="<td class='td1'>"+album.titre+", "+serie.nom+", Album N°"+album.numero+", Auteur : "+auteurs.get(album.idAuteur).nom+"</td>";
               html+="</tr>";
@@ -56,6 +60,39 @@ function mySearch_titre() {
 
 }
  
+// ------------------------------------------------------------------------------------------------------------------- >>>
+/**
+ * SEARCH BY SERIES AUTHOR
+ * @param {string}
+ * Beata
+ */
+
+ var search_bar2 = document.getElementById("myInput2");
+ search_bar2.addEventListener("keyup", mySearch_auteur);
+ 
+ function mySearch_auteur() {
+  var html = "<table border='1|1' class='tab1' id='myTab' >";
+ 
+  for(var [idAuteur, auteur] of auteurs.entries()) {
+      // Recherche des albums par AUTEUR
+      for (var [idAlbum, album] of albums.entries()) {
+         if (album.idAuteur == idAuteur) {
+             if (auteur.nom.toLowerCase().includes(search_bar2.value.toLowerCase())) {
+               html+="<tr class='tr1'>";
+               html+="<td class='td1'>"+auteur.nom+", Album N°"+album.numero+" "+album.titre+", Série:"+series.get(album.idSerie).nom+"</td>";
+               html+="</tr>";
+             }
+           }
+      }
+      
+  }
+  html+="</table>";
+  document.getElementById("box_auteurs").innerHTML = html;
+ 
+ }
+
+// ------------------------------------------------------------------------------------------------------------------- >>>
+
  /**
   * An example for a table list  
   */
