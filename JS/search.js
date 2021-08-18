@@ -9,24 +9,31 @@ var search_bar = document.getElementById("myInput");
 search_bar.addEventListener("keyup", mySearch_serie);
 
 function mySearch_serie() {
- var html = "<table border='1|1' class='tab1' id='myTab' >";
+ 
 
  for(var [idSerie, serie] of series.entries()) {
      // Recherche des albums par SÉRIE
      for (var [idAlbum, album] of albums.entries()) {
         if (album.idSerie == idSerie) {
             if (serie.nom.toLowerCase().includes(search_bar.value.toLowerCase())) {
-              html+="<tr class='tr1'>";
-              html+="<td class='td1'>"+serie.nom+", Album N°"+album.numero+" "+album.titre+", Auteur : "+auteurs.get(album.idAuteur).nom+"</td>";
-              html+="</tr>";
+              var html = document.createElement("table");
+              html.innerHTML="<tr class='tr1'>"+"<td class='td1'>"+serie.nom+", Album N°"+album.numero+" "+album.titre+", Auteur : "+auteurs.get(album.idAuteur).nom+"</td>"+"</tr>";
+              var idBD = idAlbum;
+              html.addEventListener("click", function () {clickResult(idBD)});
+              console.log(html);
+              document.getElementById("box").appendChild(html);
             }
           }
      }
      
  }
- html+="</table>";
- document.getElementById("box_auteurs").innerHTML = html;
 
+ 
+
+}
+
+function clickResult(key) {
+  window.location = "bd_details.html?idbd=" + key;
 }
 
 // ------------------------------------------------------------------------------------------------------------------- >>>
@@ -56,7 +63,7 @@ function mySearch_titre() {
      
  }
  html+="</table>";
- document.getElementById("box_auteurs").innerHTML = html;
+ document.getElementById("box").innerHTML = html;
 
 }
  
@@ -87,7 +94,7 @@ function mySearch_titre() {
       
   }
   html+="</table>";
-  document.getElementById("box_auteurs").innerHTML = html;
+  document.getElementById("box").innerHTML = html;
  
  }
 
