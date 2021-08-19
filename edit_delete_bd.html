@@ -106,7 +106,7 @@
                             </div>
                         </div>
                         <div class="cover_img_div mb-5">
-                            <img src="MEDIA/albums/IR-01-La voie fiscale.jpg" class="img_cover img-fluid rounded float-end bottom" alt="BD cover" />
+                            <img src="MEDIA/images/noComics.jpeg" id="album" class="img_cover img-fluid rounded float-end bottom" alt="BD cover" />
                         </div>
                         <!-- <input type="file" data-role="file" data-prepend="Select your photo(s):"> -->
 
@@ -119,19 +119,19 @@
                                 <tr>
                                     <td class="cat1 ">Titre&nbsp:</td>
                                     <td class="cat2 ">
-                                        <input type="text " class="input " size="1 ">
+                                        <input type="text " class="input " size="1 " id="titre">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="cat1 ">Auteur/s&nbsp:</td>
                                     <td class="cat2 ">
-                                        <input type="text " class="input " size="1 ">
+                                        <input type="text " class="input " size="1 " id="auteur">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="cat1 ">Séries&nbsp:</td>
+                                    <td class="cat1 ">Série&nbsp:</td>
                                     <td class="cat2 ">
-                                        <input type="text " class="input " size="1 ">
+                                        <input type="text " class="input " size="1 " id="serie">
                                     </td>
                                 </tr>
                                 <tr>
@@ -144,7 +144,7 @@
                                 </select>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <td class="cat1 ">État&nbsp:</td>
                                     <td class="cat2 ">
                                         <select id="disabledSelect " class="form-select form-select-sm border-0 ">
@@ -155,7 +155,7 @@
                                 <option>Fragile !</option>
                                 </select>
                                     </td>
-                                </tr>
+                                </tr> -->
                                 <tr>
                                     <td class="cat1 ">Emplacement&nbsp:</td>
                                     <td class="cat2 ">
@@ -176,13 +176,13 @@
                                 </select>
                                     </td>
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <td class="cat1 ">Copies&nbsp:</td>
                                     <td class="cat2 ">
                                         <input type="text " class="input " size="1 ">
                                     </td>
-                                </tr>
-                                <tr>
+                                </tr> -->
+                                <!-- <tr>
                                     <td class="cat1 ">Genre&nbsp:</td>
                                     <td class="cat2 ">
                                         <select id="disabledSelect " class="form-select form-select-sm border-0 ">
@@ -196,8 +196,8 @@
 
                                 </select>
                                     </td>
-                                </tr>
-                                <tr>
+                                </tr> -->
+                                <!-- <tr>
                                     <td class="cat1 ">Public&nbsp:</td>
                                     <td class="cat2 ">
                                         <select id="disabledSelect " class="form-select form-select-sm border-0 ">
@@ -208,11 +208,11 @@
                                 <option>Adultes</option>
                                 </select>
                                     </td>
-                                </tr>
+                                </tr> -->
                                 <tr>
                                     <td class="cat1 ">ISBN&nbsp:</td>
                                     <td class="cat2 ">
-                                        <input type="text " class="input " size="1 ">
+                                        <input type="text " class="input " size="1 " id="id" readonly>
                                     </td>
                                 </tr>
                             </tbody>
@@ -235,7 +235,7 @@
                     </div>
                     <!-- SAVE -->
                     <div class="ml-auto ">
-                        <button id="btn_enregistrer " type="button " class="btn btn-primary btn-sm justify-content-md-end stick-bottom ">Enregistrer changements</button>
+                        <button id="btn_enregistrer" type="button " class="btn btn-primary btn-sm justify-content-md-end stick-bottom ">Enregistrer changements</button>
                     </div>
                 </div>
 
@@ -247,10 +247,16 @@
     <!-- ========================================================= JS ================================================================== -->
 
     <!-- JAVA SCRIPT -->
+
     <script src="JS/jquery.js "></script>
     <script src="JS/menu.js "></script>
+    <script src="JS/auteurs.js"></script>
+    <script src="JS/albums.js "></script>
+    <script src="JS/series.js "></script>
+    <script src="JS/edite_delete.js"></script>
     <script src="JS/metro.js "></script>
     <script src="JS/all.js "></script>
+
 
     <!-- ======================================================== END ================================================================== -->
 

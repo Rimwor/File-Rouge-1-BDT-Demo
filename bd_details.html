@@ -93,100 +93,100 @@
                 <div class="div_heading">&nbsp&nbsp Détails de BD &nbsp&nbsp</div>
 
                 <div class="center_row row">
-                    
+
                     <!-- ==================================================================================================== -->
                     <div class="cell4 cell colspan-lg-8 colspan-fs-12 colspan-sm-12 colspan-md-12 flex-align-self-stretch mt-5">
 
                         <!-- TABLE -->
                         <table class="table table-border cell-border">
-                        <tbody>
-                                
-                                    <tr>
-                                        <td class="cat1"><label for="id">ISBN :</label></td>
-                                        <td class="cat2">
-                                        <input type="number" data-role="input" required id="id" value="0" min="0" title="Saisissez un numéro et validez">
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td class="cat1"><label for="serie">Série :</label></td>
-                                        <td class="cat2">
+                            <tbody>
+
+                                <tr>
+                                    <td class="cat1"><label for="id">ISBN :</label></td>
+                                    <td class="cat2">
+                                        <input type="number" data-role="input" required id="id" value="0" min="0" readonly>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="cat1"><label for="serie">Série :</label></td>
+                                    <td class="cat2">
                                         <input type="text" data-role="input" id="serie" readonly>
-                                        </td>
-                                    </tr>
+                                    </td>
+                                </tr>
 
-                                    <tr>
-                                        <td class="cat1"><label for="numero">Album N° :</label></td>
-                                        <td class="cat2">
+                                <tr>
+                                    <td class="cat1"><label for="numero">Album N° :</label></td>
+                                    <td class="cat2">
                                         <input type="text" data-role="input" id="numero" readonly>
-                                        </td>
-                                    </tr>
+                                    </td>
+                                </tr>
 
-                                    <tr>
-                                        <td class="cat1"><label for="titre">Titre :</label></td>
-                                        <td class="cat2">
+                                <tr>
+                                    <td class="cat1"><label for="titre">Titre :</label></td>
+                                    <td class="cat2">
                                         <input type="text" data-role="input" id="titre" readonly>
-                                        </td>
-                                    </tr>
+                                    </td>
+                                </tr>
 
-                                    <tr>
-                                        <td class="cat1"><label for="auteur">Auteur :</label></td>
-                                        <td class="cat2">
+                                <tr>
+                                    <td class="cat1"><label for="auteur">Auteur :</label></td>
+                                    <td class="cat2">
                                         <input type="text" data-role="input" id="auteur" readonly>
-                                        </td>
-                                    </tr>
-                                                               
-                                    <tr>
-                                        <td class="cat1"><label for="prix">Prix :</label></td>
-                                        <td class="cat2">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="cat1"><label for="prix">Prix :</label></td>
+                                    <td class="cat2">
                                         <input type="number" data-role="input" id="prix" readonly>
-                                        </td>
-                                    </tr>
-                                
-                        </tbody>
+                                    </td>
+                                </tr>
+
+                            </tbody>
                         </table>
 
                         <div is="toto">
-                            <img src="MEDIA/images/noComicsMini.jpeg" id="albumMini" >
+                            <img src="MEDIA/images/noComicsMini.jpeg" id="albumMini">
                         </div>
 
                         <!-- EDIT/DELETE // for GESTIONNAIRE -->
                         <div class="btns_div d-flex flex-justify-start">
-                        <div id="gestionnaire" style="visibility: hidden;" class="ml-auto">
-                            <a href="edit_delete_bd.html">
-                            <button id="btn_edit_delete" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Édition / Suppression</button>
-                            </a>
-                        </div>
+                            <div id="gestionnaire" style="visibility: hidden;" class="ml-auto">
+                                <a href="edit_delete_bd.html">
+                                    <button id="btn_edit_delete" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Édition / Suppression</button>
+                                </a>
+                            </div>
                         </div>
 
-                    </div>             
+                    </div>
 
                     <!-- COVER IMG -->
                     <div class="cell5 cell colspan-3 offset-1 flex-align-self-stretch">
-                            <img src="MEDIA/images/noComics.jpeg" id="album" class="img_cover img-fluid rounded float-end bottom" alt="BD cover">                       
+                        <img src="MEDIA/images/noComics.jpeg" id="album" class="img_cover img-fluid rounded float-end bottom" alt="BD cover">
                     </div>
                 </div>
 
                 <!-- BUTTONS -->
                 <div class="btns_div d-flex flex-justify-start">
 
-                        <!-- BACK / CANCEL // for ALL  -->
-                        <div>
-                            <button id="btn_back" class="button justify-content-md-start stick-bottom">
+                    <!-- BACK / CANCEL // for ALL  -->
+                    <div>
+                        <button id="btn_back" class="button justify-content-md-start stick-bottom">
                             <i class="fas fa-chevron-left"></i> &nbsp Annuler
                             </button>
-                        </div>
+                    </div>
 
-                        <!-- PRET // for BIBLIOTHECAIRE -->
-                        <div id="bibliothecaire" style="visibility: hidden;" class="ml-auto">
-                            <button id="btn_pret" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Procéder avec un prêt</button>
-                        </div>
+                    <!-- PRET // for BIBLIOTHECAIRE -->
+                    <div id="bibliothecaire" style="visibility: hidden;" class="ml-auto">
+                        <button id="btn_pret" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Procéder avec un prêt</button>
+                    </div>
 
                 </div>
 
             </div>
         </div>
-        
+
     </body>
     <!-- ========================================================= JS ================================================================== -->
 
@@ -200,7 +200,6 @@
     <script src="JS/series.js"></script>
 
     <script src="JS/bd_details.js"></script>
-    <script src="JS/test_profils.js"></script>
     <script src="JS/menu.js"></script>
 
     <!-- ======================================================== END ================================================================== -->

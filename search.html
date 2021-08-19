@@ -1,35 +1,36 @@
 <html lang="fr">
 <!-- ======================================================== START ================================================================ -->
 <!-- MAIN CONTAINER -->
-    <!-- MAIN CONTAINER : class="container-fluid" -->
-    <!-- HEADER : class="header" -->
-    <!-- IMG HELP : class="img_help" -->
+<!-- MAIN CONTAINER : class="container-fluid" -->
+<!-- HEADER : class="header" -->
+<!-- IMG HELP : class="img_help" -->
 
 <!-- MAIN CONTAINER -->
-    <!-- MAIN CONTAINER : class="container-fluid" -->
+<!-- MAIN CONTAINER : class="container-fluid" -->
 
-    <!-- HEADER : class="header" -->
-        <!-- DIV : class="row" -->
-            <!-- DIV 1 : class="cell1" -->
-                <!-- IMG HELP : class="img_help" -->
-            <!-- DIV 1 : class="cell2" -->
-            <!-- DIV 1 : class="cell3" -->
-                <!-- USER STATUS : id="user_status" -->
-                <!-- USER NAME : id="user_name" -->
+<!-- HEADER : class="header" -->
+<!-- DIV : class="row" -->
+<!-- DIV 1 : class="cell1" -->
+<!-- IMG HELP : class="img_help" -->
+<!-- DIV 1 : class="cell2" -->
+<!-- DIV 1 : class="cell3" -->
+<!-- USER STATUS : id="user_status" -->
+<!-- USER NAME : id="user_name" -->
 
 <!-- MIDDLE DIV -->
-    <!-- MIDDLE DIV : class="middle_div" -->
-    <!-- BURGER MENU -->
-        <!-- BURGER button : id="context_toggle" -->
-        <!-- MENU UL : class="d-menu" -->
+<!-- MIDDLE DIV : class="middle_div" -->
+<!-- BURGER MENU -->
+<!-- BURGER button : id="context_toggle" -->
+<!-- MENU UL : class="d-menu" -->
 
-    <!-- CENTER DIV : class="center_div"-->
-        <!-- in : DIV : class="row" -->
-            <!-- in DIV : class="cell" ; id="cell_1" ; id="cell_2"-->
-            <!-- BUTTONS : -->
-                <!-- id="btn_back" -->
+<!-- CENTER DIV : class="center_div"-->
+<!-- in : DIV : class="row" -->
+<!-- in DIV : class="cell" ; id="cell_1" ; id="cell_2"-->
+<!-- BUTTONS : -->
+<!-- id="btn_back" -->
 
 <!-- ======================================================== HEAD ================================================================= -->
+
 <head>
 
     <!-- META -->
@@ -52,87 +53,89 @@
 
 </head>
 <!-- ======================================================== BODY ================================================================= -->
+
 <body>
-    <body background="MEDIA\bdthequebackground.jpg"  style="background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover;" alt="background">   
 
-    <!-- MAIN CONTAINER -->
-    <div class="container-fluid">
+    <body background="MEDIA\bdthequebackground.jpg" style="background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: cover;" alt="background">
 
-        <!-- HEADER -->
-        <header class="header">
-            <div class="row">
-                <div class="cell1">
-                <a href="help.html" target="_blank">
-                <img src="MEDIA\help.png" class="img_help" alt="help"/></a>
-                </div>
+        <!-- MAIN CONTAINER -->
+        <div class="container-fluid">
 
-                <div class="cell2">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="row">
+                    <div class="cell1">
+                        <a href="help.html" target="_blank">
+                            <img src="MEDIA\help.png" class="img_help" alt="help" /></a>
                     </div>
-                    
-                <div class="cell3">
-                    <span class="">Bienvenue sur votre compte </span><span id="user_status"></span><span>, </span><span id="user_name"></span> !</span>
-                </div>
-            </div>                      
-        </header>
 
-        <!-- MIDDLE DIV -->
-        <div class="middle_div p-3 border" >
-            
-            <div class="burger_menu">
-            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
-            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
-                <li id="profile"><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
-                <li class="divider"></li>
-                <li id="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
-            </ul>
-            </div>
+                    <div class="cell2">
+                    </div>
 
-            <!-- CENTER DIV -->
-            <div class="center_div">
-                <div class="consult_dfond col align-self-center">
-                    Consultation du fond
-                </div>
-                </br>
-            </a>
-                <div class="img_search_div col align-self-center">
-                    <img src="MEDIA\search_form.png" class="img_search_form img-fluid mx-auto d-block" alt="search">
-                </div>
-                </br>
-
-                <!-- =====================================================- -->
-                <input type="text" class="myInputs" id="myInput" placeholder="Recherche par série ...">
-                <input type="text" class="myInputs" id="myInput1" placeholder="Recherche par titre ...">
-                <input type="text" class="myInputs" id="myInput2" placeholder="Recherche par auteur ...">
-                
-                <div class="center_row row">
-                    <div class="cell4 cell colspan-11 flex-align-self-stretch">
-
-                        <!-- TABLE -->
-                        <div id="box"></div>
-    
+                    <div class="cell3">
+                        <span class="">Bienvenue sur votre compte </span><span id="user_status"></span><span>, </span><span id="user_name"></span> !</span>
                     </div>
                 </div>
-                
-            </div>
+            </header>
 
-            <!-- BACK BUTTON -->
-            <div class="btns_div d-flex flex-justify-start">
-                <!-- BACK -->
-                <div>
-                    <button id="btn_back" class="button justify-content-md-start stick-bottom">
+            <!-- MIDDLE DIV -->
+            <div class="middle_div p-3 border">
+
+                <div class="burger_menu">
+                    <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+                    <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                        <li id="profile"><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                        <li class="divider"></li>
+                        <li id="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+                    </ul>
+                </div>
+
+                <!-- CENTER DIV -->
+                <div class="center_div">
+                    <div class="consult_dfond col align-self-center">
+                        Consultation du fond
+                    </div>
+                    </br>
+                    </a>
+                    <div class="img_search_div col align-self-center">
+                        <img src="MEDIA\search_form.png" class="img_search_form img-fluid mx-auto d-block" alt="search">
+                    </div>
+                    </br>
+
+                    <!-- =====================================================- -->
+                    <input type="text" class="myInputs" id="myInput" placeholder="Recherche par série ...">
+                    <input type="text" class="myInputs" id="myInput1" placeholder="Recherche par titre ...">
+                    <input type="text" class="myInputs" id="myInput2" placeholder="Recherche par auteur ...">
+
+                    <div class="center_row row">
+                        <div class="cell4 cell colspan-11 flex-align-self-stretch">
+
+                            <!-- TABLE -->
+                            <div id="box"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BACK BUTTON -->
+                <div class="btns_div d-flex flex-justify-start">
+                    <!-- BACK -->
+                    <div>
+                        <button id="btn_back" class="button justify-content-md-start stick-bottom">
                     <i class="fas fa-chevron-left"></i>
                     </button>
+                    </div>
+                    <!-- BUTTON BACK TO TOP -->
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
                 </div>
-                <!-- BUTTON BACK TO TOP -->
-                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-            </div> 
 
+            </div>
         </div>
-    </div>
 
-</body>
-   
-<!-- ========================================================= JS ================================================================== -->
+    </body>
+
+    <!-- ========================================================= JS ================================================================== -->
 
     <!-- JAVA SCRIPT -->
     <script src="JS/jquery.js"></script>
@@ -143,11 +146,10 @@
     <script src="JS/auteurs.js"></script>
     <script src="JS/albums.js"></script>
     <script src="JS/series.js"></script>
-
+    <script src="JS/test_profils.js"></script>
     <script src="JS/search.js"></script>
     <script src="JS/btn_top.js"></script>
 
-    <script src="JS/test_profils.js"></script>
+    <!-- ======================================================== END ================================================================== -->
 
-<!-- ======================================================== END ================================================================== -->
 </html>

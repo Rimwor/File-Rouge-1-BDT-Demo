@@ -42,7 +42,6 @@ function clickResultEdit(e) {
             if (e.target.innerHTML.toLowerCase().includes(album.titre.toLowerCase())) {
                 var idBD = idAlbum;
                 window.location = "edit_delete_bd.html?idbd=" + idBD;
-
             }
         }
     }
