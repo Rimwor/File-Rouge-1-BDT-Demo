@@ -22,7 +22,7 @@ function mySearch_serie() {
                     var html = document.createElement("table");
                     html.innerHTML = "<tr class='tr1'>" + "<td class='td1'>" + serie.nom + ", Album N°" + album.numero + " " + album.titre + ", Auteur : " + auteurs.get(album.idAuteur).nom + "</td>" + "</tr>";
                     var idBD = idAlbum;
-                    html.addEventListener("click", function() { clickResult(idBD) });
+                    html.addEventListener("click", clickResult);
                     console.log(html);
                     document.getElementById("box").appendChild(html);
                 }
@@ -35,8 +35,17 @@ function mySearch_serie() {
 
 }
 
-function clickResult(key) {
-    window.location = "bd_details.html?idbd=" + key;
+function clickResult(e) {
+    for (var [idSerie, serie] of series.entries()) {
+        // Recherche des albums par SÉRIE
+        for (var [idAlbum, album] of albums.entries()) {
+            if (e.target.innerHTML.toLowerCase().includes(album.titre.toLowerCase())) {
+                var idBD = idAlbum;
+                window.location = "bd_details.html?idbd=" + idBD;
+
+            }
+        }
+    }
 }
 
 // ------------------------------------------------------------------------------------------------------------------- >>>
@@ -65,7 +74,7 @@ function mySearch_titre() {
                     var html = document.createElement("table");
                     html.innerHTML = "<tr class='tr1'>" + "<td class='td1'>" + serie.nom + ", Album N°" + album.numero + " " + album.titre + ", Auteur : " + auteurs.get(album.idAuteur).nom + "</td>" + "</tr>";
                     var idBD = idAlbum;
-                    html.addEventListener("click", function() { clickResult(idBD) });
+                    html.addEventListener("click", clickResult);
                     console.log(html);
                     document.getElementById("box").appendChild(html);
                 }
@@ -101,7 +110,7 @@ function mySearch_auteur() {
                     var html = document.createElement("table");
                     html.innerHTML = "<tr class='tr1'>" + "<td class='td1'>" + album.idSerie + ", Album N°" + album.numero + " " + album.titre + ", Auteur : " + auteurs.get(album.idAuteur).nom + "</td>" + "</tr>";
                     var idBD = idAlbum;
-                    html.addEventListener("click", function() { clickResult(idBD) });
+                    html.addEventListener("click", clickResult);
                     console.log(html);
                     document.getElementById("box").appendChild(html);
                 }

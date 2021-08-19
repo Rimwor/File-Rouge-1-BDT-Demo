@@ -21,9 +21,9 @@ function mySearch_serieEdit() {
                     var html = document.createElement("table");
                     html.innerHTML = "<tr class='tr1'>" + "<td class='td1'>" + serie.nom + ", Album N°" + album.numero + " " + album.titre + ", Auteur : " + auteurs.get(album.idAuteur).nom + "</td>" + "</tr>";
                     var idBD = idAlbum;
-                    html.addEventListener("click", function() { clickResultEdit(idBD) });
-                    console.log(html);
+                    html.addEventListener("click", clickResultEdit);
                     list.appendChild(html);
+                    console.log(idBD);
                 }
             }
         }
@@ -34,8 +34,18 @@ function mySearch_serieEdit() {
 
 }
 
-function clickResultEdit(key) {
-    window.location = "edit_delete_bd.html?idbd=" + key;
+function clickResultEdit(e) {
+    console.log(e.target.innerHTML);
+    for (var [idSerie, serie] of series.entries()) {
+        // Recherche des albums par SÉRIE
+        for (var [idAlbum, album] of albums.entries()) {
+            if (e.target.innerHTML.toLowerCase().includes(album.titre.toLowerCase())) {
+                var idBD = idAlbum;
+                window.location = "edit_delete_bd.html?idbd=" + idBD;
+
+            }
+        }
+    }
 }
 
 // ------------------------------------------------------------------------------------------------------------------- >>>
@@ -62,8 +72,8 @@ function mySearch_titreEdit() {
                     var html = document.createElement("table");
                     html.innerHTML = "<tr class='tr1'>" + "<td class='td1'>" + serie.nom + ", Album N°" + album.numero + " " + album.titre + ", Auteur : " + auteurs.get(album.idAuteur).nom + "</td>" + "</tr>";
                     var idBD = idAlbum;
-                    html.addEventListener("click", function() { clickResultEdit(idBD) });
-                    console.log(html);
+                    console.log(idBD);
+                    html.addEventListener("click", clickResultEdit);
                     document.getElementById("box").appendChild(html);
                 }
             }
@@ -97,7 +107,7 @@ function mySearch_auteurEdit() {
                     var html = document.createElement("table");
                     html.innerHTML = "<tr class='tr1'>" + "<td class='td1'>" + album.idSerie + ", Album N°" + album.numero + " " + album.titre + ", Auteur : " + auteurs.get(album.idAuteur).nom + "</td>" + "</tr>";
                     var idBD = idAlbum;
-                    html.addEventListener("click", function() { clickResultEdit(idBD) });
+                    html.addEventListener("click", clickResultEdit);
                     console.log(html);
                     document.getElementById("box").appendChild(html);
                 }
