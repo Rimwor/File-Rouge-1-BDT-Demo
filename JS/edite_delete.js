@@ -185,6 +185,9 @@ jQuery(document).ready(function($) {
             e.preventDefault();
             alert("Veuillez respecter les formats requis");
         } else {
+            var srcVal = document.getElementById("formFileSm").value.slice(12);
+            console.log(srcVal);
+            imgAlbum.src = SRC_ALBUM + (srcVal);
 
             albums.get(monId).titre = monTitre;
 
