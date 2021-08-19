@@ -53,8 +53,7 @@ function verifCredentials(e) {
         alert("Le format de vos identifiants est invalide");
     } else {
         for (let i in users) {
-            if (utilisateur == users[i].identifiant //&& code == users[i].pin
-            ) {
+            if (utilisateur == users[i].identifiant && code == users[i].pin) {
                 localStorage.setItem("type", users[i].type);
                 localStorage.setItem("name", users[i].name);
                 var profil = localStorage.getItem("type");
@@ -70,8 +69,7 @@ function verifCredentials(e) {
                     $(form).attr("action", "compte.html");
                 }
                 break;
-            } else if (i == count && (utilisateur != users[i].identifiant //|| code != users[i].pin)
-                )) {
+            } else if (i == count && (utilisateur != users[i].identifiant || code != users[i].pin)) {
                 $(form).attr("action", "error_connection.html");
             }
 
