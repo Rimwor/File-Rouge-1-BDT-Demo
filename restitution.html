@@ -1,44 +1,45 @@
 <html lang="fr">
 <!-- ======================================================== START ================================================================ -->
 <!-- MAIN CONTAINER -->
-    <!-- MAIN CONTAINER : class="container-fluid" -->
+<!-- MAIN CONTAINER : class="container-fluid" -->
 
-    <!-- HEADER : class="header" -->
-        <!-- DIV : class="row" -->
-            <!-- DIV 1 : class="cell1" -->
-                <!-- IMG HELP : class="img_help" -->
-            <!-- DIV 1 : class="cell2" -->
-            <!-- DIV 1 : class="cell3" -->
-                <!-- USER STATUS : id="user_status" -->
-                <!-- USER NAME : id="user_name" -->
+<!-- HEADER : class="header" -->
+<!-- DIV : class="row" -->
+<!-- DIV 1 : class="cell1" -->
+<!-- IMG HELP : class="img_help" -->
+<!-- DIV 1 : class="cell2" -->
+<!-- DIV 1 : class="cell3" -->
+<!-- USER STATUS : id="user_status" -->
+<!-- USER NAME : id="user_name" -->
 
 <!-- MIDDLE DIV -->
-    <!-- MIDDLE DIV : class="middle_div" -->
-    <!-- BURGER MENU -->
-        <!-- BURGER button : id="context_toggle" -->
-        <!-- MENU UL : class="d-menu" -->
+<!-- MIDDLE DIV : class="middle_div" -->
+<!-- BURGER MENU -->
+<!-- BURGER button : id="context_toggle" -->
+<!-- MENU UL : class="d-menu" -->
 
-    <!-- CENTER DIV : -->
-        <!-- HEADING : class="div_heading" -->
-        <!-- CENTER DIV : class="center_row" -->
-            <!-- USER NUMBER -->
-            <!-- LEFT empty COL -->
-            <!-- IS VALID -- / -- IS INVALID -->
-                <!-- SPACE -->
-            <!-- BORROWED BD -->
-                <!-- SPACE -->
-            <!-- BDs LIST -->
-                <!-- class="group-list" -->
-                <!-- class="no" -->
-                <!-- class="lis" -->
-                <!-- select : id="disabledSelect" -->
-                <!-- input : class="form-check-input" -->
-            <!-- RIGHT empty COL -->
-                <!-- BACK BUTTON / & / RETURN BUTTON -->
-                    <!-- BACK : id="btn_back" -->
-                    <!-- RETURN : id="btn_restitution" -->
+<!-- CENTER DIV : -->
+<!-- HEADING : class="div_heading" -->
+<!-- CENTER DIV : class="center_row" -->
+<!-- USER NUMBER -->
+<!-- LEFT empty COL -->
+<!-- IS VALID -- / -- IS INVALID -->
+<!-- SPACE -->
+<!-- BORROWED BD -->
+<!-- SPACE -->
+<!-- BDs LIST -->
+<!-- class="group-list" -->
+<!-- class="no" -->
+<!-- class="lis" -->
+<!-- select : id="disabledSelect" -->
+<!-- input : class="form-check-input" -->
+<!-- RIGHT empty COL -->
+<!-- BACK BUTTON / & / RETURN BUTTON -->
+<!-- BACK : id="btn_back" -->
+<!-- RETURN : id="btn_restitution" -->
 
 <!-- ======================================================== HEAD ================================================================= -->
+
 <head>
 
     <!-- META -->
@@ -60,173 +61,183 @@
 
 </head>
 <!-- ======================================================== BODY ================================================================= -->
+
 <body>
-    <body background="MEDIA\bdthequebackground.jpg" alt="background">   
 
-    <!-- MAIN CONTAINER -->
-    <div class="container-fluid">
+    <body background="MEDIA\bdthequebackground.jpg" alt="background">
 
-        <!-- HEADER -->
-        <header class="header">
-            <div class="row">
-                <div class="cell1">
-                <a href="help.html" target="_blank">
-                <img src="MEDIA\help.png" class="img_help" alt="help"/></a>
-                </div>
+        <!-- MAIN CONTAINER -->
+        <div class="container-fluid">
 
-                <div class="cell2">
-                    </div>
-                    
-                <div class="cell3">
-                <span class="">Bienvenue sur votre compte </span><span id="user_status">Bibliothécaire</span> <span>, </span><span id="user_name">Andy Dufresne</span> !</span>
-                </div>
-            </div>                      
-        </header>
-
-        <!-- MIDDLE DIV -->
-        <div class="middle_div border" >
-            
-            <div class="burger_menu">
-            <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
-            <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
-                <li id="profile"><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
-                <li class="divider"></li>
-                <li id="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
-            </ul>
-            </div>
-
-            <!-- CENTER DIV -->
-            <div class="div_heading">&nbsp&nbsp Gestion des empruntes : restitution &nbsp&nbsp</div>
-
-
-            <div class="center_row row">
-                
-                <!-- USER NUMBER -->
-                <div class="row align-items-start">
-                    <div class="col col-1">
-                    <!-- LEFT empty COL -->
+            <!-- HEADER -->
+            <header class="header">
+                <div class="row">
+                    <div class="cell1">
+                        <a href="help.html" target="_blank">
+                            <img src="MEDIA\help.png" class="img_help" alt="help" /></a>
                     </div>
 
-                    <div class="col col-10">
-                        <div class="cell6 cell colspan-8 flex-align-self-stretch">
-                        <!-- TABLE -->
-                        <table class="table">
-                        <tbody>
-                        
-                        <!-- IS VALID -->
-                        <tr>
-                            <td class="cat1">Numero d'utilisateur&nbsp:</td>
-                            <td class="cat2"><input type="text" class="form-control is-valid form-control-sm" placeholder="Ex: 2259873640"></td>
-                        </tr>
-                            <!-- IS INVALID -->
-                            <!-- <tr>
+                    <div class="cell2">
+                    </div>
+
+                    <div class="cell3">
+                        <span class="">Bienvenue sur votre compte </span><span id="user_status">Bibliothécaire</span> <span>, </span><span id="user_name">Andy Dufresne</span> !</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- MIDDLE DIV -->
+            <div class="middle_div border">
+
+                <div class="burger_menu">
+                    <a class="button" id="context_toggle"><i class="fas fa-bars"></i></a>
+                    <ul class="d-menu context drop-down-right" data-role="dropdown" data-toggle-element="#context_toggle">
+                        <li id="profile"><a href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
+                        <li class="divider"></li>
+                        <li id="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Deconnection</a></li>
+                    </ul>
+                </div>
+
+                <!-- CENTER DIV -->
+                <div class="div_heading">&nbsp&nbsp Gestion des empruntes : restitution &nbsp&nbsp</div>
+
+
+                <div class="center_row row">
+
+                    <!-- USER NUMBER -->
+                    <div class="row align-items-start">
+                        <div class="col col-1">
+                            <!-- LEFT empty COL -->
+                        </div>
+
+                        <div class="col col-10">
+                            <div class="cell6 cell colspan-8 flex-align-self-stretch">
+                                <!-- TABLE -->
+                                <table class="table">
+                                    <tbody>
+
+                                        <!-- IS VALID -->
+                                        <tr>
+                                            <td class="cat1">Numero d'utilisateur&nbsp:</td>
+                                            <td class="cat2"><input type="text" class="form-control is-valid form-control-sm" placeholder="Ex: 2259873640"></td>
+                                        </tr>
+                                        <!-- IS INVALID -->
+                                        <!-- <tr>
                                 <td class="cat1">Numero d'utilisateur&nbsp:</td>
                                 <td class="cat2"><input type="text" class="form-control is-invalid form-control-sm"></td>
                             </tr> -->
 
-                            <!-- SPACE -->
-                            <tr><td></td></td></tr>
+                                        <!-- SPACE -->
+                                        <tr>
+                                            <td></td>
+                                            </td>
+                                        </tr>
 
-                        <!-- FOR RETURN BD -->
-                        <tr>
-                            <td class="cat1">BDs à rendre&nbsp:</td>
-                        </tr>
+                                        <!-- FOR RETURN BD -->
+                                        <tr>
+                                            <td class="cat1">BDs à rendre&nbsp:</td>
+                                        </tr>
 
-                            <!-- SPACE -->
-                            <tr><td></td></td></tr>
+                                        <!-- SPACE -->
+                                        <tr>
+                                            <td></td>
+                                            </td>
+                                        </tr>
 
-                        </tbody>
-                        </table>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- BDs LIST -->
+
+                            <ul class="group-list horizontal border-0">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li style="text-align: center; color: gray;" class="ddfp">FIN DE PRÊT</li>
+                                <li style="text-align: center; color: gray;" class="ddfp">DÉPASSÉE DE</li>
+                            </ul>
+
+                            <ul class="group-list horizontal border-0">
+                                <li class="no">1</li>
+                                <li class="lis">Numero ISBN</li>
+                                <li>
+                                    <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    <option>0-7645-2645-2641-3</option>
+                                </select>
+                                </li>
+                                <li><input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></li>
+                                <li class="lis1">00/00/0000</li>
+                                <li class="lis1">0 jours</li>
+                            </ul>
+
+                            <ul class="group-list horizontal border-0">
+                                <li class="no">2</li>
+                                <li class="lis">Numero ISBN</li>
+                                <li>
+                                    <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    <option>0-7645-2645-2641-3</option>
+                                </select>
+                                </li>
+                                <li><input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></li>
+                                <li class="lis1">00/00/0000</li>
+                                <li class="lis1">0 jours</li>
+                            </ul>
+
+                            <ul class="group-list horizontal border-0">
+                                <li class="no">3</li>
+                                <li class="lis">Numero ISBN</li>
+                                <li>
+                                    <select id="disabledSelect" class="form-select form-select-sm border-0">
+                                    <option>0-7645-2645-2641-3</option>
+                                </select>
+                                </li>
+                                <li><input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></li>
+                                <li class="lis1">00/00/0000</li>
+                                <li class="lis1">0 jours</li>
+                            </ul>
+
                         </div>
+                        <!-- RIGHT empty COL -->
+                        <div class="col col-1">
 
-                        <!-- BDs LIST -->
-
-                            <ul class="group-list horizontal border-0">
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li style="text-align: center; color: gray;" class="ddfp">FIN DE PRÊT</li>
-                            <li style="text-align: center; color: gray;" class="ddfp">DÉPASSÉE DE</li>
-                            </ul>
-
-                            <ul class="group-list horizontal border-0">
-                            <li class="no">1</li>
-                            <li class="lis">Numero ISBN</li>
-                            <li>
-                                <select id="disabledSelect" class="form-select form-select-sm border-0">
-                                    <option>0-7645-2645-2641-3</option>
-                                </select>
-                            </li>
-                            <li><input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></li>
-                            <li class="lis1">00/00/0000</li>
-                            <li class="lis1">0 jours</li>
-                            </ul>
-
-                            <ul class="group-list horizontal border-0">
-                            <li class="no">2</li>
-                            <li class="lis">Numero ISBN</li>
-                            <li>
-                                <select id="disabledSelect" class="form-select form-select-sm border-0">
-                                    <option>0-7645-2645-2641-3</option>
-                                </select>
-                            </li>
-                            <li><input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></li>
-                            <li class="lis1">00/00/0000</li>
-                            <li class="lis1">0 jours</li>
-                            </ul>
-
-                            <ul class="group-list horizontal border-0">
-                            <li class="no">3</li>
-                            <li class="lis">Numero ISBN</li>
-                            <li>
-                                <select id="disabledSelect" class="form-select form-select-sm border-0">
-                                    <option>0-7645-2645-2641-3</option>
-                                </select>
-                            </li>
-                            <li><input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></li>
-                            <li class="lis1">00/00/0000</li>
-                            <li class="lis1">0 jours</li>
-                            </ul>
-
+                        </div>
                     </div>
-                    <!-- RIGHT empty COL -->
-                    <div class="col col-1">
-                    
-                    </div>
-                </div>        
-                  
-            </div>
-            
-            </br>
-            <!-- BACK BUTTON / & / RETURN BUTTON -->
-            <div class="btns_div d-flex flex-justify-start">
-                <!-- BACK -->
-                <div>
-                    <button id="btn_back" class="button justify-content-md-start stick-bottom">
+
+                </div>
+
+                </br>
+                <!-- BACK BUTTON / & / RETURN BUTTON -->
+                <div class="btns_div d-flex flex-justify-start">
+                    <!-- BACK -->
+                    <div>
+                        <button id="btn_back" class="button justify-content-md-start stick-bottom">
                     <i class="fas fa-chevron-left"></i>
                     </button>
+                    </div>
+                    <!-- RETURN -->
+                    <div class="ml-auto">
+                        <button id="btn_restitution" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Rendre</button>
+                    </div>
                 </div>
-                <!-- RETURN -->
-                <div class="ml-auto">
-                    <button id="btn_restitution" type="button" class="btn btn-primary btn-sm justify-content-md-end stick-bottom">Rendre</button>
-                </div>
+
             </div>
-            
-        </div> 
-        
-        
 
-    </div>
 
-</body>
-<!-- ========================================================= JS ================================================================== -->
+
+        </div>
+
+    </body>
+    <!-- ========================================================= JS ================================================================== -->
 
     <!-- JAVA SCRIPT -->
     <script src="JS/jquery.js"></script>
     <script src="JS/menu.js"></script>
+    <script src="JS/back.js"></script>
     <script src="JS/metro.js"></script>
     <script src="JS/all.js"></script>
 
-<!-- ======================================================== END ================================================================== -->
+    <!-- ======================================================== END ================================================================== -->
+
 </html>
