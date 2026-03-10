@@ -19,4 +19,3 @@ Ce dossier technique concerne un logiciel _application de gestion des ressources
 - essais ;
 - travail en binôme.
 
-> Dossier technique : https://drive.google.com/drive/folders/1f7rNHBqI5eRYOOANVSCwB8xczBVoXpm8?usp=sharing
